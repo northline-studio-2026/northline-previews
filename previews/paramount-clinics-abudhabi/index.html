@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paramount Clinics — Dental &amp; Aesthetic Clinic, Abu Dhabi</title>
+<meta name="description" content="Paramount Clinics in Al Danah, Abu Dhabi — dental care, Botox & fillers, laser treatments and dermatology. Book on WhatsApp.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;color:#1c2b2a;background:#f7f3ec;line-height:1.55}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+/* header */
+header{background:#0b3d3a;color:#f7f3ec}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;gap:12px}
+.logo{font-size:22px;letter-spacing:.06em;font-weight:700}
+.logo small{display:block;font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#e8b04b;font-weight:400;margin-top:2px}
+.callbtn{font-family:Arial,Helvetica,sans-serif;background:#e8b04b;color:#0b3d3a;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:999px;white-space:nowrap}
+/* hero — asymmetric editorial */
+.hero{padding:44px 0 8px}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:28px}
+.eyebrow{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#a85c2a;font-weight:700}
+h1{font-size:40px;line-height:1.08;margin:14px 0 16px;font-weight:700}
+h1 em{font-style:italic;color:#0b3d3a}
+.hero p.lede{font-size:18px;color:#3d4a48;max-width:34rem}
+.rating{display:flex;align-items:baseline;gap:10px;margin:20px 0 4px;font-family:Arial,Helvetica,sans-serif}
+.rating .stars{color:#e8b04b;font-size:20px;letter-spacing:2px}
+.rating b{font-size:20px}
+.rating span{color:#5a6865;font-size:14px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 10px}
+.btn{font-family:Arial,Helvetica,sans-serif;display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 22px;border-radius:999px}
+.btn-wa{background:#128c7e;color:#fff}
+.btn-call{background:#0b3d3a;color:#f7f3ec}
+.note{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#5a6865}
+.hero-img{border-radius:4px 120px 4px 4px;overflow:hidden}
+.hero-img img{width:100%;height:340px;object-fit:cover}
+.hero-cap{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#5a6865;margin-top:8px}
+/* strip */
+.strip{background:#0b3d3a;color:#f7f3ec;margin-top:36px}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:8px 36px;padding:18px 20px;font-family:Arial,Helvetica,sans-serif;font-size:14px}
+.strip b{color:#e8b04b}
+/* services — staggered editorial list, not uniform cards */
+.services{padding:56px 0 20px}
+h2{font-size:30px;line-height:1.15;margin-bottom:8px}
+.sec-intro{color:#3d4a48;max-width:36rem;margin-bottom:34px}
+.svc{display:grid;grid-template-columns:1fr;gap:18px;padding:26px 0;border-top:2px solid #0b3d3a}
+.svc:last-child{border-bottom:2px solid #0b3d3a}
+.svc-num{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.2em;color:#a85c2a;font-weight:700}
+.svc h3{font-size:24px;margin:6px 0 8px}
+.svc p{color:#3d4a48;font-size:16px}
+.svc .price{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#5a6865;margin-top:10px}
+.svc .price b{color:#0b3d3a}
+.svc-img{border-radius:4px;overflow:hidden}
+.svc-img img{width:100%;height:220px;object-fit:cover}
+.svc-link{font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#0b3d3a;text-decoration:none;border-bottom:2px solid #e8b04b}
+/* reviews */
+.reviews{padding:56px 0}
+.review-box{background:#fff;border:1px solid #ddd5c6;padding:34px 28px;display:grid;grid-template-columns:1fr;gap:18px}
+.big-score{font-size:64px;line-height:1;font-weight:700;color:#0b3d3a}
+.big-score small{font-size:22px;color:#5a6865}
+.review-box .stars{color:#e8b04b;font-size:26px;letter-spacing:3px}
+.review-box p{color:#3d4a48;font-size:17px}
+.review-box .src{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#5a6865}
+/* booking */
+.booking{padding:0 0 56px}
+.book-grid{display:grid;grid-template-columns:1fr;gap:26px}
+.book-copy h2{margin-bottom:12px}
+.book-copy p{color:#3d4a48;font-size:17px;margin-bottom:14px}
+.book-copy ul{list-style:none;font-family:Arial,Helvetica,sans-serif;font-size:15px}
+.book-copy li{padding:9px 0;border-top:1px solid #ddd5c6}
+.book-copy li b{color:#0b3d3a}
+form{background:#0b3d3a;color:#f7f3ec;padding:28px 24px;border-radius:4px}
+form h3{font-size:22px;margin-bottom:4px}
+form p{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#cfe0dc;margin-bottom:18px}
+label{font-family:Arial,Helvetica,sans-serif;display:block;font-size:13px;margin:12px 0 5px}
+input,select,textarea{width:100%;font-family:Arial,Helvetica,sans-serif;font-size:15px;padding:11px 12px;border:1px solid #4a6b68;border-radius:4px;background:#fff;color:#1c2b2a}
+textarea{resize:vertical;min-height:70px}
+form .btn{width:100%;text-align:center;margin-top:18px;border:none;cursor:pointer;background:#25d366;color:#083b2c;font-size:16px}
+form .fine{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#cfe0dc;margin-top:12px;text-align:center}
+/* visit */
+.visit{background:#fff;border-top:2px solid #0b3d3a;padding:44px 0}
+.visit-grid{display:grid;grid-template-columns:1fr;gap:20px}
+.visit h2{margin-bottom:10px}
+.visit address{font-style:normal;font-size:17px;color:#3d4a48;line-height:1.7}
+.visit .tel{font-family:Arial,Helvetica,sans-serif;font-size:17px;margin-top:14px}
+.visit .tel a{color:#0b3d3a;font-weight:700;text-decoration:none}
+footer{background:#0b3d3a;color:#cfe0dc;padding:26px 0;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media(min-width:760px){
+  h1{font-size:54px}
+  .hero-grid{grid-template-columns:1.05fr .95fr;align-items:start}
+  .hero-img img{height:460px}
+  .svc{grid-template-columns:110px 1fr 300px;align-items:start}
+  .svc-img img{height:170px}
+  .review-box{grid-template-columns:auto 1fr;align-items:center;gap:34px}
+  .book-grid{grid-template-columns:1fr 1fr;align-items:start}
+  .visit-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Paramount Clinics<small>Dental &amp; Aesthetic · Abu Dhabi</small></div>
+    <a class="callbtn" href="tel:+97126228724">Call 02 622 8724</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Dental · Dermatology · Aesthetics</span>
+      <h1>Good teeth.<br>Clear skin.<br><em>One clinic.</em></h1>
+      <p class="lede">Paramount Clinics brings dental care and aesthetic treatments together under one roof in Al Danah — so you book once, and get looked after properly.</p>
+      <div class="rating">
+        <span class="stars">★★★★★</span>
+        <b>4.8</b>
+        <span>from 219 Google reviews</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/971551099404?text=Hi%20Paramount%20Clinics%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a>
+        <a class="btn btn-call" href="tel:+97126228724">Call the clinic</a>
+      </div>
+      <p class="note">No online payment needed — send a message and the clinic confirms your time.</p>
+    </div>
+    <div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80" alt="Dentist treating a patient at Paramount Clinics">
+      </div>
+      <p class="hero-cap">Plaza Tower, Al Najda Street — opposite Al Mariah Mall, Al Danah.</p>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <span><b>Dental Care</b> · check-ups, cleaning, fillings</span>
+    <span><b>Botox &amp; Fillers</b> · natural-looking results</span>
+    <span><b>Laser</b> · hair removal &amp; skin treatments</span>
+    <span><b>GP</b> · general consultations</span>
+  </div>
+</div>
+
+<section class="services">
+  <div class="wrap">
+    <h2>What we do, plainly.</h2>
+    <p class="sec-intro">Four services, done well. Pick one, ask on WhatsApp, and the clinic will confirm the price for your consultation before you come in.</p>
+
+    <div class="svc">
+      <span class="svc-num">01 — DENTAL</span>
+      <div>
+        <h3>Dental Care</h3>
+        <p>Check-ups, cleaning, fillings, whitening and routine dental work — with clear advice on what you actually need, and what you don't.</p>
+        <p class="price"><b>Price:</b> on consultation</p>
+        <p style="margin-top:12px"><a class="svc-link" href="https://wa.me/971551099404?text=Hi%2C%20I%27d%20like%20to%20book%20a%20dental%20appointment.">Book dental →</a></p>
+      </div>
+      <div class="svc-img"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="Dental treatment in progress"></div>
+    </div>
+
+    <div class="svc">
+      <span class="svc-num">02 — AESTHETIC</span>
+      <div>
+        <h3>Botox &amp; Fillers</h3>
+        <p>Subtle, natural-looking anti-wrinkle and filler treatments, planned face to face — never rushed, never overdone.</p>
+        <p class="price"><b>Price:</b> on consultation</p>
+        <p style="margin-top:12px"><a class="svc-link" href="https://wa.me/971551099404?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20Botox%20and%20fillers.">Ask about Botox →</a></p>
+      </div>
+      <div class="svc-img"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Skincare and aesthetic treatment"></div>
+    </div>
+
+    <div class="svc">
+      <span class="svc-num">03 — SKIN</span>
+      <div>
+        <h3>Laser Treatments</h3>
+        <p>Laser hair removal and skin treatments with a proper consultation first, so the plan fits your skin — not a one-size package.</p>
+        <p class="price"><b>Price:</b> on consultation</p>
+        <p style="margin-top:12px"><a class="svc-link" href="https://wa.me/971551099404?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20laser%20treatments.">Ask about laser →</a></p>
+      </div>
+      <div class="svc-img"><img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=800&q=80" alt="Skin care consultation"></div>
+    </div>
+
+    <div class="svc">
+      <span class="svc-num">04 — SKIN &amp; GP</span>
+      <div>
+        <h3>Dermatology &amp; GP</h3>
+        <p>Skin concerns checked by a dermatologist, plus general practitioner consultations for everyday health questions.</p>
+        <p class="price"><b>Price:</b> on consultation</p>
+        <p style="margin-top:12px"><a class="svc-link" href="https://wa.me/971551099404?text=Hi%2C%20I%27d%20like%20to%20book%20a%20dermatology%20or%20GP%20consultation.">Book a consultation →</a></p>
+      </div>
+      <div class="svc-img"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Modern clinic treatment room"></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="review-box">
+      <div>
+        <div class="big-score">4.8<small> / 5</small></div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div>
+        <p><strong>219 Google reviews.</strong> Patients rate the clinic 4.8 out of 5 — the number speaks for itself, so we will let it.</p>
+        <p class="src" style="margin-top:8px">Rating from Google reviews, as listed publicly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="booking">
+  <div class="wrap book-grid">
+    <div class="book-copy">
+      <h2>Book in under a minute.</h2>
+      <p>Fill in the form and it opens WhatsApp with your request ready to send. The clinic replies and confirms your time.</p>
+      <ul>
+        <li><b>1.</b> Tell us what you need</li>
+        <li><b>2.</b> Send it on WhatsApp</li>
+        <li><b>3.</b> We confirm your appointment</li>
+      </ul>
+      <p style="margin-top:18px">Prefer to talk? Call <a href="tel:+97126228724" style="font-weight:700;color:#0b3d3a">02 622 8724</a> or message <a href="https://wa.me/971551099404" style="font-weight:700;color:#0b3d3a">+971 55 109 9404</a>.</p>
+    </div>
+    <form onsubmit="sendWhatsApp(event)">
+      <h3>Request an appointment</h3>
+      <p>Your details go straight to the clinic on WhatsApp.</p>
+      <label for="f-name">Your name</label>
+      <input id="f-name" type="text" placeholder="e.g. Sara Ahmed" required>
+      <label for="f-phone">Phone number</label>
+      <input id="f-phone" type="tel" placeholder="e.g. 050 123 4567" required>
+      <label for="f-service">Service</label>
+      <select id="f-service">
+        <option>Dental Care</option>
+        <option>Botox &amp; Fillers</option>
+        <option>Laser Treatments</option>
+        <option>Dermatology</option>
+        <option>GP Consultation</option>
+      </select>
+      <label for="f-msg">Anything we should know? (optional)</label>
+      <textarea id="f-msg" placeholder="e.g. Prefer a morning appointment"></textarea>
+      <button class="btn" type="submit">Send request on WhatsApp</button>
+      <p class="fine">No payment taken here — the clinic confirms your slot first.</p>
+    </form>
+  </div>
+</section>
+
+<section class="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <h2>Visit us</h2>
+      <address>
+        Office 503–504, Plaza Tower<br>
+        Al Najda Street, opposite Al Mariah Mall<br>
+        Al Danah, Abu Dhabi, UAE
+      </address>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <p class="tel">Phone: <a href="tel:+97126228724">+971 2 622 8724</a></p>
+      <p class="tel">WhatsApp: <a href="https://wa.me/971551099404">+971 55 109 9404</a></p>
+      <p style="margin-top:14px"><a class="btn btn-wa" href="https://wa.me/971551099404?text=Hi%20Paramount%20Clinics%2C%20I%27d%20like%20to%20book%20an%20appointment.">Message us on WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Paramount Clinics, Abu Dhabi</span>
+    <span>Plaza Tower, Al Najda St, Al Danah</span>
+  </div>
+</footer>
+
+<script>
+function sendWhatsApp(e){
+  e.preventDefault();
+  var name=document.getElementById('f-name').value.trim();
+  var phone=document.getElementById('f-phone').value.trim();
+  var service=document.getElementById('f-service').value;
+  var msg=document.getElementById('f-msg').value.trim();
+  var text='Hi Paramount Clinics, I would like to request an appointment.%0AName: '+encodeURIComponent(name)+'%0APhone: '+encodeURIComponent(phone)+'%0AService: '+encodeURIComponent(service);
+  if(msg){ text+='%0ANotes: '+encodeURIComponent(msg); }
+  window.open('https://wa.me/971551099404?text='+text,'_blank');
+}
+</script>
+</body>
+</html>
