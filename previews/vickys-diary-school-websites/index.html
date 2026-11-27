@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your School — A School Website, Done Properly | Concept Preview</title>
+<meta name="description" content="Concept preview of a school website: admissions, classes, news and contact in one place, built to work on any phone.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;background:#f7f2e9;color:#1e2a28;line-height:1.6}
+a{color:#0d3f3a}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.topbar{background:#0d3f3a;color:#f7f2e9;font-family:Arial,Helvetica,sans-serif;font-size:13px;padding:10px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar a{color:#f2c14e;text-decoration:none;font-weight:bold}
+header{padding:22px 0 8px}
+.brand{font-size:26px;font-weight:bold;color:#0d3f3a;letter-spacing:.5px}
+.brand span{color:#c97a1e}
+.nav{font-family:Arial,Helvetica,sans-serif;font-size:14px;margin-top:10px;display:flex;gap:22px;flex-wrap:wrap}
+.nav a{text-decoration:none;color:#1e2a28}
+.nav a:hover{color:#c97a1e}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:34px 0 44px}
+.hero h1{font-size:44px;line-height:1.12;color:#0d3f3a;margin:14px 0 16px}
+.hero h1 em{font-style:italic;color:#c97a1e}
+.kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c97a1e;font-weight:bold}
+.hero p{font-size:18px;max-width:46ch}
+.hero img{width:100%;height:340px;object-fit:cover;border-radius:4px;display:block}
+.btn{display:inline-block;background:#0d3f3a;color:#f7f2e9;font-family:Arial,Helvetica,sans-serif;font-weight:bold;text-decoration:none;padding:13px 24px;border-radius:4px;margin-top:20px}
+.btn.ghost{background:transparent;color:#0d3f3a;border:2px solid #0d3f3a;margin-left:10px}
+.note{background:#fdf6e3;border-left:4px solid #e8a33d;padding:14px 18px;font-family:Arial,Helvetica,sans-serif;font-size:14px;margin:6px 0 34px}
+.steps{background:#0d3f3a;color:#f7f2e9;padding:38px 0}
+.steps h2,.classes h2,.news h2,.visit h2{font-size:30px;margin-bottom:6px}
+.steps h2{color:#f7f2e9}
+.sub{font-family:Arial,Helvetica,sans-serif;font-size:15px;opacity:.85;margin-bottom:26px}
+.stepgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.stepnum{font-size:40px;color:#f2c14e;font-weight:bold}
+.step h3{font-size:19px;margin:6px 0}
+.step p{font-family:Arial,Helvetica,sans-serif;font-size:14px;opacity:.9}
+.classes{padding:44px 0}
+.classrow{display:grid;grid-template-columns:64px 1fr 220px;gap:18px;align-items:start;padding:22px 0;border-top:2px solid #0d3f3a}
+.classrow:last-child{border-bottom:2px solid #0d3f3a}
+.classrow .n{font-size:30px;color:#c97a1e;font-weight:bold}
+.classrow h3{font-size:22px;color:#0d3f3a}
+.classrow p{font-family:Arial,Helvetica,sans-serif;font-size:15px;max-width:56ch}
+.classrow .tag{font-family:Arial,Helvetica,sans-serif;font-size:13px;background:#efe6d2;padding:8px 12px;border-radius:4px}
+.band{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.band img{width:100%;height:260px;object-fit:cover;display:block}
+.news{padding:44px 0}
+.newsitem{display:flex;gap:18px;padding:18px 0;border-top:1px solid #d8cdb8}
+.newsitem:first-of-type{border-top:2px solid #0d3f3a}
+.newsitem .d{font-family:Arial,Helvetica,sans-serif;min-width:110px}
+.newsitem .d b{display:block;font-size:22px;color:#0d3f3a}
+.newsitem h3{font-size:19px;color:#0d3f3a}
+.newsitem p{font-family:Arial,Helvetica,sans-serif;font-size:14px}
+.visit{background:#efe6d2;padding:44px 0}
+.visitgrid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.visit form{background:#fffdf7;padding:24px;border-radius:4px}
+.visit label{display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;margin:12px 0 4px}
+.visit input,.visit textarea{width:100%;padding:10px;border:1px solid #c9bda6;border-radius:4px;font-family:Arial,Helvetica,sans-serif;font-size:14px}
+.visit button{background:#0d3f3a;color:#f7f2e9;border:0;padding:12px 22px;border-radius:4px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;margin-top:14px;cursor:pointer}
+footer{background:#0d3f3a;color:#f7f2e9;padding:28px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px}
+footer a{color:#f2c14e}
+@media(max-width:760px){
+.hero{grid-template-columns:1fr}
+.hero h1{font-size:32px}
+.hero img{height:240px}
+.stepgrid{grid-template-columns:1fr}
+.classrow{grid-template-columns:44px 1fr}
+.classrow .tag{display:none}
+.band{grid-template-columns:1fr}
+.band img{height:200px}
+.visitgrid{grid-template-columns:1fr}
+.btn.ghost{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+<span>Concept preview — a school website, built to show what is possible</span>
+<a href="https://www.threads.com/@vick.ysdiary7/post/Df_lED8DtZK">See the original request on Threads &rarr;</a>
+</div></div>
+
+<header><div class="wrap">
+<div class="brand">Your <span>School</span></div>
+<nav class="nav">
+<a href="#admissions">Admissions</a>
+<a href="#classes">Classes</a>
+<a href="#news">News &amp; Events</a>
+<a href="#visit">Visit Us</a>
+</nav>
+</div></header>
+
+<section class="hero wrap">
+<div>
+<p class="kicker">Admissions open — enquire today</p>
+<h1>A school website <em>parents actually read.</em></h1>
+<p>Admissions, classes, news and contact — everything a parent needs, in one place, on any phone. No hunting through PDFs. No out-of-date pages.</p>
+<a class="btn" href="#admissions">How admissions works</a>
+<a class="btn ghost" href="#visit">Book a school visit</a>
+</div>
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&q=80" alt="Children learning together in a bright classroom">
+</section>
+
+<div class="wrap"><div class="note"><strong>About this preview:</strong> this is a concept school website, built to show the shape of the finished site. Your school&rsquo;s real name, colours, photos, term dates and contact details replace the placeholders here.</div></div>
+
+<section class="steps" id="admissions"><div class="wrap">
+<h2>Admissions, in three clear steps</h2>
+<p class="sub">Parents should never have to guess what happens next.</p>
+<div class="stepgrid">
+<div class="step"><div class="stepnum">01</div><h3>Visit the school</h3><p>Book a tour, meet the teachers and see the classrooms in person.</p></div>
+<div class="step"><div class="stepnum">02</div><h3>Apply online</h3><p>One short form, on any phone. No printing, no posting, no queues.</p></div>
+<div class="step"><div class="stepnum">03</div><h3>Enrol &amp; start</h3><p>Confirmation, term dates and everything your child needs for day one.</p></div>
+</div>
+</div></section>
+
+<section class="classes wrap" id="classes">
+<h2>Classes &amp; learning</h2>
+<p class="sub" style="font-family:Arial,Helvetica,sans-serif">Every stage of the school, laid out plainly.</p>
+<div class="classrow"><div class="n">01</div><div><h3>Early Years</h3><p>Play-based learning, small groups and a gentle start to school life.</p></div><div class="tag">Ages &amp; places confirmed on enquiry</div></div>
+<div class="classrow"><div class="n">02</div><div><h3>Primary</h3><p>Reading, writing and maths, plus sport, music and art every week.</p></div><div class="tag">Class sizes &amp; timetable on request</div></div>
+<div class="classrow"><div class="n">03</div><div><h3>Secondary</h3><p>Subject teaching, exam preparation and guidance for what comes next.</p></div><div class="tag">Subjects &amp; results on request</div></div>
+</section>
+
+<div class="band">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80" alt="School books and learning materials">
+<img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200&q=80" alt="Children playing outside at school">
+</div>
+
+<section class="news wrap" id="news">
+<h2>News &amp; events</h2>
+<p class="sub" style="font-family:Arial,Helvetica,sans-serif">The latest from school life — kept current, not left stale.</p>
+<div class="newsitem"><div class="d"><b>Example</b>News</div><div><h3>Term dates &amp; school calendar</h3><p>Term dates, holidays and inset days — always up to date in one place.</p></div></div>
+<div class="newsitem"><div class="d"><b>Example</b>Event</div><div><h3>Sports day &amp; school events</h3><p>Photos, results and what is coming up next — so parents never miss it.</p></div></div>
+<div class="newsitem"><div class="d"><b>Example</b>Notice</div><div><h3>Admissions notices</h3><p>Deadlines and open days, posted the moment they are confirmed.</p></div></div>
+</section>
+
+<section class="visit" id="visit"><div class="wrap visitgrid">
+<div>
+<h2>Visit the school</h2>
+<p style="font-family:Arial,Helvetica,sans-serif">The best way to choose a school is to see it. Book a tour and meet the people who will teach your child.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;margin-top:14px"><strong>Contact details go here</strong> — the school&rsquo;s real phone number, email and address replace this line in the finished site.</p>
+</div>
+<form onsubmit="alert('Thank you — this is a concept preview, so the form does not send anywhere yet.');return false;">
+<label for="n">Parent&rsquo;s name</label>
+<input id="n" type="text" placeholder="Your name">
+<label for="e">Email</label>
+<input id="e" type="email" placeholder="you@example.com">
+<label for="m">Message</label>
+<textarea id="m" rows="3" placeholder="I would like to book a school visit&hellip;"></textarea>
+<button type="submit">Request a visit</button>
+</form>
+</div></section>
+
+<footer><div class="wrap">
+<p><strong>Your School</strong> — concept preview built by Northline Studio for the school-website request posted on Threads, 21 Nov 2026.</p>
+<p style="margin-top:8px">Original request: <a href="https://www.threads.com/@vick.ysdiary7/post/Df_lED8DtZK">threads.com/@vick.ysdiary7</a></p>
+</div></footer>
+
+</body>
+</html>
