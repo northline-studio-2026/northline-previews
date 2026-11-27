@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Smile Boutique Glasgow — Cosmetic Dentistry, Newton Mearns</title>
+<meta name="description" content="The Smile Boutique Glasgow — cosmetic dentistry in Newton Mearns, Glasgow. 5.0 stars from 123 Google reviews.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#faf6ef;color:#22312a;line-height:1.6}
+  a{color:inherit}
+  .sans{font-family:'Helvetica Neue',Arial,sans-serif}
+  /* top bar */
+  .topbar{background:#22312a;color:#faf6ef;display:flex;justify-content:space-between;align-items:center;padding:12px 5vw;font-size:13px;letter-spacing:.08em}
+  .topbar .name{font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+  .topbar a{text-decoration:none;border-bottom:1px solid #c97b4a}
+  /* hero */
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:0;align-items:stretch}
+  .hero-copy{padding:64px 6vw 56px 5vw}
+  .eyebrow{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#c97b4a;margin-bottom:18px}
+  h1{font-size:clamp(38px,6vw,64px);line-height:1.05;font-weight:400;margin-bottom:20px}
+  h1 em{font-style:italic;color:#0d3f3a}
+  .hero-copy p.lede{font-size:18px;max-width:520px;margin-bottom:26px}
+  .rating{display:inline-flex;align-items:center;gap:10px;background:#0d3f3a;color:#faf6ef;padding:10px 16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;margin-bottom:30px}
+  .rating .stars{color:#e8b25a;letter-spacing:2px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:14px 26px;text-decoration:none;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;letter-spacing:.06em}
+  .btn-solid{background:#c97b4a;color:#fff}
+  .btn-line{border:1px solid #22312a;color:#22312a}
+  .hero-photo{position:relative;min-height:420px}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}
+  .hero-caption{position:absolute;left:18px;bottom:18px;background:#faf6ef;padding:10px 14px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+  /* stats strip */
+  .stats{background:#0d3f3a;color:#faf6ef;display:grid;grid-template-columns:repeat(3,1fr);text-align:left}
+  .stat{padding:28px 5vw;border-left:1px solid rgba(250,246,239,.18)}
+  .stat:first-child{border-left:none}
+  .stat .num{font-size:34px;line-height:1.1}
+  .stat .lbl{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.8;margin-top:6px}
+  /* fix section */
+  .fix{padding:64px 5vw}
+  .fix h2{font-size:clamp(28px,4vw,40px);font-weight:400;line-height:1.15;max-width:640px;margin-bottom:8px}
+  .fix .sub{font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;color:#5b6b54;margin-bottom:36px;max-width:560px}
+  .fix-row{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:26px 0;border-top:1px solid #d8cfc0}
+  .fix-row:last-child{border-bottom:1px solid #d8cfc0}
+  .fix-num{font-size:30px;color:#c97b4a}
+  .fix-row h3{font-size:22px;font-weight:400;margin-bottom:6px}
+  .fix-row p{font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;color:#3d4a43;max-width:640px}
+  /* gallery */
+  .gallery{padding:0 5vw 64px}
+  .gallery h2{font-size:clamp(28px,4vw,40px);font-weight:400;margin-bottom:8px}
+  .gallery .sub{font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;color:#5b6b54;margin-bottom:28px}
+  .gal-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}
+  .gal-grid img{width:100%;height:100%;object-fit:cover;display:block}
+  .gal-tall{height:460px}
+  .gal-stack{display:grid;grid-template-rows:1fr 1fr;gap:14px}
+  .gal-stack img{height:223px}
+  .gal-note{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:#5b6b54;margin-top:14px;letter-spacing:.04em}
+  /* reviews */
+  .reviews{background:#22312a;color:#faf6ef;padding:64px 5vw;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+  .big-score{font-size:clamp(64px,10vw,110px);line-height:1}
+  .big-score small{font-size:28px}
+  .reviews h2{font-size:26px;font-weight:400;margin-bottom:10px}
+  .reviews p{font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;opacity:.85;max-width:520px}
+  .reviews .stars{color:#e8b25a;letter-spacing:3px;font-size:20px;margin-bottom:8px}
+  /* booking */
+  .book{padding:64px 5vw;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .book h2{font-size:clamp(28px,4vw,40px);font-weight:400;line-height:1.15;margin-bottom:14px}
+  .book p{font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;color:#3d4a43;max-width:440px;margin-bottom:20px}
+  .book .contact-line{font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;margin-bottom:8px}
+  .book .contact-line a{color:#0d3f3a;font-weight:700}
+  form label{display:block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin:14px 0 6px}
+  form input,form textarea{width:100%;padding:12px;border:1px solid #22312a;background:#fff;font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px}
+  form button{margin-top:20px;background:#c97b4a;color:#fff;border:none;padding:14px 28px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;letter-spacing:.06em;cursor:pointer}
+  form .fine{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:#5b6b54;margin-top:12px}
+  /* footer */
+  footer{background:#0d3f3a;color:#faf6ef;padding:36px 5vw;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px}
+  footer a{color:#faf6ef}
+  footer .fname{font-family:Georgia,serif;font-size:18px}
+  @media(max-width:760px){
+    .hero{grid-template-columns:1fr}
+    .hero-photo{min-height:300px}
+    .stats{grid-template-columns:1fr}
+    .stat{border-left:none;border-top:1px solid rgba(250,246,239,.18)}
+    .stat:first-child{border-top:none}
+    .gal-grid{grid-template-columns:1fr}
+    .gal-tall{height:300px}
+    .reviews{grid-template-columns:1fr;gap:16px}
+    .book{grid-template-columns:1fr;gap:32px}
+    .topbar{flex-direction:column;gap:4px;align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <span class="name">The Smile Boutique Glasgow</span>
+  <span>Newton Mearns, Glasgow &nbsp;·&nbsp; <a href="mailto:info@smileglasgow.com">info@smileglasgow.com</a></span>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Cosmetic Dentistry · Newton Mearns, Glasgow</p>
+    <h1>A smile worth<br><em>showing off.</em></h1>
+    <p class="lede">A cosmetic dental practice in Newton Mearns where the work speaks for itself — starting with a website that finally shows it.</p>
+    <div class="rating"><span class="stars">★★★★★</span><span>5.0 · 123 Google reviews</span></div>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#book">Request an appointment</a>
+      <a class="btn btn-line" href="#gallery">See the smiles</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1000&q=80" alt="Dental care at The Smile Boutique Glasgow">
+    <span class="hero-caption">Newton Mearns · Glasgow</span>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><div class="num">5.0</div><div class="lbl">Google rating</div></div>
+  <div class="stat"><div class="num">123</div><div class="lbl">Google reviews</div></div>
+  <div class="stat"><div class="num">On-site</div><div class="lbl">Booking — no external site</div></div>
+</section>
+
+<section class="fix">
+  <h2>A homepage that finally does the practice justice.</h2>
+  <p class="sub">The current site is thin, its photos are from 2022, and booking sends patients off to another website. This version fixes all three.</p>
+
+  <div class="fix-row">
+    <div class="fix-num">01</div>
+    <div>
+      <h3>A real smile gallery</h3>
+      <p>Before-and-after results up front, where new patients actually look — instead of a homepage with nothing to see.</p>
+    </div>
+  </div>
+  <div class="fix-row">
+    <div class="fix-num">02</div>
+    <div>
+      <h3>Booking on the site itself</h3>
+      <p>Patients request an appointment right here, in one step — no more being pushed out to an external booking subdomain.</p>
+    </div>
+  </div>
+  <div class="fix-row">
+    <div class="fix-num">03</div>
+    <div>
+      <h3>Fresh pages, not stale ones</h3>
+      <p>Current photography and clear, up-to-date pages for every treatment — so the site matches the standard of the dentistry.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <h2>The smile gallery.</h2>
+  <p class="sub">Results first — this is what patients come to see.</p>
+  <div class="gal-grid">
+    <div class="gal-tall"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1000&q=80" alt="Dental treatment in progress"></div>
+    <div class="gal-stack">
+      <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80" alt="Smiling patient">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80" alt="Smiling patient">
+    </div>
+  </div>
+  <div class="gal-grid" style="margin-top:14px">
+    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1000&q=80" alt="Modern dental practice" style="height:280px">
+    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Smiling patient" style="height:280px">
+  </div>
+  <p class="gal-note">Photography shown for illustration — your own before-and-after results take pride of place here once the site goes live.</p>
+</section>
+
+<section class="reviews">
+  <div class="big-score">5.0<small> / 5</small></div>
+  <div>
+    <div class="stars">★★★★★</div>
+    <h2>Rated 5.0 from 123 Google reviews.</h2>
+    <p>Patients rate the practice at the top of the scale. The new site puts that rating where every visitor sees it — at the top of the page, not buried away.</p>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div>
+    <h2>Request an appointment.</h2>
+    <p>Fill in the form and the practice will come back to you to confirm a time. No external booking site, no extra steps.</p>
+    <p class="contact-line">Email: <a href="mailto:info@smileglasgow.com">info@smileglasgow.com</a></p>
+    <p class="contact-line">Instagram: <a href="https://www.instagram.com/thesmileboutiqueglasgow" target="_blank" rel="noopener">@thesmileboutiqueglasgow</a></p>
+    <p class="contact-line">Newton Mearns, Glasgow</p>
+  </div>
+  <form id="bookForm">
+    <label for="fname">Your name</label>
+    <input id="fname" name="name" type="text" required placeholder="Full name">
+    <label for="fphone">Phone</label>
+    <input id="fphone" name="phone" type="tel" required placeholder="Best number to reach you">
+    <label for="fmsg">What would you like help with?</label>
+    <textarea id="fmsg" name="message" rows="4" placeholder="e.g. I'd like to discuss my smile"></textarea>
+    <button type="submit">Send appointment request</button>
+    <p class="fine">Submitting opens your email app with the request addressed to the practice. Nothing is stored on this page.</p>
+  </form>
+</section>
+
+<footer>
+  <div>
+    <div class="fname">The Smile Boutique Glasgow</div>
+    <div>Cosmetic Dentistry · Newton Mearns, Glasgow</div>
+  </div>
+  <div>
+    <a href="mailto:info@smileglasgow.com">info@smileglasgow.com</a><br>
+    <a href="https://www.instagram.com/thesmileboutiqueglasgow" target="_blank" rel="noopener">@thesmileboutiqueglasgow</a>
+  </div>
+</footer>
+
+<script>
+document.getElementById('bookForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var n = document.getElementById('fname').value.trim();
+  var p = document.getElementById('fphone').value.trim();
+  var m = document.getElementById('fmsg').value.trim();
+  var subject = 'Appointment request — ' + n;
+  var body = 'Name: ' + n + '\nPhone: ' + p + '\n\n' + m;
+  window.location.href = 'mailto:info@smileglasgow.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+</script>
+
+</body>
+</html>
