@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control Detailing — Auto Detailing, Gold Coast QLD</title>
+<meta name="description" content="Control Detailing — auto detailing on the Gold Coast, QLD. Rated 5.0 from 62 reviews. Book your detail online.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #f7f3ea; color: #1c1a17; line-height: 1.6; }
+  a { color: inherit; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
+
+  /* Top bar */
+  .topbar { background: #0d3f3a; color: #f7f3ea; padding: 12px 0; font-size: 14px; }
+  .topbar .wrap { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .topbar .brand { font-size: 19px; letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
+  .topbar a { color: #f7f3ea; text-decoration: none; border-bottom: 1px solid #c47a3d; }
+  .topbar .loc { opacity: .85; }
+
+  /* Hero — asymmetric */
+  .hero { padding: 56px 0 40px; }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; }
+  .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #c47a3d; font-weight: bold; margin-bottom: 14px; }
+  h1 { font-size: 52px; line-height: 1.05; font-weight: normal; color: #0d3f3a; margin-bottom: 18px; }
+  h1 em { font-style: italic; color: #c47a3d; }
+  .hero p.lede { font-size: 18px; color: #4a453d; margin-bottom: 22px; max-width: 46ch; }
+  .rating { display: inline-flex; align-items: center; gap: 10px; background: #0d3f3a; color: #f7f3ea; padding: 10px 16px; margin-bottom: 26px; }
+  .rating .stars { color: #e8a94e; font-size: 17px; letter-spacing: 2px; }
+  .rating .num { font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+  .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn { display: inline-block; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; text-decoration: none; padding: 14px 26px; }
+  .btn-solid { background: #c47a3d; color: #fff; }
+  .btn-outline { border: 2px solid #0d3f3a; color: #0d3f3a; }
+  .hero-photo { position: relative; }
+  .hero-photo img { width: 100%; height: 420px; object-fit: cover; display: block; }
+  .hero-caption { position: absolute; left: -18px; bottom: 18px; background: #f7f3ea; border-left: 5px solid #c47a3d; padding: 12px 16px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; max-width: 260px; box-shadow: 0 6px 24px rgba(0,0,0,.18); }
+
+  /* Fix strip */
+  .fix { background: #0d3f3a; color: #f7f3ea; padding: 44px 0; }
+  .fix-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px; }
+  .fix h2 { font-size: 26px; font-weight: normal; margin-bottom: 8px; }
+  .fix .num { font-family: Arial, Helvetica, sans-serif; color: #c47a3d; font-size: 13px; letter-spacing: 2px; }
+  .fix p { font-size: 15px; opacity: .9; }
+
+  /* Services — numbered editorial rows */
+  .services { padding: 60px 0 20px; }
+  .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; flex-wrap: wrap; margin-bottom: 30px; }
+  .section-head h2 { font-size: 34px; font-weight: normal; color: #0d3f3a; }
+  .section-head span { font-family: Arial, Helvetica, sans-serif; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #c47a3d; }
+  .service { display: grid; grid-template-columns: 70px 1fr 170px; gap: 20px; align-items: center; padding: 26px 0; border-top: 1px solid #d8d0bf; }
+  .service:last-of-type { border-bottom: 1px solid #d8d0bf; }
+  .service .no { font-size: 34px; color: #c47a3d; font-style: italic; }
+  .service h3 { font-size: 24px; font-weight: normal; color: #0d3f3a; margin-bottom: 4px; }
+  .service p { font-size: 15px; color: #4a453d; }
+  .service .price { font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: right; color: #0d3f3a; }
+  .service .price b { display: block; font-size: 15px; }
+
+  /* Photo band */
+  .band { padding: 44px 0 10px; }
+  .band-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
+  .band-grid img { width: 100%; height: 300px; object-fit: cover; display: block; }
+  .band-grid .tall { height: 300px; }
+
+  /* Reviews */
+  .reviews { padding: 56px 0; text-align: center; }
+  .reviews .big { font-size: 84px; line-height: 1; color: #0d3f3a; }
+  .reviews .stars { color: #c47a3d; font-size: 26px; letter-spacing: 4px; margin: 10px 0; }
+  .reviews p { font-size: 17px; color: #4a453d; max-width: 52ch; margin: 0 auto; }
+
+  /* Booking */
+  .booking { background: #1c1a17; color: #f7f3ea; padding: 56px 0; }
+  .booking-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 44px; }
+  .booking h2 { font-size: 34px; font-weight: normal; margin-bottom: 14px; }
+  .booking h2 em { color: #e8a94e; font-style: italic; }
+  .booking p { font-size: 16px; opacity: .88; margin-bottom: 18px; }
+  .booking .direct { font-family: Arial, Helvetica, sans-serif; font-size: 15px; }
+  .booking .direct a { color: #e8a94e; }
+  form label { display: block; font-family: Arial, Helvetica, sans-serif; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; margin: 14px 0 6px; }
+  form input, form select, form textarea { width: 100%; padding: 12px; font-size: 15px; font-family: Arial, Helvetica, sans-serif; background: #f7f3ea; border: none; color: #1c1a17; }
+  form textarea { min-height: 90px; resize: vertical; }
+  form button { margin-top: 20px; background: #c47a3d; color: #fff; border: none; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; padding: 14px 28px; cursor: pointer; }
+  .form-note { font-family: Arial, Helvetica, sans-serif; font-size: 13px; opacity: .75; margin-top: 12px; }
+
+  /* Footer */
+  footer { background: #0d3f3a; color: #f7f3ea; padding: 34px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+  footer a { color: #e8a94e; text-decoration: none; }
+  footer .fbrand { font-size: 18px; letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
+
+  @media (max-width: 760px) {
+    h1 { font-size: 38px; }
+    .hero-grid, .fix-grid, .booking-grid { grid-template-columns: 1fr; }
+    .hero-photo img { height: 300px; }
+    .hero-caption { left: 10px; }
+    .service { grid-template-columns: 46px 1fr; }
+    .service .price { grid-column: 2; text-align: left; }
+    .band-grid { grid-template-columns: 1fr; }
+    .reviews .big { font-size: 64px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <span class="brand">Control Detailing</span>
+    <span class="loc">Gold Coast, QLD</span>
+    <a href="mailto:contact@controldetailing.com.au">contact@controldetailing.com.au</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Auto Detailing — Gold Coast</p>
+      <h1>Your car, detailed <em>like it matters.</em></h1>
+      <p class="lede">A proper detail, done by hand on the Gold Coast. Book in below and we will confirm your spot by email — no external booking pages, no runaround.</p>
+      <div class="rating">
+        <span class="stars">★★★★★</span>
+        <span class="num">5.0 &nbsp;·&nbsp; 62 reviews</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="#book">Book a detail</a>
+        <a class="btn btn-outline" href="https://instagram.com/controldetailing_" target="_blank" rel="noopener">Instagram — @controldetailing_</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Freshly detailed car">
+      <div class="hero-caption">Rated 5.0 from 62 reviews — Gold Coast, QLD</div>
+    </div>
+  </div>
+</section>
+
+<section class="fix">
+  <div class="wrap fix-grid">
+    <div>
+      <p class="num">01</p>
+      <h2>Book right here</h2>
+      <p>Your booking request goes straight to us from this page. No third-party checkout, no bouncing between sites.</p>
+    </div>
+    <div>
+      <p class="num">02</p>
+      <h2>Clear pricing</h2>
+      <p>Every detail is priced on enquiry for your car — no guessing, no hidden extras. Ask us and we will quote it plainly.</p>
+    </div>
+    <div>
+      <p class="num">03</p>
+      <h2>Real reviews</h2>
+      <p>5.0 from 62 reviews, shown up front — not buried in a widget at the bottom of the page.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What we do</h2>
+      <span>Price on enquiry</span>
+    </div>
+
+    <div class="service">
+      <span class="no">01</span>
+      <div>
+        <h3>Exterior Detail</h3>
+        <p>Full wash, decontamination and a proper finish — paintwork cleaned and protected, wheels and glass done right.</p>
+      </div>
+      <div class="price"><b>Price on enquiry</b>Quoted for your car</div>
+    </div>
+
+    <div class="service">
+      <span class="no">02</span>
+      <div>
+        <h3>Interior Detail</h3>
+        <p>A deep clean inside — seats, carpets, dash and trim, finished so the cabin feels new again.</p>
+      </div>
+      <div class="price"><b>Price on enquiry</b>Quoted for your car</div>
+    </div>
+
+    <div class="service">
+      <span class="no">03</span>
+      <div>
+        <h3>Complete Detail</h3>
+        <p>The full treatment, inside and out. The one to book when the car needs everything.</p>
+      </div>
+      <div class="price"><b>Price on enquiry</b>Quoted for your car</div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap band-grid">
+    <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Car being washed">
+    <img class="tall" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Detailed sports car">
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="big">5.0</div>
+    <div class="stars">★★★★★</div>
+    <p>Rated 5.0 from 62 reviews. That is the number our customers gave us — and the standard every car gets.</p>
+  </div>
+</section>
+
+<section class="booking" id="book">
+  <div class="wrap booking-grid">
+    <div>
+      <h2>Book your <em>detail.</em></h2>
+      <p>Tell us about your car and what it needs. We will reply by email to confirm your booking and your price.</p>
+      <p class="direct">Prefer email? Write to<br><a href="mailto:contact@controldetailing.com.au">contact@controldetailing.com.au</a></p>
+      <p class="direct">Follow the work on Instagram:<br><a href="https://instagram.com/controldetailing_" target="_blank" rel="noopener">@controldetailing_</a></p>
+    </div>
+    <form id="bookForm">
+      <label for="f-name">Your name</label>
+      <input id="f-name" name="name" type="text" required>
+      <label for="f-phone">Phone</label>
+      <input id="f-phone" name="phone" type="tel">
+      <label for="f-car">Your car</label>
+      <input id="f-car" name="car" type="text" placeholder="e.g. Toyota Hilux, 2021" required>
+      <label for="f-service">Detail needed</label>
+      <select id="f-service" name="service">
+        <option>Exterior Detail</option>
+        <option>Interior Detail</option>
+        <option>Complete Detail</option>
+        <option>Not sure yet — advise me</option>
+      </select>
+      <label for="f-msg">Anything we should know?</label>
+      <textarea id="f-msg" name="message"></textarea>
+      <button type="submit">Send booking request</button>
+      <p class="form-note">This opens your email app with the request ready to send to Control Detailing. Nothing is stored here.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="fbrand">Control Detailing</span>
+    <span>Auto Detailing — Gold Coast, QLD</span>
+    <span><a href="mailto:contact@controldetailing.com.au">contact@controldetailing.com.au</a> &nbsp;·&nbsp; <a href="https://instagram.com/controldetailing_" target="_blank" rel="noopener">@controldetailing_</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('bookForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('f-name').value;
+    var phone = document.getElementById('f-phone').value;
+    var car = document.getElementById('f-car').value;
+    var service = document.getElementById('f-service').value;
+    var msg = document.getElementById('f-msg').value;
+    var subject = encodeURIComponent('Booking request — ' + service + ' — ' + car);
+    var body = encodeURIComponent('Hi Control Detailing,\n\nName: ' + name + '\nPhone: ' + phone + '\nCar: ' + car + '\nDetail needed: ' + service + '\n\n' + msg + '\n\nPlease confirm my booking and price by email.\nThanks!');
+    window.location.href = 'mailto:contact@controldetailing.com.au?subject=' + subject + '&body=' + body;
+  });
+</script>
+
+</body>
+</html>
