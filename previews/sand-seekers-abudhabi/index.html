@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sand Seekers Real Estate — Homes in Abu Dhabi, UAE</title>
+<meta name="description" content="Sand Seekers Real Estate LLC, Abu Dhabi. 4.9 stars from 250+ Google reviews. 94+ active listings. Browse homes for sale and rent, or message us on Instagram.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;color:#1d1a16;background:#f7f2e9;line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  /* top bar */
+  .topbar{background:#12312e;color:#f7f2e9;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.04em}
+  .topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+  .topbar a{text-decoration:none;border-bottom:1px solid #c98a2e}
+  /* header */
+  header{background:#f7f2e9;border-bottom:2px solid #12312e}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+  .brand{font-size:26px;font-weight:700;letter-spacing:.02em;color:#12312e}
+  .brand small{display:block;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:#8a6d3b;margin-top:2px}
+  .cta-row{display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;text-decoration:none;padding:12px 20px;border-radius:3px}
+  .btn-dark{background:#12312e;color:#f7f2e9}
+  .btn-amber{background:#c98a2e;color:#1d1a16}
+  .btn-outline{background:transparent;color:#12312e;border:2px solid #12312e}
+  /* hero — asymmetric */
+  .hero{padding:52px 0 40px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:start}
+  .kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#8a6d3b}
+  h1{font-size:clamp(34px,6vw,54px);line-height:1.08;color:#12312e;margin:14px 0 18px}
+  h1 em{font-style:italic;color:#c98a2e}
+  .lede{font-size:18px;max-width:46ch}
+  .lede strong{color:#12312e}
+  .hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+  .rating-card{background:#12312e;color:#f7f2e9;padding:18px 20px;margin-top:28px;max-width:420px}
+  .rating-card .stars{color:#e8b45a;font-size:20px;letter-spacing:.12em}
+  .rating-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;margin-top:4px}
+  .hero-img{position:relative}
+  .hero-img img{width:100%;height:420px;object-fit:cover;display:block;border-radius:3px}
+  .hero-img figcaption{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#5b5347;margin-top:8px}
+  .hero-img .tag{position:absolute;left:-14px;top:18px;background:#c98a2e;color:#1d1a16;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;padding:8px 14px;border-radius:3px}
+  /* stats */
+  .stats{background:#e9dfc9;border-top:2px solid #12312e;border-bottom:2px solid #12312e}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-top:22px;padding-bottom:22px;text-align:left}
+  .stat b{display:block;font-size:30px;color:#12312e;line-height:1.1}
+  .stat span{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#5b5347}
+  /* fix section */
+  .fix{padding:56px 0 20px}
+  h2{font-size:clamp(26px,4vw,36px);line-height:1.15;color:#12312e;margin:10px 0 8px}
+  .section-lede{font-size:17px;max-width:60ch;color:#3d362c}
+  .rows{margin-top:30px}
+  .row{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:22px 0;border-top:1px solid #c9bda6}
+  .row:last-child{border-bottom:1px solid #c9bda6}
+  .num{font-size:30px;color:#c98a2e;font-weight:700}
+  .row h3{font-size:21px;color:#12312e;margin-bottom:4px}
+  .row p{font-size:16px;color:#3d362c;max-width:62ch}
+  /* photo band */
+  .band{padding:36px 0 8px}
+  .band-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  .band-grid img{width:100%;height:230px;object-fit:cover;display:block;border-radius:3px}
+  .band-grid figure:nth-child(2){transform:translateY(18px)}
+  /* reviews */
+  .reviews{padding:56px 0}
+  .reviews-box{background:#12312e;color:#f7f2e9;padding:34px 30px;border-radius:3px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+  .big-score{font-size:64px;line-height:1;color:#e8b45a;font-weight:700}
+  .big-score small{display:block;font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#f7f2e9;font-weight:400;margin-top:6px}
+  .reviews-box p{font-size:18px}
+  .reviews-box p span{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#d8cdb4;display:block;margin-top:8px}
+  /* contact */
+  .contact{padding:20px 0 60px}
+  .contact-card{border:2px solid #12312e;padding:32px 28px;border-radius:3px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+  .contact-card h2{margin-top:0}
+  .contact-lines{font-family:Arial,Helvetica,sans-serif;font-size:16px}
+  .contact-lines a{display:block;text-decoration:none;color:#12312e;font-weight:700;padding:6px 0;border-bottom:1px solid #c9bda6}
+  .contact-lines a small{display:block;font-weight:400;font-size:13px;color:#5b5347}
+  /* footer */
+  footer{background:#12312e;color:#d8cdb4;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:20px;padding-bottom:20px}
+  footer a{color:#f7f2e9;text-decoration:none;border-bottom:1px solid #c98a2e}
+  @media(max-width:760px){
+    .hero-grid,.contact-card{grid-template-columns:1fr}
+    .hero-img img{height:280px}
+    .hero-img .tag{left:8px}
+    .stats .wrap{grid-template-columns:repeat(2,1fr)}
+    .band-grid{grid-template-columns:1fr}
+    .band-grid figure:nth-child(2){transform:none}
+    .band-grid img{height:220px}
+    .reviews-box{grid-template-columns:1fr;gap:12px}
+    .row{grid-template-columns:44px 1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Abu Dhabi, UAE</span>
+    <span><a href="tel:+971509495053">+971 50 949 5053</a> &nbsp;·&nbsp; <a href="tel:+97143669242">+971 4 366 9242</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="brand">Sand Seekers<small>Real Estate LLC</small></div>
+    <div class="cta-row">
+      <a class="btn btn-dark" href="tel:+971509495053">Call us</a>
+      <a class="btn btn-outline" href="https://instagram.com/sandseekers_" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Real Estate Agency · Abu Dhabi</p>
+        <h1>Your next home in Abu Dhabi, <em>in one place.</em></h1>
+        <p class="lede">Right now our <strong>94+ live listings</strong> sit scattered across property portals. This is what it looks like when every home we offer is searchable in one place — and every enquiry starts with one tap.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-amber" href="tel:+971509495053">Call +971 50 949 5053</a>
+          <a class="btn btn-dark" href="https://instagram.com/sandseekers_" target="_blank" rel="noopener">Message us on Instagram</a>
+        </div>
+        <div class="rating-card">
+          <div class="stars">★★★★★</div>
+          <p><strong>4.9 stars · 250+ Google reviews</strong><br>That is what our clients say about us.</p>
+        </div>
+      </div>
+      <figure class="hero-img">
+        <span class="tag">94+ active listings</span>
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&auto=format&fit=crop" alt="Modern home exterior" loading="lazy">
+        <figcaption>Homes for sale and rent across Abu Dhabi.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="wrap">
+      <div class="stat"><b>4.9 ★</b><span>Google rating</span></div>
+      <div class="stat"><b>250+</b><span>Google reviews</span></div>
+      <div class="stat"><b>94+</b><span>Active listings</span></div>
+      <div class="stat"><b>10K</b><span>Instagram followers</span></div>
+    </div>
+  </section>
+
+  <section class="fix">
+    <div class="wrap">
+      <p class="kicker">What changes</p>
+      <h2>One searchable home for every listing.</h2>
+      <p class="section-lede">People find us on the portals and on Instagram. What we were missing is a place of our own where a buyer or tenant can search everything we offer — and reach us without hunting for a number.</p>
+      <div class="rows">
+        <div class="row">
+          <div class="num">01</div>
+          <div>
+            <h3>Every listing, searchable</h3>
+            <p>All 94+ active listings in one place — filter by area, type and budget, instead of scrolling through portal pages.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="num">02</div>
+          <div>
+            <h3>Buy or rent, without the runaround</h3>
+            <p>Clear photos, clear details, and one button to ask about a home — no more chasing the same listing across three apps.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="num">03</div>
+          <div>
+            <h3>Talk to us where you already do</h3>
+            <p>Instagram is where most of our enquiries start. Message us at @sandseekers_ — or call us direct, either way you reach a real person.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap band-grid">
+      <figure><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop" alt="Modern home exterior" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80&auto=format&fit=crop" alt="Bright modern interior" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80&auto=format&fit=crop" alt="Apartment living space" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="wrap">
+      <div class="reviews-box">
+        <div class="big-score">4.9<small>out of 5 · Google</small></div>
+        <p>250+ Google reviews from buyers, sellers and tenants across Abu Dhabi.
+        <span>Our rating is the reason most new clients call us first.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <div>
+          <p class="kicker">Get in touch</p>
+          <h2>Ask about a home today.</h2>
+          <p class="section-lede">Call us, or send us a message on Instagram — that is where our enquiries start, and we answer.</p>
+        </div>
+        <div class="contact-lines">
+          <a href="tel:+971509495053">+971 50 949 5053<small>Call or message</small></a>
+          <a href="tel:+97143669242">+971 4 366 9242<small>Office line</small></a>
+          <a href="https://instagram.com/sandseekers_" target="_blank" rel="noopener">@sandseekers_<small>Instagram — 10K followers</small></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Sand Seekers Real Estate LLC · Abu Dhabi, UAE</span>
+    <span><a href="tel:+971509495053">+971 50 949 5053</a> &nbsp;·&nbsp; <a href="https://instagram.com/sandseekers_" target="_blank" rel="noopener">@sandseekers_</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
