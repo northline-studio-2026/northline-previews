@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmetic Skin Doctors (CSD Clinics) — Skin &amp; Aesthetic Clinic, Armadale Melbourne</title>
+<meta name="description" content="Cosmetic Skin Doctors (CSD Clinics), Armadale Melbourne. 4.4 stars from 361 Google reviews. Book a consultation.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#faf6ef;color:#22312a;line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  /* ---------- top bar ---------- */
+  .topbar{background:#22312a;color:#faf6ef;padding:12px 0;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.04em}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .topbar a{text-decoration:none;border-bottom:1px solid #c97b4a}
+  .topbar .loc{opacity:.85}
+  /* ---------- header ---------- */
+  header{padding:26px 0 10px}
+  header .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+  .brand{font-size:30px;font-weight:700;letter-spacing:.01em}
+  .brand span{color:#b0714a}
+  .brand small{display:block;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#5b6b54;margin-top:4px}
+  .cta-btn{display:inline-block;background:#b0714a;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;text-decoration:none;padding:13px 24px;border-radius:2px}
+  .cta-btn.ghost{background:transparent;color:#22312a;border:2px solid #22312a}
+  /* ---------- hero ---------- */
+  .hero{padding:34px 0 8px}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+  .eyebrow{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#b0714a;font-weight:700}
+  h1{font-size:clamp(38px,6vw,62px);line-height:1.04;margin:14px 0 18px;font-weight:700}
+  h1 em{font-style:italic;color:#b0714a}
+  .lede{font-size:18px;max-width:520px}
+  .lede strong{color:#b0714a}
+  .rating-chip{display:inline-flex;align-items:center;gap:10px;background:#22312a;color:#faf6ef;padding:12px 18px;margin-top:22px;font-family:Arial,Helvetica,sans-serif}
+  .rating-chip .stars{color:#e8b25a;font-size:17px;letter-spacing:2px}
+  .rating-chip .num{font-size:20px;font-weight:700}
+  .rating-chip .lbl{font-size:13px;opacity:.85}
+  .hero-cta{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+  .hero-img{position:relative}
+  .hero-img img{width:100%;height:520px;object-fit:cover;display:block;border-radius:2px}
+  .hero-img figcaption{position:absolute;left:-14px;bottom:22px;background:#faf6ef;border:2px solid #22312a;padding:12px 16px;font-family:Arial,Helvetica,sans-serif;font-size:13px;max-width:240px;line-height:1.45}
+  .hero-img figcaption strong{display:block;font-size:14px;margin-bottom:2px}
+  /* ---------- trust strip ---------- */
+  .strip{background:#22312a;color:#faf6ef;margin-top:44px;padding:20px 0;font-family:Arial,Helvetica,sans-serif}
+  .strip .wrap{display:flex;gap:28px;flex-wrap:wrap;justify-content:space-between}
+  .strip div{font-size:14px}
+  .strip b{color:#e8b25a;font-size:18px;display:block;margin-bottom:2px}
+  /* ---------- sections ---------- */
+  section{padding:52px 0 8px}
+  h2{font-size:clamp(28px,4vw,40px);line-height:1.1;margin:10px 0 8px}
+  .sub{font-size:17px;max-width:640px;color:#43564d}
+  /* services: numbered editorial rows */
+  .svc{border-top:2px solid #22312a;margin-top:30px}
+  .svc-row{display:grid;grid-template-columns:70px 1fr auto;gap:18px;padding:24px 4px;border-bottom:1px solid #d8cfc0;align-items:start}
+  .svc-row .n{font-size:34px;color:#b0714a;font-style:italic}
+  .svc-row h3{font-size:22px;margin-bottom:6px}
+  .svc-row p{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#43564d;max-width:560px}
+  .svc-row .price{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;white-space:nowrap;background:#f3e9dc;padding:8px 12px;border-radius:2px}
+  /* photo band */
+  .band{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
+  .band img{width:100%;height:300px;object-fit:cover;display:block;border-radius:2px}
+  /* reviews */
+  .reviews{background:#22312a;color:#faf6ef;margin-top:52px;padding:48px 0}
+  .reviews .big{font-size:clamp(52px,9vw,96px);line-height:1;font-weight:700}
+  .reviews .big span{color:#e8b25a;font-size:.45em;vertical-align:top}
+  .reviews p{font-size:17px;max-width:560px;margin-top:12px;opacity:.92}
+  .reviews .note{font-family:Arial,Helvetica,sans-serif;font-size:13px;opacity:.7;margin-top:18px}
+  /* booking */
+  .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:28px;align-items:start}
+  form{display:flex;flex-direction:column;gap:12px}
+  label{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:.04em}
+  input,select,textarea{font-family:Arial,Helvetica,sans-serif;font-size:15px;padding:12px 14px;border:2px solid #22312a;background:#fff;border-radius:2px;width:100%}
+  textarea{min-height:96px;resize:vertical}
+  button{background:#b0714a;color:#fff;border:none;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;padding:15px 24px;cursor:pointer;border-radius:2px}
+  .book-side{background:#f3e9dc;padding:28px;border-radius:2px}
+  .book-side h3{font-size:22px;margin-bottom:10px}
+  .book-side p{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#43564d;margin-bottom:12px}
+  .book-side .fee{font-size:26px;font-weight:700;color:#b0714a}
+  .book-side .fee small{font-size:14px;color:#43564d;font-weight:400}
+  /* visit */
+  .visit{margin-top:44px;border-top:2px solid #22312a;padding-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .visit h3{font-size:20px;margin-bottom:8px}
+  .visit p{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#43564d}
+  .visit a{font-weight:700}
+  footer{background:#22312a;color:#faf6ef;margin-top:56px;padding:28px 0 34px;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{text-decoration:none;border-bottom:1px solid #c97b4a}
+  @media(max-width:760px){
+    .hero-grid,.book-grid,.visit{grid-template-columns:1fr}
+    .hero-img img{height:360px}
+    .hero-img figcaption{left:12px}
+    .band{grid-template-columns:1fr}
+    .band img{height:240px}
+    .svc-row{grid-template-columns:48px 1fr;grid-template-rows:auto auto}
+    .svc-row .price{grid-column:2}
+    .brand{font-size:25px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="loc">Armadale, Melbourne VIC</span>
+    <span><a href="mailto:info@csdclinics.com.au">info@csdclinics.com.au</a> &nbsp;·&nbsp; <a href="https://instagram.com/csd.clinics" target="_blank" rel="noopener">@csd.clinics</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="brand">CSD <span>Clinics</span>
+      <small>Cosmetic Skin Doctors</small>
+    </div>
+    <a class="cta-btn" href="#book">Request a consultation</a>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">Skin &amp; aesthetic clinic — Armadale, Melbourne</p>
+      <h1>Skin care,<br><em>made clear.</em></h1>
+      <p class="lede">One clinic, one name: <strong>Cosmetic Skin Doctors</strong>. Real photos of real treatments, honest pricing up front, and a booking request that takes less than a minute.</p>
+      <div class="rating-chip">
+        <span class="stars">★★★★☆</span>
+        <span class="num">4.4</span>
+        <span class="lbl">from 361 Google reviews</span>
+      </div>
+      <div class="hero-cta">
+        <a class="cta-btn" href="#book">Request a consultation</a>
+        <a class="cta-btn ghost" href="mailto:info@csdclinics.com.au">Email the clinic</a>
+      </div>
+    </div>
+    <figure class="hero-img">
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Skin treatment at a Melbourne clinic" loading="lazy">
+      <figcaption><strong>Consultation first, always.</strong>Your skin, your goals, discussed before anything else.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>4.4 ★</b>361 Google reviews</div>
+    <div><b>$50</b>Consultation fee — shown up front</div>
+    <div><b>1 name</b>Cosmetic Skin Doctors (CSD Clinics)</div>
+    <div><b>1 minute</b>Online booking request</div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2>Treatments, explained plainly.</h2>
+    <p class="sub">No walls of text. Every treatment is discussed at consultation first — what it does, what it costs, and whether it suits your skin.</p>
+
+    <div class="svc">
+      <div class="svc-row">
+        <div class="n">01</div>
+        <div>
+          <h3>Consultations</h3>
+          <p>Your skin, your goals, and an honest plan — discussed before any treatment is booked.</p>
+        </div>
+        <span class="price">$50 consultation fee</span>
+      </div>
+      <div class="svc-row">
+        <div class="n">02</div>
+        <div>
+          <h3>Skin Treatments</h3>
+          <p>Care for your skin, tailored at consultation. Pricing confirmed with you before anything goes ahead.</p>
+        </div>
+        <span class="price">Price on consultation</span>
+      </div>
+      <div class="svc-row">
+        <div class="n">03</div>
+        <div>
+          <h3>Aesthetic Treatments</h3>
+          <p>Subtle, natural-looking results. What suits you is decided together, at consultation.</p>
+        </div>
+        <span class="price">Price on consultation</span>
+      </div>
+    </div>
+
+    <div class="band">
+      <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Healthy skin, natural results" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Relaxed clinic treatment room" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<div class="reviews">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#e8b25a">What patients say</p>
+    <div class="big">4.4 <span>★ / 5</span></div>
+    <p>From 361 Google reviews — the rating speaks for the clinic, so we let it speak here too.</p>
+    <p class="note">Rating and review count from Google, as listed at time of writing.</p>
+  </div>
+</div>
+
+<section id="book">
+  <div class="wrap">
+    <p class="eyebrow">Book in</p>
+    <h2>Request a consultation.</h2>
+    <p class="sub">Fill this in and it opens an email to the clinic with your details ready to send. No account, no waiting on hold.</p>
+    <div class="book-grid">
+      <form action="mailto:info@csdclinics.com.au" method="post" enctype="text/plain">
+        <label for="fname">Your name</label>
+        <input id="fname" name="Name" type="text" required placeholder="Full name">
+        <label for="fphone">Phone</label>
+        <input id="fphone" name="Phone" type="tel" placeholder="Best number to reach you">
+        <label for="fwhat">What would you like to discuss?</label>
+        <select id="fwhat" name="Enquiry">
+          <option>Consultation — general</option>
+          <option>Skin treatments</option>
+          <option>Aesthetic treatments</option>
+          <option>Something else</option>
+        </select>
+        <label for="fmsg">Anything we should know?</label>
+        <textarea id="fmsg" name="Message" placeholder="A sentence or two about your skin or your goals"></textarea>
+        <button type="submit">Send booking request</button>
+      </form>
+      <div class="book-side">
+        <h3>Before you book</h3>
+        <p>Every visit starts with a consultation, so you always know the plan — and the price — before anything else happens.</p>
+        <p class="fee">$50 <small>consultation fee</small></p>
+        <p>Prefer email? Write to us directly:</p>
+        <p><a href="mailto:info@csdclinics.com.au">info@csdclinics.com.au</a></p>
+        <p>Follow the clinic on Instagram:</p>
+        <p><a href="https://instagram.com/csd.clinics" target="_blank" rel="noopener">@csd.clinics</a></p>
+      </div>
+    </div>
+
+    <div class="visit">
+      <div>
+        <h3>Visit the clinic</h3>
+        <p>Cosmetic Skin Doctors (CSD Clinics)<br>Armadale, Melbourne VIC, Australia</p>
+      </div>
+      <div>
+        <h3>Get in touch</h3>
+        <p>Email: <a href="mailto:info@csdclinics.com.au">info@csdclinics.com.au</a><br>
+        Instagram: <a href="https://instagram.com/csd.clinics" target="_blank" rel="noopener">@csd.clinics</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><strong>Cosmetic Skin Doctors (CSD Clinics)</strong> — Armadale, Melbourne VIC</span>
+    <span><a href="mailto:info@csdclinics.com.au">info@csdclinics.com.au</a> &nbsp;·&nbsp; <a href="https://instagram.com/csd.clinics" target="_blank" rel="noopener">@csd.clinics</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
