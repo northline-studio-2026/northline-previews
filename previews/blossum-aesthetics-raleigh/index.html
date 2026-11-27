@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blossüm Aesthetics Co. — Medical Spa in Raleigh, NC</title>
+<meta name="description" content="Blossüm Aesthetics Co. is a patient-first medical spa in Raleigh, NC. Botox, fillers, facials and skin treatments. 4.9 stars from 300+ Google reviews.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;color:#2b2622;background:#f7f2ea;line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  /* top bar */
+  .top{background:#2b2622;color:#f7f2ea;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+  .top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+  .top a{text-decoration:none;border-bottom:1px solid #c98a5e}
+  .top .book{background:#c98a5e;color:#fff;padding:6px 14px;border-radius:999px;border:none;font-weight:700}
+  /* header */
+  header{padding:26px 0 8px}
+  header .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+  .logo{font-size:30px;letter-spacing:.02em;font-weight:700}
+  .logo span{color:#c98a5e}
+  nav{font-family:Arial,Helvetica,sans-serif;font-size:14px}
+  nav a{margin-left:18px;text-decoration:none;color:#5c534a}
+  nav a:first-child{margin-left:0}
+  /* hero — asymmetric editorial */
+  .hero{padding:34px 0 10px}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:end}
+  .eyebrow{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#c98a5e;margin-bottom:14px}
+  h1{font-size:clamp(38px,6vw,62px);line-height:1.04;font-weight:400}
+  h1 em{font-style:italic;color:#5f6f52}
+  .hero p.lede{font-size:18px;color:#5c534a;margin-top:18px;max-width:46ch}
+  .stars{font-family:Arial,Helvetica,sans-serif;font-size:15px;margin-top:18px}
+  .stars b{font-size:17px}
+  .hero .cta{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;background:#2b2622;color:#f7f2ea;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:15px;text-decoration:none;padding:13px 22px;border-radius:999px}
+  .btn.light{background:transparent;color:#2b2622;border:2px solid #2b2622}
+  .hero figure img{width:100%;height:440px;object-fit:cover;display:block;border-radius:4px}
+  .hero figcaption{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#8a7f74;margin-top:8px}
+  /* strip */
+  .strip{background:#5f6f52;color:#f7f2ea;margin-top:44px}
+  .strip .wrap{padding-top:26px;padding-bottom:26px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px}
+  .strip h3{font-size:19px;font-weight:400;margin-bottom:6px}
+  .strip p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#e6e2d8}
+  /* services — numbered editorial list, no cards */
+  .services{padding:56px 0 20px}
+  .sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+  h2{font-size:clamp(28px,4vw,40px);font-weight:400;line-height:1.1}
+  .sec-head p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#8a7f74}
+  .svc{border-top:1px solid #d8cfc2;padding:24px 0;display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:start}
+  .svc:last-of-type{border-bottom:1px solid #d8cfc2}
+  .num{font-size:15px;font-family:Arial,Helvetica,sans-serif;color:#c98a5e;font-weight:700;padding-top:4px}
+  .svc h3{font-size:23px;font-weight:400;margin-bottom:6px}
+  .svc p{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#5c534a;max-width:56ch}
+  .price{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#8a7f74;text-align:right;white-space:nowrap;padding-top:6px}
+  .price b{color:#2b2622;font-size:14px;display:block}
+  .note{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#8a7f74;margin-top:14px}
+  /* image break */
+  .break{margin:44px 0 0}
+  .break img{width:100%;height:340px;object-fit:cover;display:block}
+  .break .wrap{padding-top:10px}
+  .break figcaption{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#8a7f74}
+  /* why */
+  .why{padding:52px 0 8px}
+  .why .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px}
+  .why p{font-size:17px;color:#5c534a;margin-bottom:14px}
+  .why p:first-child{margin-top:6px}
+  /* reviews — rating only, no invented quotes */
+  .reviews{background:#efe7da;margin-top:44px}
+  .reviews .wrap{padding-top:44px;padding-bottom:44px;text-align:center}
+  .big{font-size:clamp(52px,9vw,84px);line-height:1;font-weight:400}
+  .big span{font-size:30px;vertical-align:top}
+  .reviews .stars{font-size:22px;letter-spacing:4px;color:#c98a5e;margin-top:10px}
+  .reviews p{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#5c534a;margin-top:10px}
+  /* booking */
+  .booking{padding:56px 0 60px}
+  .booking .wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+  .booking h2{margin-bottom:14px}
+  .booking p{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#5c534a;margin-bottom:14px}
+  .booking .call{font-size:30px;font-weight:700;text-decoration:none;display:block;margin:6px 0 2px}
+  .booking .call-sub{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#8a7f74}
+  form label{display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;margin:12px 0 5px}
+  form input,form select,form textarea{width:100%;font-family:Arial,Helvetica,sans-serif;font-size:15px;padding:11px 12px;border:1px solid #cfc4b4;border-radius:6px;background:#fff;color:#2b2622}
+  form textarea{min-height:84px;resize:vertical}
+  form button{margin-top:18px;background:#c98a5e;color:#fff;border:none;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:15px;padding:13px 26px;border-radius:999px;cursor:pointer}
+  form .fine{font-size:12px;color:#8a7f74;margin-top:10px}
+  footer{background:#2b2622;color:#cfc4b4;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+  footer .wrap{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  footer a{color:#f7f2ea;text-decoration:none}
+  @media (max-width:760px){
+    .hero .wrap{grid-template-columns:1fr}
+    .hero figure img{height:300px}
+    .strip .wrap{grid-template-columns:1fr;gap:18px}
+    .svc{grid-template-columns:40px 1fr}
+    .price{grid-column:2;text-align:left;padding-top:0}
+    .why .wrap,.booking .wrap{grid-template-columns:1fr;gap:28px}
+    .break img{height:220px}
+  }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <span>Raleigh, NC &nbsp;·&nbsp; Medical Spa</span>
+    <span><a href="tel:+19193361302">(919) 336-1302</a> &nbsp; <a class="book" href="#book">Book a consultation</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Blossüm <span>Aesthetics Co.</span></div>
+    <nav>
+      <a href="#services">Treatments</a>
+      <a href="#why">Why Blossüm</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Medical spa — Raleigh, North Carolina</p>
+      <h1>Skin, softer.<br>Lines, lighter.<br><em>You, still you.</em></h1>
+      <p class="lede">A patient-first medical spa. No sales funnels — just honest treatments, done well, by people who do this every day.</p>
+      <p class="stars">★★★★★ &nbsp;<b>4.9</b> · 300+ Google reviews</p>
+      <div class="cta">
+        <a class="btn" href="tel:+19193361302">Call (919) 336-1302</a>
+        <a class="btn light" href="#book">Book a consultation</a>
+      </div>
+    </div>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80" alt="Facial skin treatment at a medical spa" loading="lazy">
+      <figcaption>Real care, in person — every visit starts with a conversation, not a checkout.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <div>
+      <h3>Patients only</h3>
+      <p>This site is for people who want treatments — nothing else in the way.</p>
+    </div>
+    <div>
+      <h3>Consultation first</h3>
+      <p>Every treatment starts with a proper consultation, so the plan fits your skin — not a package off a shelf.</p>
+    </div>
+    <div>
+      <h3>Clear on price</h3>
+      <p>Exact pricing depends on your consultation. No hidden fees, no surprise add-ons at the door.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Treatments</h2>
+      <p>Price on consultation — confirmed in person, before anything begins.</p>
+    </div>
+
+    <div class="svc">
+      <div class="num">01</div>
+      <div>
+        <h3>Wrinkle relaxers — Botox</h3>
+        <p>Softens frown lines, forehead lines and crow&rsquo;s feet while keeping your expressions natural. A quick visit with results that settle in over days.</p>
+      </div>
+      <div class="price"><b>Price on consultation</b>per treatment area</div>
+    </div>
+
+    <div class="svc">
+      <div class="num">02</div>
+      <div>
+        <h3>Dermal fillers</h3>
+        <p>Restores volume where time has taken it — cheeks, lips, jawline and under-eye hollows — with a measured, natural-looking result.</p>
+      </div>
+      <div class="price"><b>Price on consultation</b>per syringe / area</div>
+    </div>
+
+    <div class="svc">
+      <div class="num">03</div>
+      <div>
+        <h3>Facials</h3>
+        <p>Deep-cleansing and hydrating facials tailored to your skin type, whether you want a glow before an event or a regular reset.</p>
+      </div>
+      <div class="price"><b>Price on consultation</b>per session</div>
+    </div>
+
+    <div class="svc">
+      <div class="num">04</div>
+      <div>
+        <h3>Skin treatments</h3>
+        <p>Targeted care for tone, texture and clarity — a plan built around your skin&rsquo;s needs, not a one-size-fits-all menu.</p>
+      </div>
+      <div class="price"><b>Price on consultation</b>per plan</div>
+    </div>
+
+    <div class="svc">
+      <div class="num">05</div>
+      <div>
+        <h3>Thread lifts</h3>
+        <p>A subtle lift for sagging skin, with minimal downtime. Your injector will confirm how many threads you need at consultation.</p>
+      </div>
+      <div class="price"><b>From $300 per thread</b>confirmed at consultation</div>
+    </div>
+
+    <p class="note">Not sure which treatment fits? Book a consultation — we will tell you honestly what will help, and what will not.</p>
+  </div>
+</section>
+
+<figure class="break">
+  <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1400&q=80" alt="Relaxing spa treatment room" loading="lazy">
+  <div class="wrap"><figcaption>Quiet rooms, unhurried appointments, and time to ask questions.</figcaption></div>
+</figure>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div><h2>Why people<br>come back</h2></div>
+    <div>
+      <p>Most med-spa websites make you wade through sales pitches before you can even find a treatment. Ours does not. You came here for your skin — so this page is about your skin.</p>
+      <p>Book a consultation, talk to a real injector, and leave with a plan you understand. That is the whole idea.</p>
+      <p><a href="#book" style="font-family:Arial,Helvetica,sans-serif;font-weight:700">Book your consultation →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <p class="big">4.9<span> / 5</span></p>
+    <p class="stars">★★★★★</p>
+    <p>From 300+ Google reviews — one of Raleigh&rsquo;s best-reviewed medical spas.</p>
+  </div>
+</section>
+
+<section class="booking" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Book a consultation</h2>
+      <p>Tell us what you are thinking about and a good time to reach you. We will confirm your appointment and answer any questions first — no pressure, no obligation.</p>
+      <a class="call" href="tel:+19193361302">(919) 336-1302</a>
+      <p class="call-sub">Call or text — the fastest way to book.</p>
+      <p style="margin-top:18px">Prefer email?<br><a href="mailto:info.blossum@icloud.com">info.blossum@icloud.com</a></p>
+    </div>
+    <form action="mailto:info.blossum@icloud.com" method="post" enctype="text/plain">
+      <label for="name">Your name</label>
+      <input id="name" name="Name" type="text" required placeholder="Jane Smith">
+      <label for="phone">Phone</label>
+      <input id="phone" name="Phone" type="tel" required placeholder="(919) 555-0100">
+      <label for="svc">Treatment you are interested in</label>
+      <select id="svc" name="Treatment">
+        <option>Wrinkle relaxers — Botox</option>
+        <option>Dermal fillers</option>
+        <option>Facials</option>
+        <option>Skin treatments</option>
+        <option>Thread lifts</option>
+        <option>Not sure yet — need advice</option>
+      </select>
+      <label for="msg">Anything we should know? (optional)</label>
+      <textarea id="msg" name="Message" placeholder="e.g. I have an event in three weeks…"></textarea>
+      <button type="submit">Request my consultation</button>
+      <p class="fine">Submitting opens your email app to send the request to the clinic.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Blossüm Aesthetics Co. — Medical Spa, Raleigh, NC</span>
+    <span><a href="tel:+19193361302">(919) 336-1302</a> &nbsp;·&nbsp; <a href="mailto:info.blossum@icloud.com">info.blossum@icloud.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
