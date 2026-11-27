@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duplex Lashez — Lash &amp; Brow Studio, Leeds</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #FAF6EF; color: #22201D; line-height: 1.55; }
+  a { color: inherit; }
+  .topbar { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; border-bottom: 1px solid #E3D9C8; font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+  .topbar a { text-decoration: none; font-weight: bold; color: #B0714A; }
+  .hero { padding: 44px 20px 8px; max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 28px; }
+  @media (min-width: 760px) { .hero { grid-template-columns: 1.15fr 0.85fr; padding-top: 64px; } }
+  .eyebrow { font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #B0714A; margin-bottom: 14px; }
+  h1 { font-size: 42px; line-height: 1.08; font-weight: normal; }
+  @media (min-width: 760px) { h1 { font-size: 60px; } }
+  h1 em { font-style: italic; color: #B0714A; }
+  .lede { font-size: 18px; margin: 18px 0 24px; max-width: 46ch; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-block; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; text-decoration: none; padding: 14px 22px; border-radius: 999px; }
+  .btn-dark { background: #22201D; color: #FAF6EF; }
+  .btn-line { border: 1.5px solid #22201D; color: #22201D; }
+  .hero-photo { position: relative; }
+  .hero-photo img { width: 100%; height: 340px; object-fit: cover; display: block; }
+  @media (min-width: 760px) { .hero-photo img { height: 460px; } .hero-photo { margin-top: 46px; } }
+  .hero-photo figcaption { position: absolute; left: -8px; bottom: -14px; background: #B0714A; color: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 13px; padding: 8px 14px; }
+  .stats { max-width: 1080px; margin: 56px auto 0; padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; border-top: 2px solid #22201D; padding-top: 22px; }
+  .stats b { display: block; font-size: 30px; line-height: 1.1; }
+  .stats span { font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #6B655C; }
+  @media (max-width: 560px) { .stats b { font-size: 22px; } }
+  section { max-width: 1080px; margin: 0 auto; padding: 64px 20px 0; }
+  h2 { font-size: 30px; line-height: 1.15; font-weight: normal; margin-bottom: 8px; }
+  @media (min-width: 760px) { h2 { font-size: 38px; } }
+  .section-note { font-size: 17px; color: #4A453E; max-width: 56ch; margin-bottom: 28px; }
+  .rows { border-top: 1px solid #E3D9C8; }
+  .row { display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 22px 0; border-bottom: 1px solid #E3D9C8; }
+  .row .num { font-family: Arial, Helvetica, sans-serif; font-size: 13px; letter-spacing: 2px; color: #B0714A; padding-top: 6px; }
+  .row h3 { font-size: 21px; font-weight: normal; margin-bottom: 4px; }
+  .row p { font-size: 16px; color: #4A453E; }
+  .row .tag { display: inline-block; margin-top: 8px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; background: #EFE7D8; padding: 5px 10px; }
+  .gallery { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 760px) { .gallery { grid-template-columns: 1.25fr 0.75fr; } .gallery img.tall { grid-row: span 2; height: 100%; min-height: 420px; } }
+  .gallery img { width: 100%; height: 300px; object-fit: cover; display: block; }
+  .gallery figure { position: relative; }
+  .gallery figcaption { font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #6B655C; margin-top: 8px; }
+  .band { background: #22312A; color: #FAF6EF; margin-top: 64px; }
+  .band .inner { max-width: 1080px; margin: 0 auto; padding: 56px 20px; display: grid; grid-template-columns: 1fr; gap: 28px; }
+  @media (min-width: 760px) { .band .inner { grid-template-columns: 1.2fr 0.8fr; align-items: center; } }
+  .band h2 { color: #FAF6EF; }
+  .band p { color: #D8D2C4; font-size: 17px; max-width: 52ch; }
+  .band .btn-light { background: #FAF6EF; color: #22312A; }
+  .band .handle { font-family: Arial, Helvetica, sans-serif; font-size: 14px; letter-spacing: 1px; margin-top: 16px; }
+  .band .handle a { color: #E8B48C; font-weight: bold; text-decoration: none; }
+  .book { text-align: left; }
+  .book .btn { margin-top: 8px; }
+  .fineprint { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #6B655C; margin-top: 14px; }
+  footer { max-width: 1080px; margin: 0 auto; padding: 48px 20px 40px; border-top: 1px solid #E3D9C8; margin-top: 64px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #6B655C; }
+  footer a { color: #B0714A; font-weight: bold; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <span>Duplex Lashez &middot; Leeds</span>
+  <a href="https://www.instagram.com/duplexlashez" target="_blank" rel="noopener">@duplexlashez</a>
+</header>
+
+<div class="hero">
+  <div>
+    <p class="eyebrow">Lash &amp; Brow Studio &mdash; Leeds, UK</p>
+    <h1>Lashes that do <em>the talking.</em></h1>
+    <p class="lede">A lash &amp; brow studio in Leeds with a loyal Instagram following &mdash; now with a proper home on the web, where the work, the prices and the booking all live in one place.</p>
+    <div class="cta-row">
+      <a class="btn btn-dark" href="https://www.instagram.com/duplexlashez" target="_blank" rel="noopener">Book on Instagram</a>
+      <a class="btn btn-line" href="#work">See the work</a>
+    </div>
+  </div>
+  <figure class="hero-photo">
+    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Close-up of finished eye makeup">
+    <figcaption>The work, up close</figcaption>
+  </figure>
+</div>
+
+<div class="stats">
+  <div><b>4,759</b><span>Instagram followers</span></div>
+  <div><b>170&ndash;1,200</b><span>Likes per post</span></div>
+  <div><b>Leeds</b><span>Studio location</span></div>
+</div>
+
+<section>
+  <h2>Everything in one place.</h2>
+  <p class="section-note">Until now the only link in the bio was a booking link. This site gives clients the full picture before they book.</p>
+  <div class="rows">
+    <div class="row">
+      <span class="num">01</span>
+      <div>
+        <h3>Lashes</h3>
+        <p>Full sets and infills, shown the way clients actually see them &mdash; finished eyes, not just a lash map.</p>
+        <span class="tag">Price on consultation</span>
+      </div>
+    </div>
+    <div class="row">
+      <span class="num">02</span>
+      <div>
+        <h3>Brows</h3>
+        <p>Brow work alongside lashes, so clients can book both in one visit instead of hunting through captions.</p>
+        <span class="tag">Price on consultation</span>
+      </div>
+    </div>
+    <div class="row">
+      <span class="num">03</span>
+      <div>
+        <h3>Reviews, in one place</h3>
+        <p>Client feedback collected on the site itself, instead of scattered across posts and stories.</p>
+        <span class="tag">No reviews invented</span>
+      </div>
+    </div>
+    <div class="row">
+      <span class="num">04</span>
+      <div>
+        <h3>Book in one tap</h3>
+        <p>One clear booking button on every page, straight to Instagram messages.</p>
+        <span class="tag">DM to book</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <h2>The work.</h2>
+  <p class="section-note">A gallery that shows finished sets properly &mdash; not the same extreme close-up of one eye, post after post.</p>
+  <div class="gallery">
+    <figure>
+      <img class="tall" src="https://images.unsplash.com/photo-1526045478516-99145907023c?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Finished makeup look">
+      <figcaption>Finished look</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Beauty products laid out">
+      <figcaption>The kit</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Beauty tools">
+      <figcaption>The tools</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Makeup application">
+      <figcaption>In the chair</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Colour palette">
+      <figcaption>Colour, matched to you</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="band">
+  <div class="inner">
+    <div>
+      <h2>Follow the work.</h2>
+      <p>New sets go up on Instagram first. 4,759 followers and counting, with 170&ndash;1,200 likes on a post &mdash; the audience is already there. This site just gives it somewhere to land.</p>
+      <p class="handle">Instagram: <a href="https://www.instagram.com/duplexlashez" target="_blank" rel="noopener">@duplexlashez</a></p>
+    </div>
+    <div class="book">
+      <h2>Book your appointment.</h2>
+      <p>Message the studio on Instagram to check availability and book in.</p>
+      <a class="btn btn-light" href="https://www.instagram.com/duplexlashez" target="_blank" rel="noopener">DM @duplexlashez to book</a>
+      <p class="fineprint">Bookings are taken through Instagram messages.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Duplex Lashez &mdash; Lash &amp; Brow Studio, Leeds, UK</span>
+  <span>Instagram: <a href="https://www.instagram.com/duplexlashez" target="_blank" rel="noopener">@duplexlashez</a></span>
+</footer>
+
+</body>
+</html>
