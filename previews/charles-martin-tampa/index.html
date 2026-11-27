@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charles Martin DDS — Cosmetic &amp; General Dentistry, South Tampa</title>
+<meta name="description" content="Charles Martin DDS in South Tampa, Florida. Cosmetic dentistry, dental implants and general dentistry. 5.0 stars from 100+ Google reviews. Call (813) 251-2875.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;color:#16324a;background:#f6f1e7;line-height:1.55}
+a{color:#0e7c7b}
+img{display:block;max-width:100%}
+.topbar{background:#16324a;color:#f6f1e7;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.04em;display:flex;justify-content:space-between;gap:12px;padding:10px 18px;flex-wrap:wrap}
+.topbar a{color:#f6f1e7;text-decoration:none;font-weight:700}
+.topbar a:hover{text-decoration:underline}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+header.mast{display:flex;justify-content:space-between;align-items:baseline;padding:26px 0 8px;flex-wrap:wrap;gap:8px}
+.brand{font-size:26px;font-weight:700;letter-spacing:.01em}
+.brand small{display:block;font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#0e7c7b;margin-top:4px}
+.callbtn{font-family:Arial,Helvetica,sans-serif;background:#d9552c;color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:999px;font-size:15px}
+.callbtn:hover{background:#b8431f}
+/* HERO — asymmetric editorial */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:0;margin:26px 0 0;border-top:4px solid #16324a}
+.hero-copy{padding:34px 34px 34px 0}
+.eyebrow{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#d9552c;font-weight:700}
+.hero h1{font-size:52px;line-height:1.04;font-weight:700;margin:16px 0 18px}
+.hero h1 em{font-style:italic;color:#0e7c7b}
+.hero p.lede{font-size:19px;line-height:1.5;color:#33475c;max-width:480px}
+.stars{font-family:Arial,Helvetica,sans-serif;margin:20px 0 6px;font-size:16px}
+.stars b{color:#d9552c;font-size:19px;letter-spacing:.08em}
+.stars span{color:#33475c}
+.hero-cta{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.btn{font-family:Arial,Helvetica,sans-serif;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:999px;font-size:15px;display:inline-block}
+.btn-solid{background:#16324a;color:#f6f1e7}
+.btn-outline{border:2px solid #16324a;color:#16324a}
+.hero-img{position:relative}
+.hero-img img{width:100%;height:100%;object-fit:cover;min-height:340px}
+.hero-img figcaption{position:absolute;left:0;bottom:0;background:#16324a;color:#f6f1e7;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.06em;padding:8px 14px}
+/* STATS — offset strip */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);background:#0e7c7b;color:#fff;margin-top:0}
+.stat{padding:26px 22px;border-left:1px solid rgba(255,255,255,.25)}
+.stat:first-child{border-left:none}
+.stat b{display:block;font-size:38px;line-height:1}
+.stat span{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+/* SERVICES — numbered editorial rows, not cards */
+section{padding:64px 0}
+.kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#d9552c;font-weight:700}
+h2{font-size:38px;line-height:1.1;margin:12px 0 8px}
+.sub{font-size:18px;color:#33475c;max-width:560px}
+.svc{border-top:2px solid #16324a;padding:26px 0;display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:start}
+.svc:last-of-type{border-bottom:2px solid #16324a}
+.svc .num{font-size:30px;color:#0e7c7b;font-style:italic}
+.svc h3{font-size:25px;margin-bottom:6px}
+.svc p{color:#33475c;max-width:560px;font-size:16px}
+.svc .tag{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d9552c;font-weight:700;padding-top:8px;white-space:nowrap}
+/* GALLERY — staggered */
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.gallery figure:nth-child(2){margin-top:44px}
+.gallery figure:nth-child(3){margin-top:-14px}
+.gallery img{width:100%;height:300px;object-fit:cover}
+.gallery figcaption{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#33475c;padding:10px 0 0}
+.gallery figcaption b{color:#16324a}
+/* REVIEWS — rating only, no invented quotes */
+.reviews{background:#16324a;color:#f6f1e7}
+.reviews .wrap{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center}
+.bignum{font-size:96px;line-height:1;font-weight:700}
+.bignum small{font-size:30px;color:#e8b23a}
+.rev-copy p{font-size:19px;max-width:520px}
+.rev-copy .stars b{color:#e8b23a}
+.rev-copy a{color:#f6f1e7}
+/* FORM */
+.form-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start}
+.form-copy h2{margin-bottom:14px}
+.form-copy p{color:#33475c;font-size:17px;margin-bottom:14px}
+.form-copy .phone-big{font-size:30px;font-weight:700;color:#16324a;text-decoration:none;display:inline-block;margin:8px 0}
+form{background:#fff;border:2px solid #16324a;padding:26px}
+label{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;font-family:Arial,Helvetica,sans-serif;font-size:16px;padding:12px;border:1px solid #9aa8b5;border-radius:4px;margin-bottom:16px;background:#f6f1e7;color:#16324a}
+textarea{min-height:90px;resize:vertical}
+button{font-family:Arial,Helvetica,sans-serif;background:#d9552c;color:#fff;border:none;font-weight:700;font-size:16px;padding:15px 26px;border-radius:999px;cursor:pointer;width:100%}
+button:hover{background:#b8431f}
+.fine{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#5b6d7d;margin-top:12px}
+footer{background:#16324a;color:#c8d3dd;font-family:Arial,Helvetica,sans-serif;font-size:14px;padding:36px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#f6f1e7}
+footer b{color:#f6f1e7;font-size:17px;font-family:Georgia,serif}
+@media(max-width:760px){
+.hero{grid-template-columns:1fr}
+.hero-copy{padding:26px 0}
+.hero h1{font-size:40px}
+.hero-img img{min-height:260px}
+.stats{grid-template-columns:1fr}
+.stat{border-left:none;border-top:1px solid rgba(255,255,255,.25)}
+.stat:first-child{border-top:none}
+.stat b{font-size:32px}
+.svc{grid-template-columns:44px 1fr}
+.svc .tag{display:none}
+.gallery{grid-template-columns:1fr}
+.gallery figure:nth-child(2),.gallery figure:nth-child(3){margin-top:0}
+.gallery img{height:240px}
+.reviews .wrap{grid-template-columns:1fr;gap:12px}
+.bignum{font-size:72px}
+.form-grid{grid-template-columns:1fr}
+section{padding:48px 0}
+h2{font-size:30px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>South Tampa, Florida</span>
+  <span><a href="tel:+18132512875">(813) 251-2875</a> &nbsp;·&nbsp; <a href="mailto:info@charlesmartindds.com">info@charlesmartindds.com</a></span>
+</div>
+
+<div class="wrap">
+  <header class="mast">
+    <div class="brand">Charles Martin, DDS<small>Cosmetic &amp; General Dentistry</small></div>
+    <a class="callbtn" href="tel:+18132512875">Call (813) 251-2875</a>
+  </header>
+
+  <div class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">South Tampa · Est. 35+ Years</p>
+      <h1>A healthier smile, <em>built to last.</em></h1>
+      <p class="lede">Straightforward, gentle dentistry from a South Tampa practice patients have trusted for over three decades — from routine checkups to complete smile makeovers.</p>
+      <p class="stars"><b>★★★★★ 5.0</b> <span>· 100+ Google reviews</span></p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#appointment">Request an Appointment</a>
+        <a class="btn btn-outline" href="tel:+18132512875">Call the Office</a>
+      </div>
+    </div>
+    <figure class="hero-img">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900&amp;q=80" alt="Dentist examining a patient in a bright, modern South Tampa dental office" loading="lazy">
+      <figcaption>Charles Martin DDS — South Tampa</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><b>35+</b><span>Years in Practice</span></div>
+  <div class="stat"><b>7,000+</b><span>Smile Transformations</span></div>
+  <div class="stat"><b>5.0 ★</b><span>100+ Google Reviews</span></div>
+</div>
+
+<div class="wrap">
+  <section>
+    <p class="kicker">What We Do</p>
+    <h2>Care that covers the whole smile.</h2>
+    <p class="sub">Three areas of focus, one standard: unhurried appointments, honest advice, and work that holds up.</p>
+    <div style="height:30px"></div>
+    <div class="svc">
+      <span class="num">01</span>
+      <div><h3>Cosmetic Dentistry</h3><p>Whitening, veneers and smile design that look natural — planned around your face, not a template.</p></div>
+      <span class="tag">Smile Design</span>
+    </div>
+    <div class="svc">
+      <span class="num">02</span>
+      <div><h3>Dental Implants</h3><p>Permanent, natural-feeling replacements for missing teeth, from a single implant to full restoration.</p></div>
+      <span class="tag">Permanent Fix</span>
+    </div>
+    <div class="svc">
+      <span class="num">03</span>
+      <div><h3>General Dentistry</h3><p>Checkups, cleanings, fillings and gum care — the steady routine that keeps small issues small.</p></div>
+      <span class="tag">Everyday Care</span>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Real Smiles</p>
+    <h2>See the difference good dentistry makes.</h2>
+    <div class="gallery">
+      <figure><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&amp;q=80" alt="Patient smiling after cosmetic dental treatment" loading="lazy"><figcaption><b>Confident smiles</b> — cosmetic care, South Tampa</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=900&amp;q=80" alt="Dental examination in progress" loading="lazy"><figcaption><b>Gentle checkups</b> — unhurried, thorough visits</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=900&amp;q=80" alt="Woman smiling" loading="lazy"><figcaption><b>Natural results</b> — work that looks like you</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&amp;q=80" alt="Modern dental treatment room" loading="lazy"><figcaption><b>A modern office</b> — clean, calm, comfortable</figcaption></figure>
+    </div>
+  </section>
+</div>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="bignum">5.0<small> ★</small></div>
+    <div class="rev-copy">
+      <p class="kicker" style="color:#e8b23a">Patient Reviews</p>
+      <p style="margin-top:10px"><b>5.0 stars from 100+ Google reviews.</b> Patients across South Tampa rate the practice at the top of the scale — for gentle care, clear explanations, and results that last.</p>
+      <p class="stars"><b>★★★★★</b> <span>100+ verified Google reviews</span></p>
+      <p style="margin-top:14px"><a href="https://www.facebook.com/CharlesMartinDDS" target="_blank" rel="noopener">Follow Charles Martin DDS on Facebook →</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section id="appointment">
+    <div class="form-grid">
+      <div class="form-copy">
+        <p class="kicker">Book a Visit</p>
+        <h2>Request an appointment.</h2>
+        <p>Send a request and the office will call you back to confirm a time that suits you. Prefer to talk now?</p>
+        <a class="phone-big" href="tel:+18132512875">(813) 251-2875</a>
+        <p>Or write to <a href="mailto:info@charlesmartindds.com">info@charlesmartindds.com</a></p>
+        <p style="margin-top:18px">South Tampa, Florida<br>Charles Martin, DDS</p>
+      </div>
+      <form id="appt" onsubmit="return sendRequest(event)">
+        <label for="fname">Your Name</label>
+        <input id="fname" name="name" type="text" required placeholder="Full name">
+        <label for="fphone">Phone</label>
+        <input id="fphone" name="phone" type="tel" required placeholder="(813) 555-0100">
+        <label for="fservice">What Do You Need?</label>
+        <select id="fservice" name="service">
+          <option>Cosmetic Dentistry</option>
+          <option>Dental Implants</option>
+          <option>General Dentistry — Checkup / Cleaning</option>
+          <option>Something else</option>
+        </select>
+        <label for="fmsg">Anything We Should Know?</label>
+        <textarea id="fmsg" name="message" placeholder="e.g. Sensitive teeth, or a tooth that needs attention…"></textarea>
+        <button type="submit">Request My Appointment →</button>
+        <p class="fine">Your request opens in your email app, addressed to the office. No account needed, no spam — ever.</p>
+      </form>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div><b>Charles Martin, DDS</b><br>Cosmetic &amp; General Dentistry<br>South Tampa, Florida</div>
+    <div><a href="tel:+18132512875">(813) 251-2875</a><br><a href="mailto:info@charlesmartindds.com">info@charlesmartindds.com</a><br><a href="https://www.facebook.com/CharlesMartinDDS" target="_blank" rel="noopener">Facebook: CharlesMartinDDS</a></div>
+    <div>5.0 ★ · 100+ Google reviews<br>35+ years in practice</div>
+  </div>
+</footer>
+
+<script>
+function sendRequest(e){
+  e.preventDefault();
+  var n=document.getElementById('fname').value.trim();
+  var p=document.getElementById('fphone').value.trim();
+  var s=document.getElementById('fservice').value;
+  var m=document.getElementById('fmsg').value.trim();
+  var body='Name: '+n+'%0D%0A'+'Phone: '+p+'%0D%0A'+'Service: '+s+'%0D%0A'+'Notes: '+m;
+  window.location.href='mailto:info@charlesmartindds.com?subject='+encodeURIComponent('Appointment request — '+n)+'&body='+body;
+  return false;
+}
+</script>
+</body>
+</html>
