@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orthodontix Dental Clinic — Deira, Dubai | Braces, Aligners, Implants, Hollywood Smile</title>
+<meta name="description" content="Orthodontix Dental Clinic in Deira, Dubai. Braces, clear aligners, dental implants and Hollywood Smile. Rated 4.9 from 387 Google reviews. Book in seconds on WhatsApp.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;color:#1c2b2b;background:#fdfaf3;line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  /* header */
+  header{border-bottom:1px solid #e3dcc9;background:#fdfaf3}
+  .topbar{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:12px;flex-wrap:wrap}
+  .brand{font-size:26px;font-weight:700;letter-spacing:.5px;color:#0d3f3a}
+  .brand span{color:#c98a2b}
+  .top-actions{display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:11px 20px;border-radius:4px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700}
+  .btn-green{background:#0d3f3a;color:#fff}
+  .btn-outline{border:2px solid #0d3f3a;color:#0d3f3a;background:transparent}
+  .btn-wa{background:#1faa55;color:#fff}
+  /* hero — asymmetric editorial */
+  .hero{display:grid;grid-template-columns:1fr;gap:0;padding:0 0 8px}
+  .hero-copy{padding:44px 0 30px}
+  .eyebrow{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#c98a2b;font-weight:700}
+  h1{font-size:44px;line-height:1.08;color:#0d3f3a;margin:14px 0 16px;font-weight:700}
+  h1 em{font-style:italic;color:#c98a2b}
+  .hero-copy p{font-size:18px;color:#43504f;max-width:520px}
+  .rating{margin-top:20px;font-family:Arial,Helvetica,sans-serif;font-size:15px}
+  .stars{color:#c98a2b;font-size:19px;letter-spacing:2px}
+  .rating b{font-size:17px}
+  .hero-cta{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+  .hero-img{margin:0 -20px}
+  .hero-img img{width:100%;height:300px;object-fit:cover;display:block}
+  .hero-img figcaption{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#8a8574;padding:8px 20px 0}
+  /* strip */
+  .strip{background:#0d3f3a;color:#fdfaf3;padding:26px 0;margin-top:34px}
+  .strip .wrap{display:grid;grid-template-columns:1fr;gap:14px;font-family:Arial,Helvetica,sans-serif}
+  .strip b{font-size:22px;display:block}
+  .strip span{font-size:13px;opacity:.85}
+  /* services — editorial numbered list, no uniform cards */
+  section{padding:52px 0 10px}
+  h2{font-size:32px;color:#0d3f3a;line-height:1.15;margin-bottom:8px}
+  .sub{font-size:17px;color:#43504f;max-width:560px;margin-bottom:28px}
+  .svc{display:grid;grid-template-columns:44px 1fr;gap:6px 16px;padding:24px 0;border-top:1px solid #e3dcc9}
+  .svc:last-child{border-bottom:1px solid #e3dcc9}
+  .num{font-size:30px;color:#c98a2b;font-weight:700;line-height:1}
+  .svc h3{font-size:22px;color:#0d3f3a;margin-bottom:4px}
+  .svc p{font-size:16px;color:#43504f}
+  .svc .price{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#8a8574;margin-top:6px}
+  .svc .thumb{grid-column:2;margin-top:12px}
+  .svc .thumb img{width:100%;height:180px;object-fit:cover;display:block;border-radius:4px}
+  /* booking */
+  .book{background:#f3ecdc;margin-top:52px;padding:44px 0}
+  .book-grid{display:grid;grid-template-columns:1fr;gap:28px}
+  .book h2{margin-bottom:10px}
+  .book p{font-size:17px;color:#43504f;margin-bottom:16px}
+  .book .wa-big{display:inline-block;background:#1faa55;color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:17px;text-decoration:none;padding:14px 26px;border-radius:4px;margin:6px 0 14px}
+  .book .call-line{font-family:Arial,Helvetica,sans-serif;font-size:15px}
+  .book .call-line a{color:#0d3f3a;font-weight:700}
+  form{background:#fff;border:1px solid #e3dcc9;border-radius:6px;padding:22px}
+  form label{display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;color:#0d3f3a;margin:12px 0 5px}
+  form label:first-child{margin-top:0}
+  form input,form select{width:100%;padding:11px 12px;border:1px solid #c9c2ab;border-radius:4px;font-size:15px;font-family:Arial,Helvetica,sans-serif;background:#fdfaf3}
+  form button{margin-top:18px;width:100%;background:#0d3f3a;color:#fff;border:0;padding:14px;font-size:16px;font-weight:700;border-radius:4px;cursor:pointer;font-family:Arial,Helvetica,sans-serif}
+  form .note{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#8a8574;margin-top:10px;text-align:center}
+  /* reviews — rating only, no invented quotes */
+  .reviews{text-align:left;padding:52px 0 8px}
+  .big-score{font-size:64px;color:#0d3f3a;font-weight:700;line-height:1}
+  .big-score small{font-size:28px;color:#c98a2b}
+  .reviews .stars{font-size:24px}
+  .reviews p{font-size:17px;color:#43504f;margin-top:10px;max-width:520px}
+  /* visit */
+  .visit{padding:52px 0 60px}
+  .visit-grid{display:grid;grid-template-columns:1fr;gap:20px}
+  .visit address{font-style:normal;font-size:18px;color:#1c2b2b;line-height:1.6}
+  .visit .metro{display:inline-block;margin-top:12px;background:#0d3f3a;color:#fdfaf3;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;padding:7px 12px;border-radius:4px}
+  .visit img{width:100%;height:220px;object-fit:cover;display:block;border-radius:4px}
+  footer{background:#0d3f3a;color:#fdfaf3;padding:30px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:#fdfaf3}
+  @media(min-width:760px){
+    h1{font-size:56px}
+    .hero{grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+    .hero-img{margin:0}
+    .hero-img img{height:420px;border-radius:4px}
+    .hero-img figcaption{padding-left:0}
+    .strip .wrap{grid-template-columns:repeat(3,1fr)}
+    .book-grid{grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+    .visit-grid{grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+    .svc .thumb img{height:220px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap topbar">
+    <div class="brand">Ortho<span>dontix</span> <span style="font-size:13px;font-family:Arial,Helvetica,sans-serif;letter-spacing:2px;color:#43504f">DENTAL CLINIC · DEIRA</span></div>
+    <div class="top-actions">
+      <a class="btn btn-outline" href="tel:+97142502444">Call 04 250 2444</a>
+      <a class="btn btn-wa" href="https://wa.me/971551544040?text=Hi%20Orthodontix%2C%20I%27d%20like%20to%20book%20an%20appointment.">WhatsApp Us</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Deira · Dubai — Near Deira City Centre Metro</div>
+      <h1>Straight teeth.<br><em>Honest dentistry.</em></h1>
+      <p>Braces, clear aligners, implants and Hollywood Smile — done properly, in one clinic, a two-minute walk from the metro.</p>
+      <div class="rating">
+        <span class="stars">★★★★★</span><br>
+        <b>4.9 out of 5</b> · 387 Google reviews
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-wa" href="https://wa.me/971551544040?text=Hi%20Orthodontix%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a>
+        <a class="btn btn-green" href="tel:+97142502444">Call the Clinic</a>
+      </div>
+    </div>
+    <figure class="hero-img">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80" alt="Dentist treating a patient at Orthodontix Dental Clinic">
+      <figcaption>Orthodontix Dental Clinic, Port Saeed, Deira</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>4.9 ★</b><span>387 Google reviews</span></div>
+    <div><b>WhatsApp booking</b><span>Message us — no phone queues</span></div>
+    <div><b>Metro Exit 4</b><span>Deira City Centre, 2-minute walk</span></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <h2>What we do, properly.</h2>
+    <p class="sub">Four treatments, one clinic. Every plan starts with a consultation — and every price is confirmed with you there, before anything begins.</p>
+
+    <div class="svc">
+      <div class="num">01</div>
+      <div>
+        <h3>Braces</h3>
+        <p>Fixed braces for kids, teens and adults — planned around your bite, not a one-size-fits-all bracket.</p>
+        <p class="price">Price on consultation</p>
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="num">02</div>
+      <div>
+        <h3>Clear Aligners</h3>
+        <p>Nearly invisible trays that straighten teeth without metal — fitted and checked in clinic at every stage.</p>
+        <p class="price">Price on consultation</p>
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="num">03</div>
+      <div>
+        <h3>Dental Implants</h3>
+        <p>Permanent, natural-feeling replacements for missing teeth, placed and restored under one roof.</p>
+        <p class="price">Price on consultation</p>
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=80" alt="Dental treatment in progress"></div>
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="num">04</div>
+      <div>
+        <h3>Hollywood Smile</h3>
+        <p>A full smile design — veneers and whitening planned to your face, not a catalogue smile.</p>
+        <p class="price">Price on consultation</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="book">
+  <div class="wrap book-grid">
+    <div>
+      <h2>Book in under a minute.</h2>
+      <p>Most patients book straight through WhatsApp — message us your name and what you need, and we confirm your slot back. No forms that go nowhere, no waiting on hold.</p>
+      <a class="wa-big" href="https://wa.me/971551544040?text=Hi%20Orthodontix%2C%20I%27d%20like%20to%20book%20an%20appointment.">Message on WhatsApp →</a>
+      <p class="call-line">Prefer to call? <a href="tel:+97142502444">04 250 2444</a> · WhatsApp <a href="https://wa.me/971551544040">+971 55 154 4040</a></p>
+    </div>
+    <form id="appt" onsubmit="return sendWhatsApp(event)">
+      <label for="fname">Your name</label>
+      <input id="fname" type="text" required placeholder="e.g. Sara Ahmed">
+      <label for="fphone">Phone / WhatsApp number</label>
+      <input id="fphone" type="tel" required placeholder="e.g. 050 123 4567">
+      <label for="fsvc">Treatment</label>
+      <select id="fsvc">
+        <option>Braces</option>
+        <option>Clear Aligners</option>
+        <option>Dental Implants</option>
+        <option>Hollywood Smile</option>
+        <option>Not sure yet — need advice</option>
+      </select>
+      <label for="fday">Preferred day</label>
+      <input id="fday" type="text" placeholder="e.g. Saturday morning">
+      <button type="submit">Request Appointment on WhatsApp</button>
+      <p class="note">Opens WhatsApp with your details filled in. Price confirmed at consultation.</p>
+    </form>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="reviews">
+    <div class="big-score">4.9<small> / 5</small></div>
+    <div class="stars">★★★★★</div>
+    <p><b>387 Google reviews.</b> Patients keep coming back to us — and keep telling their friends — because the work is honest and the booking is easy.</p>
+  </section>
+
+  <section class="visit">
+    <div class="visit-grid">
+      <div>
+        <h2>Find us in Deira.</h2>
+        <address>
+          A-301, Al Shoala Building<br>
+          Port Saeed, Deira<br>
+          Dubai, UAE
+        </address>
+        <span class="metro">Deira City Centre Metro — Exit 4</span>
+        <p style="margin-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:15px">
+          <a href="tel:+97142502444" style="color:#0d3f3a;font-weight:700">04 250 2444</a> ·
+          <a href="https://wa.me/971551544040" style="color:#0d3f3a;font-weight:700">WhatsApp +971 55 154 4040</a>
+        </p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80" alt="Modern dental clinic interior">
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>© Orthodontix Dental Clinic — Deira, Dubai</div>
+    <div><a href="tel:+97142502444">04 250 2444</a> · <a href="https://wa.me/971551544040">WhatsApp</a></div>
+  </div>
+</footer>
+
+<script>
+function sendWhatsApp(e){
+  e.preventDefault();
+  var n=document.getElementById('fname').value.trim();
+  var p=document.getElementById('fphone').value.trim();
+  var s=document.getElementById('fsvc').value;
+  var d=document.getElementById('fday').value.trim();
+  var msg='Hi Orthodontix, I would like to book an appointment. Name: '+n+'. Phone: '+p+'. Treatment: '+s+(d?'. Preferred day: '+d:'');
+  window.open('https://wa.me/971551544040?text='+encodeURIComponent(msg),'_blank');
+  return false;
+}
+</script>
+</body>
+</html>
