@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knutson Custom Remodelers LLC — Kitchen &amp; Bath Remodeling, Minneapolis, MN</title>
+<meta name="description" content="Knutson Custom Remodelers LLC — kitchen and bathroom remodeling in Minneapolis, MN. 4.9 stars from 49 Google reviews.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#faf6ef;color:#23211d;line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  /* ---------- top bar ---------- */
+  .topbar{background:#23211d;color:#faf6ef;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.04em}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+  .topbar a{text-decoration:none;border-bottom:1px solid #b0714a}
+  .topbar .loc{opacity:.85}
+  /* ---------- header ---------- */
+  header{background:#faf6ef;border-bottom:2px solid #23211d}
+  header .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-top:22px;padding-bottom:18px;flex-wrap:wrap}
+  .brand{font-size:26px;font-weight:700;letter-spacing:-.01em}
+  .brand span{color:#b0714a}
+  nav{font-family:Arial,Helvetica,sans-serif;font-size:14px}
+  nav a{margin-left:22px;text-decoration:none}
+  nav a:hover{color:#b0714a}
+  /* ---------- hero ---------- */
+  .hero{padding:54px 0 46px}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:start}
+  .eyebrow{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#b0714a;margin-bottom:16px}
+  h1{font-size:clamp(34px,5vw,52px);line-height:1.08;letter-spacing:-.015em;margin-bottom:18px}
+  h1 em{font-style:italic;color:#b0714a}
+  .lede{font-size:18px;color:#4a463e;margin-bottom:26px;max-width:46ch}
+  .rating{display:inline-flex;align-items:center;gap:10px;background:#23211d;color:#faf6ef;font-family:Arial,Helvetica,sans-serif;padding:10px 16px;margin-bottom:26px}
+  .rating .stars{color:#e8a04c;letter-spacing:.12em}
+  .rating .num{font-weight:700}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;text-decoration:none;padding:14px 24px;border:2px solid #23211d}
+  .btn-solid{background:#23211d;color:#faf6ef}
+  .btn-line{background:transparent;color:#23211d}
+  .hero-img{position:relative}
+  .hero-img img{width:100%;height:420px;object-fit:cover;display:block}
+  .hero-img figcaption{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#4a463e;margin-top:8px}
+  .hero-img .tag{position:absolute;top:14px;left:-14px;background:#b0714a;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:8px 12px}
+  /* ---------- strip ---------- */
+  .strip{background:#b0714a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+  .strip .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap;font-size:14px}
+  .strip b{font-size:20px;display:block}
+  /* ---------- services ---------- */
+  .services{padding:56px 0 20px}
+  .kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#b0714a;margin-bottom:10px}
+  h2{font-size:clamp(26px,3.4vw,36px);letter-spacing:-.01em;margin-bottom:8px}
+  .sub{color:#4a463e;max-width:60ch;margin-bottom:34px}
+  .svc{display:grid;grid-template-columns:64px 1fr 220px;gap:22px;padding:26px 0;border-top:2px solid #23211d;align-items:start}
+  .svc:last-of-type{border-bottom:2px solid #23211d}
+  .svc .no{font-size:34px;color:#b0714a;line-height:1}
+  .svc h3{font-size:22px;margin-bottom:6px}
+  .svc p{color:#4a463e;font-size:16px}
+  .svc .price{font-family:Arial,Helvetica,sans-serif;font-size:14px;text-align:right;color:#4a463e}
+  .svc .price b{display:block;color:#23211d;font-size:15px}
+  /* ---------- gallery ---------- */
+  .gallery{padding:56px 0}
+  .gal-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:18px;margin-top:28px}
+  .gal-grid img{width:100%;height:100%;object-fit:cover;display:block}
+  .gal-grid .tall{grid-row:span 2;min-height:420px}
+  .gal-grid figure{position:relative}
+  .gal-grid figcaption{position:absolute;left:0;bottom:0;background:#23211d;color:#faf6ef;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.06em;padding:7px 12px}
+  .gal-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+  .gal-row img{width:100%;height:230px;object-fit:cover;display:block}
+  /* ---------- reviews ---------- */
+  .reviews{background:#23211d;color:#faf6ef;padding:56px 0}
+  .reviews .kicker{color:#e8a04c}
+  .big-score{display:flex;align-items:baseline;gap:16px;margin:18px 0 10px;flex-wrap:wrap}
+  .big-score .score{font-size:72px;line-height:1;font-weight:700}
+  .big-score .stars{color:#e8a04c;font-size:26px;letter-spacing:.14em}
+  .reviews p{color:#d8d2c4;max-width:62ch}
+  .reviews p b{color:#faf6ef}
+  /* ---------- contact ---------- */
+  .contact{padding:56px 0 64px}
+  .contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start}
+  .contact-lines{font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:2}
+  .contact-lines a{text-decoration:none;border-bottom:1px solid #b0714a;font-weight:700}
+  form{background:#fff;border:2px solid #23211d;padding:26px}
+  form label{display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;margin-bottom:6px}
+  form input,form textarea{width:100%;font-family:Arial,Helvetica,sans-serif;font-size:15px;padding:11px 12px;border:1px solid #9a938a;margin-bottom:16px;background:#faf6ef}
+  form textarea{min-height:110px;resize:vertical}
+  form button{width:100%;background:#23211d;color:#faf6ef;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;padding:14px;border:none;cursor:pointer}
+  form button:hover{background:#b0714a}
+  .note{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#4a463e;margin-top:12px}
+  /* ---------- footer ---------- */
+  footer{background:#23211d;color:#d8d2c4;font-family:Arial,Helvetica,sans-serif;font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;padding-top:26px;padding-bottom:26px;flex-wrap:wrap}
+  footer a{color:#faf6ef;text-decoration:none;border-bottom:1px solid #b0714a}
+  @media (max-width:760px){
+    .hero .wrap,.contact .wrap{grid-template-columns:1fr}
+    .hero-img img{height:300px}
+    .svc{grid-template-columns:44px 1fr}
+    .svc .price{text-align:left;grid-column:2}
+    .gal-grid{grid-template-columns:1fr}
+    .gal-grid .tall{min-height:300px}
+    .gal-row{grid-template-columns:1fr}
+    nav a{margin-left:0;margin-right:18px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="loc">Kitchen &amp; Bath Remodeling — Minneapolis, MN</span>
+    <span><a href="tel:+16124222004">(612) 422-2004</a> &nbsp;·&nbsp; <a href="mailto:knutsonevan4@gmail.com">knutsonevan4@gmail.com</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="brand">Knutson <span>Custom Remodelers</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Minneapolis, Minnesota</p>
+      <h1>A kitchen you actually <em>want to cook in.</em></h1>
+      <p class="lede">Knutson Custom Remodelers builds kitchens and bathrooms that fit the way your household really lives — planned with you, built to last, finished properly.</p>
+      <div class="rating"><span class="stars">★★★★★</span><span class="num">4.9</span><span>· 49 Google reviews</span></div>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="tel:+16124222004">Call (612) 422-2004</a>
+        <a class="btn btn-line" href="#contact">Request a Consultation</a>
+      </div>
+    </div>
+    <figure class="hero-img">
+      <span class="tag">Kitchen Remodeling</span>
+      <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&amp;q=80" alt="Bright remodeled kitchen with white cabinets and island">
+      <figcaption>A kitchen, remodeled for everyday living.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>4.9 ★</b>Google rating</div>
+    <div><b>49</b>Google reviews</div>
+    <div><b>Minneapolis, MN</b>Kitchen &amp; bath remodeling</div>
+  </div>
+</div>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="kicker">What we do</p>
+    <h2>Remodeling, done properly.</h2>
+    <p class="sub">Two trades, one team, one point of contact from first walkthrough to final walkthrough.</p>
+
+    <div class="svc">
+      <div class="no">01</div>
+      <div>
+        <h3>Kitchen Remodeling</h3>
+        <p>Full kitchen remodels — layout, cabinets, counters, lighting and flooring — planned around how you cook, gather and live.</p>
+      </div>
+      <div class="price"><b>Price on consultation</b>Every kitchen is different</div>
+    </div>
+
+    <div class="svc">
+      <div class="no">02</div>
+      <div>
+        <h3>Bathroom Remodeling</h3>
+        <p>Bathroom remodels — showers, vanities, tile and fixtures — built for daily use and finished to a standard you can see.</p>
+      </div>
+      <div class="price"><b>Price on consultation</b>Every bathroom is different</div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="work">
+  <div class="wrap">
+    <p class="kicker">Our work</p>
+    <h2>Recent remodeling, in pictures.</h2>
+    <div class="gal-grid">
+      <figure class="tall">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&amp;q=80" alt="Modern remodeled home interior">
+        <figcaption>Kitchen &amp; Living Space</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&amp;q=80" alt="Remodeled interior with warm wood finishes">
+        <figcaption>Interior Remodel</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&amp;q=80" alt="Bright remodeled living area">
+        <figcaption>Living Space</figcaption>
+      </figure>
+    </div>
+    <div class="gal-row">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200&amp;q=80" alt="Remodeled bathroom with modern fixtures">
+        <figcaption>Bathroom</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&amp;q=80" alt="Kitchen with new cabinets and counters">
+        <figcaption>Kitchen</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <p class="kicker">Reviews</p>
+    <h2>What Minneapolis says.</h2>
+    <div class="big-score">
+      <span class="score">4.9</span>
+      <span class="stars">★★★★★</span>
+      <span>out of 5 — 49 Google reviews</span>
+    </div>
+    <p>Homeowners across Minneapolis rate Knutson Custom Remodelers <b>4.9 stars from 49 Google reviews</b>. The best way to judge the work is to see it — browse the photos above, then call and talk through your project.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Get started</p>
+      <h2>Talk through your project.</h2>
+      <p class="sub">Tell us what you want to change. We will call you back to arrange a walkthrough and a consultation.</p>
+      <div class="contact-lines">
+        Phone: <a href="tel:+16124222004">(612) 422-2004</a><br>
+        Email: <a href="mailto:knutsonevan4@gmail.com">knutsonevan4@gmail.com</a><br>
+        Serving: Minneapolis, MN
+      </div>
+    </div>
+    <form action="mailto:knutsonevan4@gmail.com" method="post" enctype="text/plain">
+      <label for="fname">Your name</label>
+      <input id="fname" name="Name" type="text" required>
+      <label for="fphone">Phone</label>
+      <input id="fphone" name="Phone" type="tel" required>
+      <label for="fmsg">What would you like remodeled?</label>
+      <textarea id="fmsg" name="Project details" required></textarea>
+      <button type="submit">Send Request</button>
+      <p class="note">This opens your email app with the request addressed to Knutson Custom Remodelers.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><strong>Knutson Custom Remodelers LLC</strong> — Minneapolis, MN</span>
+    <span><a href="tel:+16124222004">(612) 422-2004</a> · <a href="mailto:knutsonevan4@gmail.com">knutsonevan4@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
