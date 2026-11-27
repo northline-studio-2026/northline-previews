@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cake Bae — Custom Cakes, Austin TX</title>
+<meta name="description" content="Cake Bae is a home bakery in Austin, Texas, making gluten-free custom cakes to order. Order by Instagram DM.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#FAF6EF;color:#2E211A;line-height:1.6}
+  a{color:inherit}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  /* ---------- top bar ---------- */
+  header{border-bottom:2px solid #2E211A}
+  .top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:16px;flex-wrap:wrap}
+  .brand{font-size:30px;font-weight:700;letter-spacing:.02em}
+  .brand small{display:block;font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#8A6D4B;font-weight:400;margin-top:2px}
+  .top a.ig{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;text-decoration:none;background:#2E211A;color:#FAF6EF;padding:11px 18px;border-radius:999px}
+  /* ---------- hero ---------- */
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;padding:52px 0 40px;align-items:start}
+  .kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#C2703E;font-weight:700}
+  h1{font-size:52px;line-height:1.05;margin:14px 0 18px;font-weight:700}
+  h1 em{color:#C2703E;font-style:italic}
+  .hero p.lede{font-size:19px;max-width:46ch}
+  .hero p.lede2{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#5C4636;margin-top:14px;max-width:48ch}
+  .cta-row{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+  .btn{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:15px;text-decoration:none;padding:14px 22px;border-radius:999px;display:inline-block}
+  .btn-dark{background:#2E211A;color:#FAF6EF}
+  .btn-line{border:2px solid #2E211A;color:#2E211A}
+  .hero figure{position:relative}
+  .hero figure img{width:100%;height:440px;object-fit:cover;display:block;border-radius:4px}
+  .hero figcaption{position:absolute;left:-14px;bottom:18px;background:#C2703E;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;padding:10px 14px;border-radius:3px;max-width:230px;line-height:1.4}
+  .proof{display:flex;gap:0;border-top:2px solid #2E211A;border-bottom:2px solid #2E211A;margin:8px 0 0}
+  .proof div{flex:1;padding:18px 14px;text-align:center}
+  .proof div+div{border-left:1px solid #D8CBB8}
+  .proof b{font-size:26px;display:block}
+  .proof span{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#8A6D4B}
+  /* ---------- sections ---------- */
+  section{padding:56px 0}
+  .sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;margin-bottom:8px}
+  h2{font-size:34px;line-height:1.15}
+  .sec-num{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#C2703E;font-weight:700}
+  .sec-sub{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#5C4636;max-width:62ch;margin-top:8px}
+  /* gallery — staggered */
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}
+  .gallery figure:nth-child(2){margin-top:44px}
+  .gallery figure:nth-child(3){margin-top:-14px}
+  .gallery figure:nth-child(4){margin-top:30px}
+  .gallery img{width:100%;height:300px;object-fit:cover;display:block;border-radius:4px}
+  .gallery figcaption{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#5C4636;padding-top:10px}
+  .gallery figcaption b{color:#2E211A}
+  /* what we bake — numbered rows */
+  .bake-list{margin-top:30px;border-top:2px solid #2E211A}
+  .bake-row{display:grid;grid-template-columns:64px 1fr auto;gap:18px;padding:24px 4px;border-bottom:1px solid #D8CBB8;align-items:baseline}
+  .bake-row .n{font-size:15px;font-family:Arial,Helvetica,sans-serif;color:#C2703E;font-weight:700}
+  .bake-row h3{font-size:24px;margin-bottom:4px}
+  .bake-row p{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#5C4636;max-width:56ch}
+  .bake-row .tag{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#EFE6D6;padding:7px 12px;border-radius:999px;white-space:nowrap}
+  /* how to order — 3 steps, offset */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+  .step{background:#2E211A;color:#FAF6EF;padding:26px 22px;border-radius:4px}
+  .step:nth-child(2){transform:translateY(18px)}
+  .step b.num{font-size:40px;color:#C2703E;display:block;line-height:1}
+  .step h3{font-size:21px;margin:14px 0 8px}
+  .step p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#E8DCC8}
+  .step a{color:#F5C99A}
+  /* order form */
+  .order-box{background:#EFE6D6;border:2px solid #2E211A;border-radius:4px;padding:34px 30px;margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .order-box h2{font-size:30px}
+  .order-box p{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#5C4636;margin-top:10px}
+  .order-box p b{color:#2E211A}
+  form{display:grid;gap:12px}
+  label{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700}
+  input,select,textarea{font-family:Arial,Helvetica,sans-serif;font-size:15px;padding:12px 14px;border:1.5px solid #B9A98F;border-radius:4px;background:#FAF6EF;color:#2E211A;width:100%}
+  textarea{min-height:90px;resize:vertical}
+  form .btn{border:none;cursor:pointer;text-align:center}
+  .fine{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#8A6D4B;margin-top:10px}
+  /* footer */
+  footer{background:#2E211A;color:#FAF6EF;padding:40px 0 34px;margin-top:20px}
+  .foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+  .foot .brand{font-size:26px}
+  .foot p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#D8CBB8;max-width:44ch}
+  .foot a.iglink{font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#F5C99A;font-size:15px}
+  .foot small{display:block;margin-top:22px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#A68F78}
+  @media (max-width:760px){
+    h1{font-size:38px}
+    .hero{grid-template-columns:1fr;padding:36px 0 28px}
+    .hero figure img{height:320px}
+    .hero figcaption{left:12px}
+    .proof{flex-wrap:wrap}
+    .proof div{flex:1 1 45%}
+    .gallery{grid-template-columns:1fr}
+    .gallery figure:nth-child(n){margin-top:0}
+    .gallery img{height:260px}
+    .steps{grid-template-columns:1fr}
+    .step:nth-child(2){transform:none}
+    .bake-row{grid-template-columns:44px 1fr}
+    .bake-row .tag{grid-column:2}
+    .order-box{grid-template-columns:1fr;padding:26px 20px}
+    section{padding:40px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap top">
+    <div class="brand">Cake Bae<small>Home Bakery &middot; Austin, TX</small></div>
+    <a class="ig" href="https://www.instagram.com/atx.cakebae" target="_blank" rel="noopener">@atx.cakebae on Instagram</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <div>
+      <p class="kicker">Home bakery &middot; Austin, Texas</p>
+      <h1>Custom cakes, <em>baked at home</em> in Austin.</h1>
+      <p class="lede">Gluten-free custom cakes, made to order for your celebration — birthdays, showers, weddings, and every sweet occasion in between.</p>
+      <p class="lede2">No shopfront, no fuss. Browse the cakes, then message us on Instagram to order yours.</p>
+      <div class="cta-row">
+        <a class="btn btn-dark" href="https://www.instagram.com/atx.cakebae" target="_blank" rel="noopener">Order on Instagram</a>
+        <a class="btn btn-line" href="#gallery">See the cakes</a>
+      </div>
+    </div>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Chocolate layer cake with smooth frosting">
+      <figcaption>Every cake is made to order — never off a shelf.</figcaption>
+    </figure>
+  </div>
+
+  <div class="proof">
+    <div><b>4,690</b><span>Instagram followers</span></div>
+    <div><b>100%</b><span>Custom &amp; made to order</span></div>
+    <div><b>Gluten-free</b><span>Custom cakes</span></div>
+  </div>
+
+  <section id="gallery">
+    <div class="sec-head">
+      <h2>The cakes</h2>
+      <span class="sec-num">01 &mdash; Gallery</span>
+    </div>
+    <p class="sec-sub">A look at the kind of cakes we bake. Every order is custom — tell us the occasion and we will design a cake around it.</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Berry-topped celebration cake">
+        <figcaption><b>Celebration cakes</b> — made for birthdays and big days</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Cake with fresh berries and cream">
+        <figcaption><b>Fresh &amp; seasonal</b> — finished with fruit and cream</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Elegant frosted layer cake">
+        <figcaption><b>Elegant &amp; simple</b> — clean frosting, classic style</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=900&amp;q=80&amp;auto=format&amp;fit=crop" alt="Cake slice with layers">
+        <figcaption><b>Inside matters too</b> — soft layers, generous filling</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>What we bake</h2>
+      <span class="sec-num">02 &mdash; The bakery</span>
+    </div>
+    <p class="sec-sub">A small home bakery with one focus: custom cakes, baked to order in Austin.</p>
+    <div class="bake-list">
+      <div class="bake-row">
+        <span class="n">01</span>
+        <div>
+          <h3>Custom cakes</h3>
+          <p>Designed around your occasion — size, style and flavours agreed with you before we bake.</p>
+        </div>
+        <span class="tag">Made to order</span>
+      </div>
+      <div class="bake-row">
+        <span class="n">02</span>
+        <div>
+          <h3>Gluten-free cakes</h3>
+          <p>Our custom cakes include gluten-free options, so nobody at the table is left out.</p>
+        </div>
+        <span class="tag">Gluten-free</span>
+      </div>
+      <div class="bake-row">
+        <span class="n">03</span>
+        <div>
+          <h3>Occasion cakes</h3>
+          <p>Birthdays, baby showers, weddings and celebrations — one cake, made for your day.</p>
+        </div>
+        <span class="tag">Your day</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>How to order</h2>
+      <span class="sec-num">03 &mdash; Ordering</span>
+    </div>
+    <p class="sec-sub">Three steps, all through Instagram — no account forms, no waiting on hold.</p>
+    <div class="steps">
+      <div class="step">
+        <b class="num">1</b>
+        <h3>Message us</h3>
+        <p>Send a DM to <a href="https://www.instagram.com/atx.cakebae" target="_blank" rel="noopener">@atx.cakebae</a> on Instagram with your date and occasion.</p>
+      </div>
+      <div class="step">
+        <b class="num">2</b>
+        <h3>Design your cake</h3>
+        <p>Tell us the size, style and flavours you want. We confirm the details with you before baking.</p>
+      </div>
+      <div class="step">
+        <b class="num">3</b>
+        <h3>Pick it up</h3>
+        <p>Your cake is baked fresh to order in Austin, ready for your celebration.</p>
+      </div>
+    </div>
+
+    <div class="order-box" id="order">
+      <div>
+        <h2>Start your order</h2>
+        <p>Fill in the details, then send them to us on Instagram. We reply by DM to confirm your cake — <b>prices are confirmed in the DM</b>, because every cake is custom.</p>
+        <p>Orders are also taken on Hotplate — the link is in our Instagram bio.</p>
+        <p class="fine">We are a home bakery in Austin, Texas. Follow us at <a href="https://www.instagram.com/atx.cakebae" target="_blank" rel="noopener">@atx.cakebae</a> for new cakes.</p>
+      </div>
+      <form onsubmit="window.open('https://www.instagram.com/atx.cakebae','_blank');return false;">
+        <div>
+          <label for="f-name">Your name</label>
+          <input id="f-name" type="text" placeholder="Your name" required>
+        </div>
+        <div>
+          <label for="f-date">Date you need the cake</label>
+          <input id="f-date" type="date">
+        </div>
+        <div>
+          <label for="f-occ">Occasion</label>
+          <select id="f-occ">
+            <option>Birthday</option>
+            <option>Baby shower</option>
+            <option>Wedding</option>
+            <option>Another celebration</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-msg">Tell us about your cake</label>
+          <textarea id="f-msg" placeholder="Size, flavours, gluten-free, colours — anything that matters"></textarea>
+        </div>
+        <button class="btn btn-dark" type="submit">Send via Instagram DM</button>
+        <p class="fine">This opens our Instagram profile — copy your details into a DM to @atx.cakebae.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="brand">Cake Bae</div>
+      <p>Home bakery in Austin, Texas. Gluten-free custom cakes, made to order.</p>
+      <small>Follow along and order on Instagram.</small>
+    </div>
+    <div>
+      <a class="iglink" href="https://www.instagram.com/atx.cakebae" target="_blank" rel="noopener">Instagram — @atx.cakebae</a>
+      <p style="margin-top:10px">Austin, TX<br>Orders by Instagram DM &amp; Hotplate</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
