@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SKIN Med Spa &amp; Laser — McKinney, TX</title>
+<meta name="description" content="SKIN Med Spa & Laser in McKinney, TX. Facials, laser hair removal and skin treatments. Rated 4.6 from 375 Google reviews. Call (214) 935-9697.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:#FAF6EF;color:#22312A;line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  /* header */
+  header{border-bottom:1px solid #E3D9C8;padding:16px 0}
+  .head-in{display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .brand{font-family:Georgia,"Times New Roman",serif;font-size:26px;letter-spacing:.14em;font-weight:700}
+  .brand small{display:block;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:.28em;font-weight:600;color:#7A6A58;margin-top:2px}
+  .call-btn{background:#22312A;color:#FAF6EF;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:999px;white-space:nowrap}
+  /* hero */
+  .hero{padding:52px 0 8px}
+  .eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#B0714A;font-weight:700}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(38px,8vw,64px);line-height:1.05;font-weight:700;margin:14px 0 18px;max-width:640px}
+  h1 em{font-style:italic;color:#5B6B54}
+  .lede{font-size:18px;max-width:520px;color:#43514A}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 18px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:14px 24px;border-radius:999px}
+  .btn-dark{background:#22312A;color:#FAF6EF}
+  .btn-line{border:1.5px solid #22312A;color:#22312A}
+  .rating{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:15px;margin-bottom:30px}
+  .stars{color:#C98A2E;letter-spacing:2px;font-size:17px}
+  .rating b{font-size:17px}
+  .hero-img{border-radius:4px;overflow:hidden}
+  .hero-img img{width:100%;height:340px;object-fit:cover;object-position:center 30%}
+  .hero-cap{font-size:12px;color:#7A6A58;margin-top:8px;letter-spacing:.04em}
+  /* strip */
+  .strip{background:#22312A;color:#FAF6EF;padding:18px 0;margin-top:44px}
+  .strip .wrap{display:flex;flex-wrap:wrap;gap:8px 26px;font-family:Georgia,serif;font-size:17px;font-style:italic}
+  .strip span::after{content:"·";margin-left:26px;color:#B0714A}
+  .strip span:last-child::after{content:""}
+  /* services */
+  .services{padding:64px 0 20px}
+  .sec-label{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#B0714A;font-weight:700}
+  h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,6vw,44px);line-height:1.1;margin:12px 0 8px}
+  .sec-sub{color:#43514A;max-width:560px;margin-bottom:40px}
+  .svc{display:grid;grid-template-columns:1fr;gap:20px;padding:34px 0;border-top:1px solid #E3D9C8}
+  .svc:last-child{border-bottom:1px solid #E3D9C8}
+  .svc-num{font-family:Georgia,serif;font-size:15px;color:#B0714A;letter-spacing:.1em}
+  .svc h3{font-family:Georgia,serif;font-size:26px;margin:6px 0 10px}
+  .svc p{color:#43514A;max-width:480px}
+  .svc .price{margin-top:14px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5B6B54}
+  .svc img{border-radius:4px;width:100%;height:240px;object-fit:cover}
+  /* reviews */
+  .reviews{background:#EFE7D8;padding:60px 0;margin-top:56px}
+  .rev-grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:center}
+  .big-num{font-family:Georgia,serif;font-size:88px;line-height:1;font-weight:700}
+  .rev-note{font-size:17px;color:#43514A;max-width:420px;margin-top:12px}
+  /* booking */
+  .book{padding:64px 0}
+  .book-grid{display:grid;grid-template-columns:1fr;gap:36px}
+  .book h2{margin-bottom:10px}
+  .book p{color:#43514A;max-width:460px}
+  .contact-lines{margin-top:26px;font-size:17px;line-height:2}
+  .contact-lines a{font-weight:700;text-decoration:none;border-bottom:2px solid #B0714A}
+  form{background:#fff;border:1px solid #E3D9C8;border-radius:6px;padding:26px 22px}
+  label{display:block;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:0 0 6px;color:#43514A}
+  input,select,textarea{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1.5px solid #D8CDB8;border-radius:6px;background:#FAF6EF;margin-bottom:16px;color:#22312A}
+  input:focus,select:focus,textarea:focus{outline:2px solid #5B6B54;border-color:#5B6B54}
+  textarea{min-height:90px;resize:vertical}
+  .submit{width:100%;background:#B0714A;color:#fff;border:0;font:inherit;font-weight:700;font-size:16px;padding:15px;border-radius:999px;cursor:pointer}
+  .form-note{font-size:13px;color:#7A6A58;text-align:center;margin-top:12px}
+  /* footer */
+  footer{background:#22312A;color:#D8CDB8;padding:40px 0 30px;font-size:14px}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:20px}
+  footer .brand{color:#FAF6EF}
+  footer a{color:#FAF6EF;text-decoration:none;font-weight:700}
+  .foot-small{margin-top:28px;padding-top:18px;border-top:1px solid #3A4A42;color:#8A9A90;font-size:12px}
+  @media(min-width:760px){
+    .hero-img img{height:460px}
+    .svc{grid-template-columns:70px 1fr 1fr;gap:28px;align-items:start}
+    .svc:nth-child(even) .svc-img{order:3}
+    .rev-grid{grid-template-columns:220px 1fr}
+    .book-grid{grid-template-columns:1fr 1fr}
+    .foot-grid{grid-template-columns:1fr 1fr 1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap head-in">
+    <div class="brand">SKIN<small>MED SPA &amp; LASER</small></div>
+    <a class="call-btn" href="tel:+12149359697">Call (214) 935-9697</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Med Spa &amp; Laser · McKinney, Texas</p>
+    <h1>Skin care that starts with <em>your</em> skin.</h1>
+    <p class="lede">Facials, laser hair removal and skin treatments in McKinney — personal, unhurried, and built around what your skin actually needs. A second studio in Plano.</p>
+    <div class="cta-row">
+      <a class="btn btn-dark" href="tel:+12149359697">Call (214) 935-9697</a>
+      <a class="btn btn-line" href="#book">Book a consultation</a>
+    </div>
+    <div class="rating">
+      <span class="stars">★★★★★</span>
+      <b>4.6</b>
+      <span>from 375 Google reviews</span>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Facial treatment at SKIN Med Spa">
+    </div>
+    <p class="hero-cap">McKinney, TX · Also in Plano</p>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <span>Facials</span><span>Laser Hair Removal</span><span>Skin Treatments</span><span>McKinney · Plano</span>
+  </div>
+</div>
+
+<section class="services">
+  <div class="wrap">
+    <p class="sec-label">What we do</p>
+    <h2>Three things, done properly.</h2>
+    <p class="sec-sub">No ten-page menu of treatments you don&rsquo;t need. We do a short list well — and we tell you honestly what will work for your skin before we start.</p>
+
+    <div class="svc">
+      <div class="svc-num">01</div>
+      <div>
+        <h3>Facials</h3>
+        <p>Custom facials matched to your skin on the day — deep cleansing, hydration and glow, without the hard sell. Your skin, your plan, every visit.</p>
+        <p class="price">Price on consultation</p>
+      </div>
+      <div class="svc-img">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Relaxing spa facial treatment">
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-num">02</div>
+      <div>
+        <h3>Laser Hair Removal</h3>
+        <p>Smooth skin that lasts. Laser hair removal for face and body, with a proper consultation first so you know exactly what to expect — sessions, results and aftercare.</p>
+        <p class="price">Price on consultation</p>
+      </div>
+      <div class="svc-img">
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Laser and skin treatment session">
+      </div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-num">03</div>
+      <div>
+        <h3>Skin Treatments</h3>
+        <p>Targeted care for texture, tone and breakouts. We look at your skin first, then build a treatment plan around it — no guesswork, no one-size-fits-all.</p>
+        <p class="price">Price on consultation</p>
+      </div>
+      <div class="svc-img">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Skin care treatment room">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap rev-grid">
+    <div class="big-num">4.6<span style="font-size:34px;color:#7A6A58"> / 5</span></div>
+    <div>
+      <span class="stars" style="font-size:22px">★★★★★</span>
+      <p class="rev-note">Rated <b>4.6 out of 5 from 375 Google reviews</b>. Clients come back for the results — and for being listened to.</p>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap book-grid">
+    <div>
+      <p class="sec-label">Book a consultation</p>
+      <h2>Come in. Let&rsquo;s look at your skin.</h2>
+      <p>Tell us what you need and we&rsquo;ll confirm your consultation by phone or email. No pressure, no obligation — just an honest conversation about your skin.</p>
+      <div class="contact-lines">
+        <a href="tel:+12149359697">(214) 935-9697</a><br>
+        <a href="mailto:skinmedspastexas@gmail.com">skinmedspastexas@gmail.com</a><br>
+        McKinney, TX · Also in Plano
+      </div>
+    </div>
+    <form action="mailto:skinmedspastexas@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Your name</label>
+      <input id="name" name="Name" type="text" placeholder="Jane Smith" required>
+      <label for="phone">Phone</label>
+      <input id="phone" name="Phone" type="tel" placeholder="(214) 555-0100" required>
+      <label for="service">I&rsquo;m interested in</label>
+      <select id="service" name="Service">
+        <option>Facials</option>
+        <option>Laser Hair Removal</option>
+        <option>Skin Treatments</option>
+        <option>Not sure yet — need advice</option>
+      </select>
+      <label for="msg">Anything we should know?</label>
+      <textarea id="msg" name="Message" placeholder="Tell us about your skin or what you&rsquo;d like to change…"></textarea>
+      <button class="submit" type="submit">Request my consultation</button>
+      <p class="form-note">Or call us directly — <a href="tel:+12149359697">(214) 935-9697</a></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">SKIN<small>MED SPA &amp; LASER</small></div>
+        <p style="margin-top:10px;color:#8A9A90">Facials, laser hair removal and skin treatments in McKinney, Texas.</p>
+      </div>
+      <div>
+        <p style="font-weight:700;color:#FAF6EF;margin-bottom:8px">McKinney, TX</p>
+        <p>Also in Plano<br><a href="tel:+12149359697">(214) 935-9697</a><br><a href="mailto:skinmedspastexas@gmail.com">skinmedspastexas@gmail.com</a></p>
+      </div>
+      <div>
+        <p style="font-weight:700;color:#FAF6EF;margin-bottom:8px">Rated by clients</p>
+        <p><span style="color:#C98A2E">★★★★★</span> 4.6 · 375 Google reviews</p>
+      </div>
+    </div>
+    <p class="foot-small">&copy; 2026 SKIN Med Spa &amp; Laser · McKinney, TX</p>
+  </div>
+</footer>
+
+</body>
+</html>
