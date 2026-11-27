@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Souk &amp; Silk Vintage — Vintage &amp; Designer Clothing, Toronto</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#FAF6EF;color:#1E1A17;line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  /* top bar */
+  .topbar{background:#1E1A17;color:#FAF6EF;padding:12px 0;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .topbar a{color:#E8B48A;text-decoration:none;font-weight:bold}
+  /* hero — asymmetric */
+  .hero{padding:56px 0 40px}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:start}
+  .kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#B4552D;font-weight:bold}
+  h1{font-size:clamp(38px,6vw,62px);line-height:1.04;font-weight:400;margin:14px 0 18px}
+  h1 em{font-style:italic;color:#B4552D}
+  .hero p.lede{font-size:18px;max-width:46ch}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  .btn{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;text-decoration:none;padding:13px 24px;border-radius:2px}
+  .btn-dark{background:#1E1A17;color:#FAF6EF}
+  .btn-line{border:2px solid #1E1A17;color:#1E1A17}
+  .hero-img{margin-top:8px}
+  .hero-img img{width:100%;height:420px;object-fit:cover;display:block;border-radius:2px}
+  .hero-img figcaption{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#6B6259;margin-top:8px;letter-spacing:.04em}
+  .proof{display:flex;gap:28px;flex-wrap:wrap;margin-top:30px;padding-top:22px;border-top:1px solid #D8CFC2}
+  .proof div{font-family:Arial,Helvetica,sans-serif}
+  .proof b{font-size:24px;display:block}
+  .proof span{font-size:13px;color:#6B6259}
+  /* shop-now band */
+  .band{background:#B4552D;color:#FAF6EF;padding:26px 0}
+  .band .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .band p{font-size:20px;max-width:60ch}
+  .band p b{font-weight:bold}
+  .band a{color:#FAF6EF;font-family:Arial,Helvetica,sans-serif;font-weight:bold}
+  /* collection */
+  .section{padding:56px 0}
+  .section h2{font-size:clamp(28px,4vw,40px);font-weight:400;line-height:1.1}
+  .section .sub{font-family:Arial,Helvetica,sans-serif;color:#6B6259;margin:10px 0 30px;max-width:60ch}
+  .rows{display:grid;gap:26px}
+  .row{display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:center;border-top:1px solid #D8CFC2;padding-top:26px}
+  .row:nth-child(even){grid-template-columns:1fr 220px}
+  .row:nth-child(even) .row-img{order:2}
+  .row-img img{width:100%;height:210px;object-fit:cover;display:block;border-radius:2px}
+  .row h3{font-size:24px;font-weight:400;margin-bottom:8px}
+  .row h3 span{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#B4552D;display:block;margin-bottom:6px}
+  .row p{color:#3D362E;max-width:52ch}
+  .row .enquire{font-family:Arial,Helvetica,sans-serif;font-weight:bold;color:#B4552D;text-decoration:none;display:inline-block;margin-top:12px}
+  /* consignment */
+  .consign{background:#1E1A17;color:#FAF6EF;padding:56px 0}
+  .consign-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+  .consign h2{font-size:clamp(28px,4vw,38px);font-weight:400;line-height:1.1}
+  .consign p{margin-top:14px;color:#D8CFC2;max-width:48ch}
+  .consign img{width:100%;height:340px;object-fit:cover;display:block;border-radius:2px}
+  /* instagram */
+  .ig{padding:56px 0;text-align:left}
+  .ig-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+  .ig h2{font-size:clamp(28px,4vw,38px);font-weight:400}
+  .ig p{margin-top:12px;color:#3D362E;max-width:46ch}
+  .ig-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .ig-photos img{width:100%;height:170px;object-fit:cover;display:block;border-radius:2px}
+  /* visit / form */
+  .visit{padding:0 0 56px}
+  .visit-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px}
+  .visit h2{font-size:clamp(28px,4vw,38px);font-weight:400}
+  .visit p{margin-top:12px;color:#3D362E}
+  .visit ul{list-style:none;margin-top:18px;font-family:Arial,Helvetica,sans-serif}
+  .visit li{margin-bottom:10px}
+  .visit a{color:#B4552D;font-weight:bold}
+  form{display:grid;gap:12px}
+  label{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase}
+  input,textarea,select{font-family:Arial,Helvetica,sans-serif;font-size:15px;padding:12px;border:1px solid #C9BFAE;border-radius:2px;background:#fff;color:#1E1A17;width:100%}
+  button{font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;background:#1E1A17;color:#FAF6EF;border:0;padding:14px 24px;border-radius:2px;cursor:pointer}
+  footer{background:#1E1A17;color:#9A9186;padding:28px 0;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:#E8B48A;text-decoration:none}
+  @media(max-width:720px){
+    .hero-grid,.row,.row:nth-child(even),.consign-grid,.ig-grid,.visit-grid{grid-template-columns:1fr}
+    .row:nth-child(even) .row-img{order:0}
+    .hero-img img{height:300px}
+    .row-img img{height:200px}
+    .consign img{height:260px}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <span>Souk &amp; Silk Vintage &nbsp;·&nbsp; Toronto, ON</span>
+    <a href="https://www.instagram.com/soukandsilkshop" target="_blank" rel="noopener">@soukandsilkshop</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Vintage &amp; Designer Clothing — Toronto</p>
+      <h1>Vintage finds.<br>Designer labels.<br><em>Ready to wear.</em></h1>
+      <p class="lede">One-of-a-kind vintage and designer pieces, handpicked in Toronto. No more “coming soon” — the shop is open, and every piece is ready to find its next home.</p>
+      <div class="cta-row">
+        <a class="btn btn-dark" href="#collection">Shop the collection</a>
+        <a class="btn btn-line" href="https://www.instagram.com/soukandsilkshop" target="_blank" rel="noopener">DM us on Instagram</a>
+      </div>
+      <div class="proof">
+        <div><b>4,254</b><span>Instagram followers</span></div>
+        <div><b>Toronto</b><span>Vintage + designer boutique</span></div>
+        <div><b>Open now</b><span>Online shop, finally live</span></div>
+      </div>
+    </div>
+    <figure class="hero-img">
+      <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=900&amp;q=80" alt="Vintage clothing rail">
+      <figcaption>Handpicked vintage, hung and ready — Toronto.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <p><b>The shop is open.</b> For over a year the website only said “coming soon.” Now you can browse, enquire and buy — right here.</p>
+    <a href="#collection">Browse the collection →</a>
+  </div>
+</section>
+
+<section class="section" id="collection">
+  <div class="wrap">
+    <h2>The collection</h2>
+    <p class="sub">Every piece is one of one. When it’s gone, it’s gone. Enquire about any piece by email or Instagram DM — price on enquiry.</p>
+    <div class="rows">
+      <article class="row">
+        <div class="row-img"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&amp;q=80" alt="Vintage clothing in store"></div>
+        <div>
+          <h3><span>01 — Vintage</span>Vintage clothing</h3>
+          <p>True vintage, handpicked piece by piece. Denim, dresses, jackets and more — each one checked, cleaned and ready to wear.</p>
+          <a class="enquire" href="mailto:soukandsilkshop@gmail.com?subject=Enquiry%20—%20Vintage%20piece">Enquire by email →</a>
+        </div>
+      </article>
+      <article class="row">
+        <div class="row-img"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=900&amp;q=80" alt="Designer fashion"></div>
+        <div>
+          <h3><span>02 — Designer</span>Designer labels</h3>
+          <p>Designer names at vintage prices. The labels you love, found second-hand and priced to move — enquire for availability and price.</p>
+          <a class="enquire" href="https://www.instagram.com/soukandsilkshop" target="_blank" rel="noopener">Enquire on Instagram →</a>
+        </div>
+      </article>
+      <article class="row">
+        <div class="row-img"><img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=900&amp;q=80" alt="Clothes hanging on a rail"></div>
+        <div>
+          <h3><span>03 — Consignment</span>Consignment available</h3>
+          <p>Have vintage or designer pieces of your own? We take consignments. Send us photos and details, and we’ll take it from there.</p>
+          <a class="enquire" href="mailto:soukandsilkshop@gmail.com?subject=Consignment%20enquiry">Start a consignment →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="consign">
+  <div class="wrap consign-grid">
+    <div>
+      <h2>Sell with us.</h2>
+      <p>Consignment is open. If your wardrobe holds vintage or designer pieces you no longer wear, we can find them their next home — and you earn from pieces that would otherwise sit unworn.</p>
+      <p>Send photos and a short description by email or Instagram DM, and we’ll reply with the next steps.</p>
+      <div class="cta-row">
+        <a class="btn btn-line" style="border-color:#FAF6EF;color:#FAF6EF" href="mailto:soukandsilkshop@gmail.com?subject=Consignment%20enquiry">Email us</a>
+        <a class="btn btn-line" style="border-color:#FAF6EF;color:#FAF6EF" href="https://www.instagram.com/soukandsilkshop" target="_blank" rel="noopener">DM on Instagram</a>
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=900&amp;q=80" alt="Clothing store rail">
+  </div>
+</section>
+
+<section class="ig">
+  <div class="wrap ig-grid">
+    <div>
+      <h2>Follow the finds.</h2>
+      <p>New pieces land on Instagram first. Follow <b>@soukandsilkshop</b> for fresh drops, try-ons and behind-the-scenes — and DM us to claim a piece before it’s gone.</p>
+      <div class="cta-row">
+        <a class="btn btn-dark" href="https://www.instagram.com/soukandsilkshop" target="_blank" rel="noopener">Follow @soukandsilkshop</a>
+      </div>
+    </div>
+    <div class="ig-photos">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&amp;q=80" alt="Shopping with vintage finds">
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&amp;q=80" alt="Vintage rail in store">
+    </div>
+  </div>
+</section>
+
+<section class="visit">
+  <div class="wrap visit-grid">
+    <div>
+      <h2>Visit &amp; enquire</h2>
+      <p>Souk &amp; Silk Vintage is a Toronto boutique. Questions about a piece, a fitting, or a consignment? Reach out — we reply by email or Instagram DM.</p>
+      <ul>
+        <li><b>Location:</b> Toronto, ON, Canada</li>
+        <li><b>Email:</b> <a href="mailto:soukandsilkshop@gmail.com">soukandsilkshop@gmail.com</a></li>
+        <li><b>Instagram:</b> <a href="https://www.instagram.com/soukandsilkshop" target="_blank" rel="noopener">@soukandsilkshop</a></li>
+      </ul>
+    </div>
+    <form action="mailto:soukandsilkshop@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Your name</label>
+      <input id="name" name="Name" type="text" required>
+      <label for="interest">I’m enquiring about</label>
+      <select id="interest" name="Enquiring about">
+        <option>A piece from the collection</option>
+        <option>Consignment</option>
+        <option>Something else</option>
+      </select>
+      <label for="msg">Your message</label>
+      <textarea id="msg" name="Message" rows="4" required></textarea>
+      <button type="submit">Send enquiry</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Souk &amp; Silk Vintage — Vintage &amp; Designer Clothing, Toronto, ON</span>
+    <span><a href="mailto:soukandsilkshop@gmail.com">soukandsilkshop@gmail.com</a> · <a href="https://www.instagram.com/soukandsilkshop" target="_blank" rel="noopener">@soukandsilkshop</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
