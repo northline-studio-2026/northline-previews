@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DKUK — Curly &amp; Textured Hair Salon, Peckham, London</title>
+<meta name="description" content="DKUK is a Peckham hair salon specialising in curly and textured hair. Haircuts from £71. Call 020 3609 0920 to book.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;color:#221c17;background:#f7f1e8;line-height:1.55}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  /* top bar */
+  .topbar{background:#221c17;color:#f7f1e8;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.08em}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:10px;padding-bottom:10px;gap:12px;flex-wrap:wrap}
+  .topbar a{text-decoration:none;border-bottom:1px solid #c98a4b}
+  .topbar .phone{font-weight:700;color:#fff}
+  /* hero — asymmetric */
+  header{padding:44px 0 8px}
+  .hero{display:grid;grid-template-columns:1fr;gap:28px;align-items:end}
+  .kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#9a5a24;font-weight:700}
+  h1{font-size:clamp(44px,9vw,84px);line-height:.98;font-weight:400;margin:14px 0 18px;letter-spacing:-.01em}
+  h1 em{font-style:italic;color:#9a5a24}
+  .hero p.lede{font-size:19px;max-width:34ch;color:#4a3f35}
+  .hero .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+  .btn{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;text-decoration:none;padding:14px 22px;border-radius:3px}
+  .btn-dark{background:#221c17;color:#f7f1e8}
+  .btn-line{border:2px solid #221c17;color:#221c17}
+  .hero-img{border-radius:4px;overflow:hidden}
+  .hero-img img{width:100%;height:420px;object-fit:cover;object-position:center 20%}
+  .hero-note{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#6d5c4c;margin-top:10px}
+  /* rating strip */
+  .rating{background:#c98a4b;color:#221c17;margin-top:36px}
+  .rating .wrap{display:flex;align-items:baseline;gap:14px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+  .rating .stars{font-size:26px;letter-spacing:.1em}
+  .rating .big{font-size:30px;font-weight:700}
+  .rating .txt{font-family:Arial,Helvetica,sans-serif;font-size:14px}
+  /* sections */
+  section{padding:56px 0}
+  h2{font-size:clamp(30px,5vw,44px);font-weight:400;line-height:1.05;margin-bottom:8px}
+  h2 em{font-style:italic;color:#9a5a24}
+  .sec-intro{font-size:18px;color:#4a3f35;max-width:52ch;margin-bottom:28px}
+  /* services — staggered editorial list, not uniform cards */
+  .services{display:grid;grid-template-columns:1fr;gap:0;border-top:2px solid #221c17}
+  .service{display:grid;grid-template-columns:1fr;gap:14px;padding:26px 0;border-bottom:1px solid #d8c9b8}
+  .service:nth-child(2){padding-left:0}
+  .service h3{font-size:24px;font-weight:400}
+  .service h3 span{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#9a5a24;display:block;margin-bottom:6px}
+  .service p{color:#4a3f35;max-width:56ch}
+  .service img{border-radius:4px;height:200px;width:100%;object-fit:cover}
+  /* price list */
+  .prices{background:#221c17;color:#f7f1e8}
+  .prices h2{color:#f7f1e8}
+  .prices .sec-intro{color:#d8c9b8}
+  .price-list{max-width:640px}
+  .price-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid #4a3f35;font-size:18px}
+  .price-row .amt{font-family:Arial,Helvetica,sans-serif;font-weight:700;white-space:nowrap;color:#e8b07e}
+  .price-row .note{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#b7a893;display:block;margin-top:2px}
+  .price-foot{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#b7a893;margin-top:20px;max-width:56ch}
+  /* reviews */
+  .reviews blockquote{font-size:clamp(22px,4vw,30px);line-height:1.35;font-style:italic;max-width:26ch}
+  .reviews .who{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#6d5c4c;margin-top:14px}
+  .reviews .big-num{font-size:clamp(34px,6vw,52px);line-height:1.05;margin-top:10px}
+  .review-grid{display:grid;grid-template-columns:1fr;gap:32px;margin-top:8px}
+  .review-grid .stars{color:#9a5a24;font-size:20px;letter-spacing:.12em}
+  /* visit / book */
+  .visit{display:grid;grid-template-columns:1fr;gap:32px}
+  .visit .big-call{font-size:clamp(28px,5vw,40px);line-height:1.1}
+  .visit .big-call a{text-decoration:none;border-bottom:3px solid #c98a4b}
+  form{background:#fff;border:1px solid #d8c9b8;border-radius:4px;padding:24px}
+  form h3{font-size:22px;font-weight:400;margin-bottom:4px}
+  form p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#6d5c4c;margin-bottom:18px}
+  label{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;display:block;margin:14px 0 6px}
+  input,select,textarea{width:100%;font-family:Arial,Helvetica,sans-serif;font-size:15px;padding:11px 12px;border:1px solid #cbbba6;border-radius:3px;background:#fbf8f2;color:#221c17}
+  textarea{min-height:90px;resize:vertical}
+  form button{margin-top:20px;width:100%;border:0;cursor:pointer;background:#221c17;color:#f7f1e8;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;padding:15px;border-radius:3px}
+  .form-note{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#6d5c4c;margin-top:12px;text-align:center}
+  /* gallery strip */
+  .strip{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 0 56px}
+  .strip img{height:220px;width:100%;object-fit:cover;border-radius:4px}
+  footer{background:#221c17;color:#d8c9b8;font-family:Arial,Helvetica,sans-serif;font-size:14px}
+  footer .wrap{padding-top:28px;padding-bottom:28px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:#f7f1e8}
+  @media(min-width:760px){
+    .hero{grid-template-columns:1.05fr .95fr}
+    .hero-img img{height:520px}
+    .services .service{grid-template-columns:1fr 1fr;align-items:center}
+    .service:nth-child(2) img{order:-1}
+    .review-grid{grid-template-columns:1fr 1fr}
+    .visit{grid-template-columns:1fr 1fr;align-items:start}
+    .strip{grid-template-columns:repeat(4,1fr)}
+    .strip img{height:180px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Peckham, London &nbsp;·&nbsp; Curly &amp; textured hair specialists</span>
+    <span><a class="phone" href="tel:+442036090920">020 3609 0920</a> &nbsp;·&nbsp; <a href="mailto:hair@dkuk.biz">hair@dkuk.biz</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap hero">
+    <div>
+      <p class="kicker">DKUK · Peckham, London</p>
+      <h1>Hair that<br>understands <em>your curls.</em></h1>
+      <p class="lede">A Peckham salon built around curly and textured hair — cuts, colour and treatments by stylists who actually know how your hair behaves.</p>
+      <div class="cta-row">
+        <a class="btn btn-dark" href="tel:+442036090920">Call 020 3609 0920</a>
+        <a class="btn btn-line" href="#book">Book an appointment</a>
+      </div>
+      <p class="hero-note">Haircuts from £71 · Walk-ins welcome when the diary allows</p>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Stylist at work in a modern hair salon" loading="lazy">
+    </div>
+  </div>
+</header>
+
+<div class="rating">
+  <div class="wrap">
+    <span class="stars" aria-label="4.9 out of 5 stars">★★★★★</span>
+    <span class="big">4.9</span>
+    <span class="txt">from 500+ Google reviews — one of Peckham's most-loved salons for curly and textured hair.</span>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>What we do <em>best</em></h2>
+    <p class="sec-intro">No guesswork, no straightening your curls into submission. Every service starts with a proper consultation about your curl pattern, your routine and what you actually want.</p>
+    <div class="services">
+      <div class="service">
+        <div>
+          <h3><span>01 · Cuts</span>Curly cuts, shaped dry</h3>
+          <p>Precision cuts for curls, coils and waves — shaped to fall naturally, so it still looks right when you wash it at home. Haircuts from £71.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Woman with natural curly hair" loading="lazy">
+      </div>
+      <div class="service">
+        <div>
+          <h3><span>02 · Colour</span>Colour that keeps curls healthy</h3>
+          <p>Balayage, highlights and full colour, planned around your curl pattern and hair health — never colour for colour's sake. Price on consultation.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Colour being applied to hair in a salon" loading="lazy">
+      </div>
+      <div class="service">
+        <div>
+          <h3><span>03 · Treatments</span>Care, moisture &amp; repair</h3>
+          <p>Deep conditioning, bond care and scalp treatments that bring dry, tired curls back to life. Price on consultation.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Curly hair after a salon treatment" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="prices">
+  <div class="wrap">
+    <h2>Clear prices, <em>no surprises</em></h2>
+    <p class="sec-intro">One thing clients always ask for is a price list you can actually see. Here it is.</p>
+    <div class="price-list">
+      <div class="price-row">
+        <div>Haircuts<span class="note">Cut &amp; finish for curly and textured hair</span></div>
+        <span class="amt">from £71</span>
+      </div>
+      <div class="price-row">
+        <div>Colour<span class="note">Balayage, highlights &amp; full colour</span></div>
+        <span class="amt">price on consultation</span>
+      </div>
+      <div class="price-row">
+        <div>Treatments<span class="note">Deep conditioning, bond care &amp; scalp care</span></div>
+        <span class="amt">price on consultation</span>
+      </div>
+      <div class="price-row">
+        <div>Styling<span class="note">Blow-dry &amp; occasion styling for curly hair</span></div>
+        <span class="amt">price on consultation</span>
+      </div>
+    </div>
+    <p class="price-foot">Colour and treatment prices depend on your hair length, density and what your curls need — your stylist confirms the exact price at consultation, before anything starts.</p>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <h2>Loved in <em>Peckham</em></h2>
+    <p class="sec-intro">4.9 stars from 500+ Google reviews. Here's what that looks like in practice.</p>
+    <div class="review-grid">
+      <div>
+        <p class="stars">★★★★★</p>
+        <p class="big-num">4.9 / 5</p>
+        <p class="who">Average rating across 500+ Google reviews</p>
+      </div>
+      <div>
+        <p class="stars">★★★★★</p>
+        <p class="big-num">500+ reviews</p>
+        <p class="who">Google reviews from real clients in Peckham and across London — read them on Google before you book.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap visit">
+    <div>
+      <h2>Come and <em>see us</em></h2>
+      <p class="sec-intro">Peckham, London. Call, email or send the form and we'll confirm your slot.</p>
+      <p class="big-call"><a href="tel:+442036090920">020 3609 0920</a></p>
+      <p class="sec-intro" style="margin-top:16px"><a href="mailto:hair@dkuk.biz">hair@dkuk.biz</a></p>
+      <p class="sec-intro">Open for cuts, colour and treatments — book ahead for weekends, they go fast.</p>
+    </div>
+    <form action="mailto:hair@dkuk.biz" method="post" enctype="text/plain">
+      <h3>Book an appointment</h3>
+      <p>Tell us what you need and when — we'll confirm by phone or email.</p>
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" required>
+      <label for="phone">Phone number</label>
+      <input id="phone" name="phone" type="tel" required>
+      <label for="service">Service</label>
+      <select id="service" name="service">
+        <option>Curly cut</option>
+        <option>Colour</option>
+        <option>Treatment</option>
+        <option>Styling</option>
+        <option>Not sure yet — need advice</option>
+      </select>
+      <label for="notes">Anything we should know? (curl type, hair history, preferred day)</label>
+      <textarea id="notes" name="notes"></textarea>
+      <button type="submit">Request my appointment</button>
+      <p class="form-note">Or call <a href="tel:+442036090920">020 3609 0920</a> — usually quicker.</p>
+    </form>
+  </div>
+</section>
+
+<div class="wrap strip">
+  <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Salon interior" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Hair wash at the salon basin" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Styling tools in the salon" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Natural curly hair portrait" loading="lazy">
+</div>
+
+<footer>
+  <div class="wrap">
+    <span><strong>DKUK</strong> — Curly &amp; textured hair salon, Peckham, London</span>
+    <span><a href="tel:+442036090920">020 3609 0920</a> &nbsp;·&nbsp; <a href="mailto:hair@dkuk.biz">hair@dkuk.biz</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
