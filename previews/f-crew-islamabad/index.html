@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>f Crew Brand Clothing — Luxury Mens Tailoring, Islamabad</title>
+<meta name="description" content="f Crew Brand Clothing — luxury mens boutique tailoring in Islamabad. Bespoke suits, shirts and eastern wear. Order and book a measurement on WhatsApp.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#F5EFE6;color:#1C1A17;line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  /* top bar */
+  header{border-bottom:2px solid #1C1A17;padding:16px 0 12px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+  .logo{font-size:26px;letter-spacing:.14em;font-weight:700}
+  .logo span{color:#B07A3F}
+  .city{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#5A5348}
+  .cta-top{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;background:#1C1A17;color:#F5EFE6;padding:10px 16px;text-decoration:none}
+  /* hero — asymmetric */
+  .hero{display:grid;grid-template-columns:1fr;gap:0;padding:34px 0 10px}
+  .hero-copy{padding:6px 0 26px}
+  .kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#B07A3F;font-weight:700}
+  h1{font-size:clamp(38px,9vw,64px);line-height:1.04;margin:14px 0 16px;font-weight:700}
+  h1 em{font-style:italic;color:#B07A3F}
+  .hero-copy p{font-size:17px;max-width:46ch;color:#3A352D}
+  .rating{display:inline-flex;align-items:center;gap:8px;margin:18px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;background:#1C1A17;color:#F5EFE6;padding:8px 14px}
+  .rating b{font-size:18px}
+  .hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+  .btn{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;padding:13px 20px;text-decoration:none;display:inline-block}
+  .btn-dark{background:#1C1A17;color:#F5EFE6}
+  .btn-line{border:2px solid #1C1A17;color:#1C1A17}
+  .hero-img{position:relative}
+  .hero-img img{width:100%;height:340px;object-fit:cover;display:block}
+  .hero-tag{position:absolute;left:-6px;bottom:14px;background:#B07A3F;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:8px 12px}
+  @media(min-width:760px){
+    .hero{grid-template-columns:1.05fr .95fr;gap:36px;align-items:start}
+    .hero-copy{padding-top:26px}
+    .hero-img img{height:460px}
+    .hero-img{margin-top:20px}
+  }
+  /* fix strip */
+  .fix{background:#1C1A17;color:#F5EFE6;padding:38px 0;margin-top:34px}
+  .fix h2{font-size:30px;margin-bottom:6px}
+  .fix .sub{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#CFC4B0;max-width:58ch}
+  .fix-row{display:grid;grid-template-columns:52px 1fr;gap:14px;padding:22px 0;border-top:1px solid #3A352D}
+  .fix-row:last-child{border-bottom:1px solid #3A352D}
+  .num{font-size:30px;color:#B07A3F;font-weight:700}
+  .fix-row h3{font-size:19px;margin-bottom:4px}
+  .fix-row p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#D8CFBE}
+  /* catalogue */
+  .cat{padding:40px 0 10px}
+  .cat h2{font-size:30px;margin-bottom:4px}
+  .cat .sub{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#5A5348;margin-bottom:18px;max-width:58ch}
+  .cat-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:16px 4px;border-top:1px solid #D8CFBE;font-family:Arial,Helvetica,sans-serif}
+  .cat-row:last-of-type{border-bottom:1px solid #D8CFBE}
+  .cat-row .n{color:#B07A3F;font-weight:700;margin-right:10px}
+  .cat-row .name{font-weight:700;font-size:16px}
+  .cat-row .price{font-size:13px;color:#5A5348;white-space:nowrap}
+  .cat-note{font-size:13px;color:#5A5348;font-family:Arial,Helvetica,sans-serif;margin:12px 0 4px}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:26px 0 6px}
+  .gallery img{width:100%;height:180px;object-fit:cover;display:block}
+  .gallery img.tall{grid-row:span 2;height:370px}
+  @media(min-width:760px){.gallery{grid-template-columns:1fr 1fr 1fr}.gallery img.tall{height:370px}}
+  /* booking */
+  .book{background:#B07A3F;color:#fff;padding:40px 0;margin-top:34px}
+  .book h2{font-size:30px;margin-bottom:6px}
+  .book .sub{font-family:Arial,Helvetica,sans-serif;font-size:14px;max-width:56ch;opacity:.95}
+  .step{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:16px 0;border-top:1px solid rgba(255,255,255,.4)}
+  .step:last-child{border-bottom:1px solid rgba(255,255,255,.4)}
+  .step .num{color:#1C1A17;font-size:26px}
+  .step h3{font-size:18px;margin-bottom:2px}
+  .step p{font-family:Arial,Helvetica,sans-serif;font-size:14px;opacity:.95}
+  .book .btn{margin-top:22px;background:#1C1A17;color:#F5EFE6}
+  /* reviews */
+  .rev{padding:40px 0;text-align:left}
+  .score{font-size:64px;font-weight:700;line-height:1}
+  .score small{font-size:22px;color:#B07A3F}
+  .rev p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#5A5348;max-width:52ch;margin-top:8px}
+  /* footer */
+  footer{background:#1C1A17;color:#F5EFE6;padding:30px 0 36px}
+  footer .fgrid{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-start}
+  footer .logo{font-size:22px}
+  footer p{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#CFC4B0;max-width:44ch}
+  footer a{color:#F5EFE6}
+  .flinks{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:2}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">f CREW<span>.</span></div>
+    <div class="city">Luxury Mens Tailoring — Islamabad</div>
+    <a class="cta-top" href="https://wa.me/923215539199">WhatsApp Us</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="kicker">Boutique Tailoring · Islamabad, Pakistan</div>
+      <h1>Cut for you.<br><em>Nothing off the rack.</em></h1>
+      <p>f Crew is a luxury mens tailoring boutique. Every piece is made to your measure — no ready-made rails, no guessing your size.</p>
+      <div class="rating"><b>4.2 ★</b> from 106 reviews</div>
+      <div class="hero-cta">
+        <a class="btn btn-dark" href="https://wa.me/923215539199">Order on WhatsApp</a>
+        <a class="btn btn-line" href="https://www.instagram.com/fcrewbrandclothing">@fcrewbrandclothing</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&q=80" alt="Man in a tailored suit">
+      <div class="hero-tag">Made to measure</div>
+    </div>
+  </section>
+</div>
+
+<section class="fix">
+  <div class="wrap">
+    <h2>What a proper site fixes</h2>
+    <p class="sub">Right now f Crew lives only on a Google listing and social media. There is no website, no catalogue and no way to book a fitting without messaging first. This is what changes:</p>
+    <div style="margin-top:18px">
+      <div class="fix-row"><div class="num">01</div><div><h3>A catalogue you can actually browse</h3><p>Suits, shirts, waistcoats and eastern wear — with photos, fabrics and styles in one place, instead of scrolling old posts.</p></div></div>
+      <div class="fix-row"><div class="num">02</div><div><h3>Clear prices, no guessing</h3><p>Every garment shows its price up front, so customers know what a bespoke piece costs before they message.</p></div></div>
+      <div class="fix-row"><div class="num">03</div><div><h3>Book a measurement in one tap</h3><p>Pick a time, send your details on WhatsApp, and arrive for a fitting that is already booked — no back-and-forth.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cat">
+  <div class="wrap">
+    <h2>The Collection</h2>
+    <p class="sub">Bespoke menswear, made to your measurements. Every piece is priced on consultation — message us on WhatsApp for a quote.</p>
+    <div class="cat-row"><span><span class="n">01</span><span class="name">Bespoke Suits</span></span><span class="price">Price on consultation</span></div>
+    <div class="cat-row"><span><span class="n">02</span><span class="name">Shirts &amp; Blazers</span></span><span class="price">Price on consultation</span></div>
+    <div class="cat-row"><span><span class="n">03</span><span class="name">Waistcoats</span></span><span class="price">Price on consultation</span></div>
+    <div class="cat-row"><span><span class="n">04</span><span class="name">Eastern Wear</span></span><span class="price">Price on consultation</span></div>
+    <p class="cat-note">Fabrics, fits and finishes are confirmed with you on WhatsApp before your order is cut.</p>
+    <div class="gallery">
+      <img class="tall" src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1200&q=80" alt="Tailored suit">
+      <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=1200&q=80" alt="Menswear portrait">
+      <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?w=1200&q=80" alt="Man in a tailored jacket">
+      <img src="https://images.unsplash.com/photo-1520975954732-35dd22299614?w=1200&q=80" alt="Man in a tailored shirt">
+    </div>
+  </div>
+</section>
+
+<section class="book">
+  <div class="wrap">
+    <h2>Book Your Measurement</h2>
+    <p class="sub">No forms, no waiting on hold. Three steps, all on WhatsApp.</p>
+    <div style="margin-top:18px">
+      <div class="step"><div class="num">1</div><div><h3>Message us on WhatsApp</h3><p>Tell us what you want made — a suit, a shirt, eastern wear. Send a photo or a style you like.</p></div></div>
+      <div class="step"><div class="num">2</div><div><h3>Pick your fitting time</h3><p>We confirm a time that suits you and the fabric and price before you visit.</p></div></div>
+      <div class="step"><div class="num">3</div><div><h3>Come in for measurements</h3><p>Your measurements are taken once, kept on file, and your piece is cut to them.</p></div></div>
+    </div>
+    <a class="btn" href="https://wa.me/923215539199?text=Hi%20f%20Crew%2C%20I%20would%20like%20to%20book%20a%20measurement.">Book a Measurement on WhatsApp</a>
+  </div>
+</section>
+
+<section class="rev">
+  <div class="wrap">
+    <div class="score">4.2<small> / 5</small></div>
+    <p><strong>106 reviews.</strong> Customers rate f Crew 4.2 out of 5 — a boutique tailorshop with a loyal following in Islamabad.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <div class="logo">f CREW<span>.</span></div>
+      <p style="margin-top:8px">Luxury mens boutique tailoring — Islamabad, Pakistan.<br>Order and book a measurement on WhatsApp.</p>
+    </div>
+    <div class="flinks">
+      <a href="https://wa.me/923215539199">WhatsApp: +92 321 5539199</a><br>
+      <a href="tel:+923215539199">Call: +92 321 5539199</a><br>
+      <a href="https://www.instagram.com/fcrewbrandclothing">Instagram: @fcrewbrandclothing</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
