@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red's Remodeling — Kitchen &amp; Home Remodeling, Raleigh NC</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#FAF6EF;color:#1E1B16;line-height:1.6}
+  a{color:inherit}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  /* ---------- top bar ---------- */
+  header{border-bottom:2px solid #1E1B16;padding:16px 0}
+  .topbar{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .brand{font-size:26px;font-weight:700;letter-spacing:.5px}
+  .brand span{color:#B0714A}
+  .top-contact{font-family:Arial,Helvetica,sans-serif;font-size:14px;text-align:right}
+  .top-contact a{display:block;text-decoration:none;font-weight:700}
+  .top-contact a.tel{color:#B0714A;font-size:16px}
+  /* ---------- hero (asymmetric) ---------- */
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;padding:48px 0 36px;align-items:start}
+  .kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#B0714A;font-weight:700}
+  h1{font-size:clamp(38px,6vw,58px);line-height:1.05;margin:14px 0 18px;font-weight:700}
+  h1 em{font-style:italic;color:#B0714A}
+  .lede{font-size:18px;max-width:520px}
+  .rating{margin-top:22px;font-family:Arial,Helvetica,sans-serif;font-size:15px}
+  .rating b{font-size:20px}
+  .stars{color:#B0714A;letter-spacing:2px;font-size:18px}
+  .cta-row{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-weight:700;text-decoration:none;padding:13px 22px;font-size:15px}
+  .btn-solid{background:#1E1B16;color:#FAF6EF}
+  .btn-outline{border:2px solid #1E1B16;color:#1E1B16}
+  .hero-photo{position:relative;margin-top:26px}
+  .hero-photo img{width:100%;height:340px;object-fit:cover;display:block}
+  .hero-photo figcaption{position:absolute;left:-14px;bottom:16px;background:#B0714A;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;padding:8px 14px}
+  /* ---------- fix strip ---------- */
+  .fix{background:#1E1B16;color:#FAF6EF;padding:44px 0}
+  .fix h2{font-size:30px;margin-bottom:6px}
+  .fix .sub{color:#D8CFC0;margin-bottom:28px;max-width:640px}
+  .fix-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .fix-item .num{font-size:34px;color:#B0714A;font-weight:700}
+  .fix-item h3{font-size:19px;margin:6px 0}
+  .fix-item p{font-size:15px;color:#D8CFC0}
+  /* ---------- services (numbered rows) ---------- */
+  .services{padding:52px 0 20px}
+  .services h2{font-size:30px;margin-bottom:4px}
+  .services .sub{color:#5C554A;margin-bottom:28px}
+  .svc{display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:baseline;padding:22px 0;border-top:2px solid #1E1B16}
+  .svc:last-of-type{border-bottom:2px solid #1E1B16}
+  .svc .n{font-size:28px;color:#B0714A;font-weight:700}
+  .svc h3{font-size:22px}
+  .svc p{font-size:15px;color:#5C554A;max-width:560px}
+  .svc .tag{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;white-space:nowrap}
+  /* ---------- gallery ---------- */
+  .gallery{padding:44px 0}
+  .gallery h2{font-size:30px;margin-bottom:6px}
+  .gallery .sub{color:#5C554A;margin-bottom:24px}
+  .gal{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .gal figure{position:relative}
+  .gal img{width:100%;height:260px;object-fit:cover;display:block}
+  .gal figcaption{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;padding:10px 0}
+  .gal figure.wide{grid-column:1 / -1}
+  .gal figure.wide img{height:320px}
+  /* ---------- quote form ---------- */
+  .quote{background:#EFE7D8;padding:48px 0}
+  .quote-inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}
+  .quote h2{font-size:30px;line-height:1.15;margin-bottom:12px}
+  .quote p{font-size:16px}
+  .quote p.tel-big{margin-top:18px;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:20px}
+  .quote p.tel-big a{color:#B0714A;text-decoration:none}
+  form label{display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;margin-bottom:5px}
+  form input,form select,form textarea{width:100%;padding:11px 12px;border:1px solid #1E1B16;background:#FAF6EF;font-family:Arial,Helvetica,sans-serif;font-size:15px;margin-bottom:14px}
+  form button{background:#1E1B16;color:#FAF6EF;border:0;padding:14px 26px;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:16px;cursor:pointer}
+  form .note{font-size:13px;color:#5C554A;margin-top:10px}
+  /* ---------- footer ---------- */
+  footer{background:#1E1B16;color:#D8CFC0;padding:32px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px}
+  footer .f-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  footer a{color:#FAF6EF;text-decoration:none;font-weight:700}
+  footer .brand{color:#FAF6EF}
+  /* ---------- mobile ---------- */
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr;padding-top:32px}
+    .hero-photo{margin-top:6px}
+    .hero-photo img{height:250px}
+    .hero-photo figcaption{left:0}
+    .fix-grid{grid-template-columns:1fr}
+    .svc{grid-template-columns:44px 1fr}
+    .svc .tag{grid-column:2}
+    .gal{grid-template-columns:1fr}
+    .gal figure.wide img{height:250px}
+    .quote-inner{grid-template-columns:1fr}
+    .top-contact{text-align:left}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap topbar">
+    <div class="brand">Red&rsquo;s <span>Remodeling</span></div>
+    <div class="top-contact">
+      <a class="tel" href="tel:+19192089710">(919) 208-9710</a>
+      <a href="mailto:redsremodelingnc@gmail.com">redsremodelingnc@gmail.com</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="wrap hero">
+    <div>
+      <p class="kicker">Kitchen &amp; Home Remodeling &middot; Raleigh, NC</p>
+      <h1>Your kitchen, <em>rebuilt</em> around the way you live.</h1>
+      <p class="lede">Red&rsquo;s Remodeling turns tired kitchens and worn-out rooms into spaces that actually work &mdash; built properly, finished cleanly, and done by people who answer the phone.</p>
+      <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br><b>4.7 stars</b> from Google reviews</p>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="#quote">Get a Free Quote</a>
+        <a class="btn btn-outline" href="tel:+19192089710">Call (919) 208-9710</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&amp;q=80" alt="Newly remodeled bright kitchen with white cabinets">
+      <figcaption>Recent kitchen remodel</figcaption>
+    </figure>
+  </section>
+
+  <!-- THE FIX -->
+  <section class="fix">
+    <div class="wrap">
+      <h2>See the work before you call.</h2>
+      <p class="sub">A remodel is a big decision. You should be able to see finished work, read real reviews, and ask for a quote without chasing anyone down.</p>
+      <div class="fix-grid">
+        <div class="fix-item">
+          <div class="num">01</div>
+          <h3>Real photos, real rooms</h3>
+          <p>Finished kitchens and remodels, shown properly &mdash; not a wall of text.</p>
+        </div>
+        <div class="fix-item">
+          <div class="num">02</div>
+          <h3>A portfolio you can browse</h3>
+          <p>Before-and-after work across Raleigh, so you know the standard before you commit.</p>
+        </div>
+        <div class="fix-item">
+          <div class="num">03</div>
+          <h3>A quote form that works</h3>
+          <p>Tell us the room and the rough size. We reply directly &mdash; no runaround.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="wrap services">
+    <h2>What we remodel</h2>
+    <p class="sub">Straightforward work, priced per job &mdash; never a flat number on a website.</p>
+
+    <div class="svc">
+      <div class="n">01</div>
+      <div>
+        <h3>Kitchen Remodeling</h3>
+        <p>New cabinets, counters, layout changes and full refreshes &mdash; from a quick update to a complete rebuild.</p>
+      </div>
+      <span class="tag">Price on consultation</span>
+    </div>
+
+    <div class="svc">
+      <div class="n">02</div>
+      <div>
+        <h3>Bathroom Remodeling</h3>
+        <p>Showers, vanities, tile and fixtures &mdash; bathrooms rebuilt to last, not just to look new.</p>
+      </div>
+      <span class="tag">Price on consultation</span>
+    </div>
+
+    <div class="svc">
+      <div class="n">03</div>
+      <div>
+        <h3>Whole-Home Renovation</h3>
+        <p>Room-by-room or full-home updates, handled as one job with one point of contact.</p>
+      </div>
+      <span class="tag">Price on consultation</span>
+    </div>
+
+    <div class="svc">
+      <div class="n">04</div>
+      <div>
+        <h3>Additions &amp; Custom Work</h3>
+        <p>Extra space and one-off carpentry jobs, built to match the home you already have.</p>
+      </div>
+      <span class="tag">Price on consultation</span>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="wrap gallery">
+    <h2>Recent work</h2>
+    <p class="sub">A sample of the standard &mdash; your home gets the same finish.</p>
+    <div class="gal">
+      <figure class="wide">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&amp;q=80" alt="Modern remodeled home exterior">
+        <figcaption>Whole-home renovation</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&amp;q=80" alt="Bright remodeled living space">
+        <figcaption>Living space refresh</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&amp;q=80" alt="Finished interior with new flooring and lighting">
+        <figcaption>Interior remodel</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&amp;q=80" alt="Finished room with warm wood finishes">
+        <figcaption>Custom finish work</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- QUOTE FORM -->
+  <section class="quote" id="quote">
+    <div class="wrap quote-inner">
+      <div>
+        <h2>Get a free quote</h2>
+        <p>Tell us what room you want redone and roughly how big it is. We will get back to you with next steps and a time to look at the job in person.</p>
+        <p class="tel-big">Prefer to talk? <a href="tel:+19192089710">(919) 208-9710</a></p>
+        <p>Raleigh, NC</p>
+      </div>
+      <form action="mailto:redsremodelingnc@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your name</label>
+        <input id="name" name="Name" type="text" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="Phone" type="tel" required>
+
+        <label for="room">Which room?</label>
+        <select id="room" name="Room">
+          <option>Kitchen</option>
+          <option>Bathroom</option>
+          <option>Whole home</option>
+          <option>Addition / custom work</option>
+          <option>Something else</option>
+        </select>
+
+        <label for="details">Tell us about the job</label>
+        <textarea id="details" name="Job details" rows="4" placeholder="e.g. Kitchen, about 12 x 14 ft, new cabinets and counters"></textarea>
+
+        <button type="submit">Send Quote Request</button>
+        <p class="note">Your request opens in your email app and goes straight to Red&rsquo;s Remodeling.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap f-grid">
+    <div>
+      <div class="brand">Red&rsquo;s <span style="color:#B0714A">Remodeling</span></div>
+      <p style="margin-top:8px">Kitchen &amp; home remodeling &middot; Raleigh, NC</p>
+      <p><b>4.7 stars</b> from Google reviews</p>
+    </div>
+    <div>
+      <p><a href="tel:+19192089710">(919) 208-9710</a></p>
+      <p><a href="mailto:redsremodelingnc@gmail.com">redsremodelingnc@gmail.com</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
