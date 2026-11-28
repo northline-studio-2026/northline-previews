@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belcourt Aesthetics — Medical Spa, Nashville TN</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #FAF6EF; color: #1E1B18; line-height: 1.55; }
+  a { color: inherit; }
+  .topbar { display: flex; justify-content: space-between; align-items: baseline; padding: 18px 20px; border-bottom: 1px solid #1E1B18; }
+  .topbar .name { font-size: 20px; font-weight: bold; letter-spacing: .02em; }
+  .topbar .city { font-size: 13px; font-family: Arial, Helvetica, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+  .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 0; }
+  .hero-copy { padding: 34px 22px 30px; }
+  .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #B0714A; margin-bottom: 14px; }
+  h1 { font-size: 42px; line-height: 1.08; font-weight: normal; margin-bottom: 16px; }
+  h1 em { font-style: italic; color: #234B3F; }
+  .hero-copy p.lede { font-size: 17px; margin-bottom: 22px; max-width: 34ch; }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-block; background: #234B3F; color: #FAF6EF; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 15px; padding: 13px 20px; }
+  .btn.ghost { background: transparent; color: #1E1B18; border: 1px solid #1E1B18; }
+  .hero-photo { position: relative; min-height: 340px; }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; position: absolute; inset: 0; }
+  .rating-tag { position: absolute; left: 14px; bottom: 14px; background: #FAF6EF; padding: 10px 14px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; border: 1px solid #1E1B18; }
+  .rating-tag strong { font-size: 18px; }
+  .strip { background: #234B3F; color: #FAF6EF; padding: 26px 22px; }
+  .strip h2 { font-size: 24px; font-weight: normal; margin-bottom: 6px; }
+  .strip p { font-family: Arial, Helvetica, sans-serif; font-size: 15px; max-width: 60ch; }
+  .fix { padding: 30px 22px 10px; }
+  .fix h2 { font-size: 26px; font-weight: normal; margin-bottom: 4px; }
+  .fix .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #5A554E; margin-bottom: 18px; }
+  .fix-row { display: grid; grid-template-columns: 52px 1fr; gap: 14px; padding: 18px 0; border-top: 1px solid #C9C2B6; }
+  .fix-row .num { font-size: 30px; color: #B0714A; line-height: 1; }
+  .fix-row h3 { font-size: 19px; margin-bottom: 4px; }
+  .fix-row p { font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #3A352F; }
+  .services { padding: 30px 22px; }
+  .services h2 { font-size: 26px; font-weight: normal; margin-bottom: 16px; }
+  .svc { display: grid; grid-template-columns: 52px 1fr auto; gap: 14px; align-items: baseline; padding: 16px 0; border-top: 1px solid #C9C2B6; }
+  .svc .num { font-size: 30px; color: #234B3F; line-height: 1; }
+  .svc h3 { font-size: 19px; }
+  .svc p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #5A554E; }
+  .svc .price { font-family: Arial, Helvetica, sans-serif; font-size: 14px; white-space: nowrap; }
+  .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 0 22px 30px; }
+  .gallery img { width: 100%; height: 210px; object-fit: cover; display: block; }
+  .gallery img.tall { grid-row: span 2; height: 428px; }
+  .reviews { background: #1E1B18; color: #FAF6EF; padding: 30px 22px; }
+  .reviews .big { font-size: 64px; line-height: 1; }
+  .reviews .big span { font-size: 26px; }
+  .reviews p { font-family: Arial, Helvetica, sans-serif; font-size: 15px; margin-top: 8px; max-width: 52ch; }
+  .book { padding: 30px 22px; }
+  .book h2 { font-size: 26px; font-weight: normal; margin-bottom: 6px; }
+  .book p { font-family: Arial, Helvetica, sans-serif; font-size: 15px; margin-bottom: 18px; max-width: 52ch; }
+  .book label { display: block; font-family: Arial, Helvetica, sans-serif; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; margin: 12px 0 5px; }
+  .book input, .book select, .book textarea { width: 100%; padding: 12px; border: 1px solid #1E1B18; background: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size: 15px; }
+  .book button { margin-top: 16px; background: #B0714A; color: #FAF6EF; border: none; font-family: Arial, Helvetica, sans-serif; font-size: 15px; padding: 14px 22px; cursor: pointer; }
+  footer { background: #234B3F; color: #FAF6EF; padding: 26px 22px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+  footer .fname { font-family: Georgia, serif; font-size: 20px; margin-bottom: 8px; }
+  footer a { color: #FAF6EF; }
+  footer .row { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 10px; }
+  @media (max-width: 640px) {
+    .hero { grid-template-columns: 1fr; }
+    h1 { font-size: 34px; }
+    .hero-photo { min-height: 260px; }
+    .gallery { grid-template-columns: 1fr; }
+    .gallery img.tall { grid-row: auto; height: 260px; }
+    .svc { grid-template-columns: 40px 1fr; }
+    .svc .price { grid-column: 2; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="name">Belcourt Aesthetics</div>
+  <div class="city">Nashville, TN</div>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="kicker">Medical Spa — Nashville</div>
+    <h1>Skin care that reads <em>clearly</em>, books in minutes.</h1>
+    <p class="lede">A fresh, calm home for Belcourt Aesthetics — every treatment easy to find, every price in plain sight, booking built in.</p>
+    <div class="cta-row">
+      <a class="btn" href="#book">Book a consultation</a>
+      <a class="btn ghost" href="#services">See treatments</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80" alt="Facial treatment at a medical spa">
+    <div class="rating-tag"><strong>4.9 ★</strong> &nbsp;Rated 4.9 from 85+ reviews</div>
+  </div>
+</section>
+
+<section class="strip">
+  <h2>What this preview fixes</h2>
+  <p>The current homepage is a wall of text — hard to scan, with no way to book online and no prices in sight. This version puts the three things patients actually look for right up front.</p>
+</section>
+
+<section class="fix">
+  <h2>Three fixes, in order</h2>
+  <p class="sub">Built around how patients choose a med spa.</p>
+  <div class="fix-row">
+    <div class="num">01</div>
+    <div>
+      <h3>Booking built in</h3>
+      <p>Request a consultation from the page itself — no phone tag, no third-party portal, no dead ends.</p>
+    </div>
+  </div>
+  <div class="fix-row">
+    <div class="num">02</div>
+    <div>
+      <h3>Prices in plain sight</h3>
+      <p>Thread lifts start at $300 per thread, shown openly. Every other treatment lists its price or says so honestly — no guessing, no enquiry wall.</p>
+    </div>
+  </div>
+  <div class="fix-row">
+    <div class="num">03</div>
+    <div>
+      <h3>Proof up front</h3>
+      <p>Rated 4.9 from 85+ reviews — shown in the hero, not buried at the bottom of a long page.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2>Treatments</h2>
+  <div class="svc">
+    <div class="num">01</div>
+    <div><h3>Thread Lifts</h3><p>Lift and contour with dissolvable threads.</p></div>
+    <div class="price">From $300 / thread</div>
+  </div>
+  <div class="svc">
+    <div class="num">02</div>
+    <div><h3>Injectables</h3><p>Neuromodulators and dermal fillers.</p></div>
+    <div class="price">Price on consultation</div>
+  </div>
+  <div class="svc">
+    <div class="num">03</div>
+    <div><h3>Facials &amp; Skin Treatments</h3><p>Medical-grade facials and skin renewal.</p></div>
+    <div class="price">Price on consultation</div>
+  </div>
+  <div class="svc">
+    <div class="num">04</div>
+    <div><h3>Laser &amp; Skin Rejuvenation</h3><p>Laser treatments for tone, texture and clarity.</p></div>
+    <div class="price">Price on consultation</div>
+  </div>
+</section>
+
+<section class="gallery">
+  <img class="tall" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80" alt="Spa treatment room">
+  <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=1200&q=80" alt="Relaxing spa setting">
+  <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=1200&q=80" alt="Skincare treatment">
+</section>
+
+<section class="reviews">
+  <div class="big">4.9 <span>★</span></div>
+  <p>Rated 4.9 from 85+ reviews. Real patient feedback, front and centre — not hidden behind a wall of text.</p>
+</section>
+
+<section class="book" id="book">
+  <h2>Book a consultation</h2>
+  <p>Send a booking request and the clinic will confirm your time by email. No account, no app, no phone call needed.</p>
+  <form action="mailto:info@belcourtaesthetics.com" method="post" enctype="text/plain">
+    <label for="name">Your name</label>
+    <input id="name" name="Name" type="text" required>
+    <label for="email">Your email</label>
+    <input id="email" name="Email" type="email" required>
+    <label for="treatment">Treatment</label>
+    <select id="treatment" name="Treatment">
+      <option>Thread Lift</option>
+      <option>Injectables</option>
+      <option>Facial / Skin Treatment</option>
+      <option>Laser / Skin Rejuvenation</option>
+      <option>Not sure yet — advice please</option>
+    </select>
+    <label for="message">Anything we should know?</label>
+    <textarea id="message" name="Message" rows="4"></textarea>
+    <button type="submit">Send booking request</button>
+  </form>
+</section>
+
+<footer>
+  <div class="fname">Belcourt Aesthetics</div>
+  <div>Medical Spa — Nashville, Tennessee</div>
+  <div class="row">
+    <span>Email: <a href="mailto:info@belcourtaesthetics.com">info@belcourtaesthetics.com</a></span>
+    <span>Instagram: <a href="https://www.instagram.com/belcourtaesthetics">@belcourtaesthetics</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
