@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eterna Wellness MD — Wellness &amp; Aesthetics, Peoria AZ</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;color:#1d2b28;background:#f7f2e9}
+  a{color:inherit}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+  /* top bar */
+  .top{background:#0d3f3a;color:#f7f2e9;font-family:Arial,Helvetica,sans-serif}
+  .top .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:13px;padding-bottom:13px;flex-wrap:wrap}
+  .brand{font-size:15px;letter-spacing:.22em;font-weight:700}
+  .brand span{color:#d99a5b}
+  .top .links{font-size:13px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  .top .links a{text-decoration:none}
+  .btn{display:inline-block;background:#c47a3d;color:#fff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:14px;padding:11px 20px;border-radius:3px}
+  /* hero - asymmetric */
+  .hero{padding:58px 0 46px}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:start}
+  .eyebrow{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#c47a3d;font-weight:700}
+  h1{font-size:52px;line-height:1.05;font-weight:400;margin:16px 0 18px}
+  h1 em{font-style:italic;color:#0d3f3a}
+  .lede{font-size:18px;line-height:1.6;color:#3d4a46;margin-bottom:26px}
+  .cta-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-family:Arial,Helvetica,sans-serif}
+  .cta-row .phone{font-size:15px;font-weight:700;text-decoration:none;border-bottom:2px solid #c47a3d;padding-bottom:2px}
+  .hero-photo{position:relative}
+  .hero-photo img{width:100%;height:440px;object-fit:cover;display:block;border-radius:4px}
+  .hero-tag{position:absolute;left:-18px;bottom:22px;background:#0d3f3a;color:#f7f2e9;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5;padding:12px 16px;border-radius:3px;max-width:250px}
+  .hero-tag b{color:#d99a5b}
+  /* fix strip */
+  .fix{background:#0d3f3a;color:#f7f2e9;padding:38px 0}
+  .fix h2{font-size:26px;font-weight:400;margin-bottom:20px}
+  .fix h2 em{font-style:italic;color:#d99a5b}
+  .fix-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+  .fix-item{font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.65;padding:13px 0;border-top:1px solid rgba(247,242,233,.25)}
+  .fix-item b{color:#d99a5b}
+  /* services - numbered rows */
+  .services{padding:56px 0 20px}
+  .services h2{font-size:32px;font-weight:400;margin-bottom:6px}
+  .services .sub{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#5a6863;margin-bottom:28px}
+  .svc{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:baseline;padding:22px 0;border-top:1px solid #c9bfae}
+  .svc:last-of-type{border-bottom:1px solid #c9bfae}
+  .svc .num{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.15em;color:#c47a3d;font-weight:700}
+  .svc h3{font-size:23px;font-weight:400}
+  .svc p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.6;color:#5a6863;margin-top:6px;max-width:560px}
+  .svc .price{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#0d3f3a;white-space:nowrap}
+  /* photo band */
+  .band{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:44px 0 10px}
+  .band img{width:100%;height:300px;object-fit:cover;display:block;border-radius:4px}
+  .band-cap{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#5a6863;padding:10px 0 0}
+  /* booking */
+  .book{padding:52px 0 60px}
+  .book .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start}
+  .book h2{font-size:32px;font-weight:400;line-height:1.15;margin-bottom:14px}
+  .book p{font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.65;color:#3d4a46;margin-bottom:12px}
+  .book p b{color:#0d3f3a}
+  form{background:#fff;border:1px solid #ddd2bd;border-radius:4px;padding:26px}
+  label{display:block;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#5a6863;margin:0 0 6px}
+  input,select,textarea{width:100%;font-family:Arial,Helvetica,sans-serif;font-size:15px;padding:11px 12px;border:1px solid #c9bfae;border-radius:3px;background:#fbf8f1;margin-bottom:16px;color:#1d2b28}
+  textarea{min-height:90px;resize:vertical}
+  form .btn{border:none;cursor:pointer;width:100%;text-align:center}
+  .form-note{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#5a6863;text-align:center;margin-top:10px}
+  /* footer */
+  footer{background:#1d2b28;color:#e9e2d2;padding:36px 0;font-family:Arial,Helvetica,sans-serif}
+  footer .wrap{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap}
+  footer h4{font-size:14px;letter-spacing:.2em;margin-bottom:10px;color:#d99a5b}
+  footer p,footer a{font-size:14px;line-height:1.7;text-decoration:none}
+  footer .fine{font-size:12px;color:#9aa79f;margin-top:26px}
+  @media(max-width:760px){
+    h1{font-size:38px}
+    .hero .wrap,.book .wrap{grid-template-columns:1fr}
+    .hero-photo img{height:300px}
+    .hero-tag{left:10px}
+    .fix-grid{grid-template-columns:1fr}
+    .svc{grid-template-columns:44px 1fr;gap:10px}
+    .svc .price{grid-column:2}
+    .band{grid-template-columns:1fr}
+    .band img{height:230px}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">ETERNA <span>WELLNESS MD</span></div>
+    <div class="links">
+      <a href="tel:+16028888948">+1 (602) 888-8948</a>
+      <a href="mailto:contact@eternawellnessmd.com">contact@eternawellnessmd.com</a>
+      <a class="btn" href="#book">Book a Consultation</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Peoria, AZ &mdash; Phoenix Metro</p>
+      <h1>The future of wellness, <em>redefined.</em></h1>
+      <p class="lede">Non-surgical facelifts, body sculpting, hormone and peptide therapy, and medical weight loss &mdash; delivered by a medical team, in one Peoria clinic. No gimmicks. No guesswork. Just a plan built around you.</p>
+      <div class="cta-row">
+        <a class="btn" href="#book">Book Your Free Consultation</a>
+        <a class="phone" href="tel:+16028888948">Call (602) 888-8948</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80" alt="Facial treatment at Eterna Wellness MD">
+      <div class="hero-tag"><b>14 ads running right now.</b><br>Every one of them should land here &mdash; on your own site.</div>
+    </div>
+  </div>
+</section>
+
+<section class="fix">
+  <div class="wrap">
+    <h2>What this rebuild <em>fixes</em></h2>
+    <div class="fix-grid">
+      <div class="fix-item"><b>01 &mdash; Your ads land here.</b> No more sending paid clicks to a generic third-party page. Every ad points to your own site, your own offer, your own booking form.</div>
+      <div class="fix-item"><b>02 &mdash; One clear story.</b> A single hero, a single message &mdash; not the same block repeated three times down the page.</div>
+      <div class="fix-item"><b>03 &mdash; Real services, real copy.</b> Every treatment gets its own words, written for the person reading it &mdash; not the same paragraph pasted under four different headings.</div>
+      <div class="fix-item"><b>04 &mdash; Booking built in.</b> Patients request their free consultation right here, on your site &mdash; no phone tag, no dead ends.</div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="wrap">
+    <h2>Treatments</h2>
+    <p class="sub">Five services. Each one explained properly, each one bookable from this page.</p>
+
+    <div class="svc">
+      <div class="num">01</div>
+      <div>
+        <h3>Emface &mdash; Non-Surgical Facelift</h3>
+        <p>Lift and tone the face without needles, surgery, or downtime. The treatment behind the ad everyone in the Valley is clicking.</p>
+      </div>
+      <div class="price">Price on consultation</div>
+    </div>
+
+    <div class="svc">
+      <div class="num">02</div>
+      <div>
+        <h3>Emsculpt Neo</h3>
+        <p>Build muscle and reduce fat in the same session. A body-sculpting treatment for people who train &mdash; and people who want to start.</p>
+      </div>
+      <div class="price">Price on consultation</div>
+    </div>
+
+    <div class="svc">
+      <div class="num">03</div>
+      <div>
+        <h3>Exion</h3>
+        <p>Radiofrequency and ultrasound for skin tightening and texture &mdash; face and body, with no downtime.</p>
+      </div>
+      <div class="price">Price on consultation</div>
+    </div>
+
+    <div class="svc">
+      <div class="num">04</div>
+      <div>
+        <h3>Hormone &amp; Peptide Therapy</h3>
+        <p>Medically supervised hormone and peptide programs, built around labs and follow-up &mdash; not a one-size-fits-all protocol.</p>
+      </div>
+      <div class="price">Price on consultation</div>
+    </div>
+
+    <div class="svc">
+      <div class="num">05</div>
+      <div>
+        <h3>Medical Weight Loss</h3>
+        <p>A physician-guided weight-loss program with real check-ins, real accountability, and a plan that fits your life.</p>
+      </div>
+      <div class="price">Price on consultation</div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap" style="display:contents">
+    <div>
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80" alt="Relaxing treatment room">
+      <p class="band-cap">A clinic that feels like a retreat, not a waiting room.</p>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1200&q=80" alt="Wellness treatment in progress">
+      <p class="band-cap">Every treatment starts with a free consultation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Book your free consultation</h2>
+      <p>Tell us what you&rsquo;d like to work on and we&rsquo;ll call you back to confirm a time. No obligation, no pressure &mdash; just a conversation about what&rsquo;s possible.</p>
+      <p><b>Phone:</b> <a href="tel:+16028888948">+1 (602) 888-8948</a><br>
+      <b>Email:</b> <a href="mailto:contact@eternawellnessmd.com">contact@eternawellnessmd.com</a><br>
+      <b>Visit:</b> 8765 W Kelton Ln, Bldg C1, Suite 101, Peoria, AZ 85382</p>
+    </div>
+    <form action="mailto:contact@eternawellnessmd.com" method="post" enctype="text/plain">
+      <label for="name">Your name</label>
+      <input id="name" name="Name" type="text" required>
+      <label for="phone">Phone</label>
+      <input id="phone" name="Phone" type="tel" required>
+      <label for="email">Email</label>
+      <input id="email" name="Email" type="email">
+      <label for="service">Treatment you&rsquo;re interested in</label>
+      <select id="service" name="Treatment">
+        <option>Emface &mdash; Non-Surgical Facelift</option>
+        <option>Emsculpt Neo</option>
+        <option>Exion</option>
+        <option>Hormone &amp; Peptide Therapy</option>
+        <option>Medical Weight Loss</option>
+        <option>Not sure yet &mdash; free consultation</option>
+      </select>
+      <label for="msg">Anything we should know?</label>
+      <textarea id="msg" name="Message"></textarea>
+      <button class="btn" type="submit">Request My Free Consultation</button>
+      <p class="form-note">Your request goes straight to the clinic &mdash; no third-party forms.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>ETERNA WELLNESS MD</h4>
+      <p>Wellness &amp; aesthetic clinic<br>Peoria, AZ &mdash; Phoenix Metro</p>
+    </div>
+    <div>
+      <h4>VISIT</h4>
+      <p>8765 W Kelton Ln, Bldg C1, Suite 101<br>Peoria, AZ 85382</p>
+    </div>
+    <div>
+      <h4>CONTACT</h4>
+      <p><a href="tel:+16028888948">+1 (602) 888-8948</a><br>
+      <a href="mailto:contact@eternawellnessmd.com">contact@eternawellnessmd.com</a></p>
+    </div>
+  </div>
+  <div class="wrap"><p class="fine">&copy; 2026 Eterna Wellness MD, Peoria AZ. Preview built by Northline Studio.</p></div>
+</footer>
+
+</body>
+</html>
