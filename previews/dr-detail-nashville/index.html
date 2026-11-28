@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Detail — Interior &amp; Exterior Car Detailing, Nashville TN</title>
+<meta name="description" content="Dr. Detail — car detailing in Nashville, TN. Interior & exterior detailing, mobile service with house calls, free estimates. Rated 4.9 from ~150 reviews.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#F7F2E9;color:#1C1A17;line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  /* top bar */
+  .topbar{background:#1C1A17;color:#F7F2E9;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.08em}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+  .topbar a{color:#E8A33D;text-decoration:none;font-weight:bold}
+  .topbar .loc{opacity:.75}
+  /* hero — asymmetric */
+  .hero{padding:56px 0 8px}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:start}
+  .eyebrow{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#9A6B2E;font-weight:bold}
+  h1{font-size:clamp(38px,6vw,64px);line-height:1.04;font-weight:400;margin:14px 0 18px}
+  h1 em{font-style:italic;color:#9A6B2E}
+  .lede{font-size:18px;max-width:46ch;color:#3D3831}
+  .rating{margin-top:22px;font-family:Arial,Helvetica,sans-serif;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .stars{color:#C07F2A;font-size:19px;letter-spacing:.08em}
+  .rating span{font-size:14px;color:#3D3831}
+  .cta-row{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;text-decoration:none;padding:13px 24px;border-radius:3px}
+  .btn-dark{background:#1C1A17;color:#F7F2E9}
+  .btn-line{border:2px solid #1C1A17;color:#1C1A17}
+  .hero-photo{position:relative}
+  .hero-photo img{width:100%;height:420px;object-fit:cover;display:block;border-radius:3px}
+  .hero-photo .tag{position:absolute;left:-14px;bottom:18px;background:#E8A33D;color:#1C1A17;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;padding:9px 14px;border-radius:3px;max-width:250px;line-height:1.35}
+  /* fix strip */
+  .fix{background:#1C1A17;color:#F7F2E9;margin-top:52px;padding:38px 0}
+  .fix h2{font-size:26px;font-weight:400;margin-bottom:6px}
+  .fix p.sub{color:#C9BFAE;font-size:15px;margin-bottom:24px}
+  .fix-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .fix-item{border-top:2px solid #E8A33D;padding-top:14px}
+  .fix-item .num{font-family:Arial,Helvetica,sans-serif;color:#E8A33D;font-size:13px;letter-spacing:.15em;font-weight:bold}
+  .fix-item h3{font-size:18px;margin:8px 0 6px;font-weight:400}
+  .fix-item p{font-size:14px;color:#C9BFAE;line-height:1.5}
+  /* services — numbered rows */
+  .services{padding:52px 0 12px}
+  .services h2{font-size:30px;font-weight:400}
+  .services .intro{color:#3D3831;margin:8px 0 26px;max-width:60ch}
+  .svc{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:baseline;padding:22px 0;border-top:1px solid #D8CDB8}
+  .svc:last-of-type{border-bottom:1px solid #D8CDB8}
+  .svc .num{font-size:30px;color:#9A6B2E;font-style:italic}
+  .svc h3{font-size:22px;font-weight:400}
+  .svc p{font-size:15px;color:#3D3831;margin-top:4px;max-width:62ch}
+  .svc .price{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#9A6B2E;white-space:nowrap}
+  /* photo band */
+  .band{padding:40px 0 8px}
+  .band-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .band-grid img{width:100%;height:280px;object-fit:cover;display:block;border-radius:3px}
+  .band-grid img.tall{height:576px;grid-row:span 2}
+  /* credentials */
+  .cred{background:#EFE7D6;padding:44px 0;margin-top:44px}
+  .cred h2{font-size:26px;font-weight:400;margin-bottom:6px}
+  .cred p.sub{color:#3D3831;margin-bottom:22px}
+  .cred-list{list-style:none;font-family:Arial,Helvetica,sans-serif;font-size:15px}
+  .cred-list li{padding:9px 0;border-top:1px solid #D8CDB8;display:flex;gap:12px;align-items:baseline}
+  .cred-list li:last-child{border-bottom:1px solid #D8CDB8}
+  .cred-list .tick{color:#9A6B2E;font-weight:bold}
+  /* areas + hours */
+  .info{padding:44px 0}
+  .info-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:36px}
+  .info h2{font-size:24px;font-weight:400;margin-bottom:12px}
+  .areas{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:2;color:#3D3831}
+  .areas span{background:#EFE7D6;padding:4px 10px;border-radius:20px;display:inline-block;margin:0 6px 8px 0}
+  .hours{font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.9;color:#3D3831}
+  .hours b{color:#1C1A17}
+  /* booking form */
+  .book{background:#1C1A17;color:#F7F2E9;padding:48px 0}
+  .book .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+  .book h2{font-size:30px;font-weight:400;line-height:1.15}
+  .book p{color:#C9BFAE;margin-top:12px;font-size:15px;max-width:40ch}
+  .book p a{color:#E8A33D;text-decoration:none;font-weight:bold}
+  form label{display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#C9BFAE;margin:0 0 6px}
+  form input,form select,form textarea{width:100%;padding:12px 14px;margin-bottom:16px;border:1px solid #4A443C;border-radius:3px;background:#2A2723;color:#F7F2E9;font-family:Arial,Helvetica,sans-serif;font-size:15px}
+  form input::placeholder,form textarea::placeholder{color:#8A8175}
+  form button{background:#E8A33D;color:#1C1A17;border:0;padding:14px 28px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;border-radius:3px;cursor:pointer}
+  /* footer */
+  footer{padding:28px 0 34px;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#6B6257}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:#9A6B2E;text-decoration:none}
+  @media (max-width:760px){
+    .hero .wrap,.book .wrap,.info-grid{grid-template-columns:1fr}
+    .fix-grid{grid-template-columns:1fr}
+    .hero-photo img{height:300px}
+    .hero-photo .tag{left:10px}
+    .band-grid{grid-template-columns:1fr}
+    .band-grid img.tall{height:280px;grid-row:auto}
+    .svc{grid-template-columns:44px 1fr;gap:12px}
+    .svc .price{grid-column:2}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>DR. DETAIL &nbsp;·&nbsp; NASHVILLE, TN</span>
+    <span class="loc">Mon–Sat 8:30am–5pm &nbsp;·&nbsp; <a href="tel:+16155166440">(615) 516-6440</a></span>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Interior &amp; Exterior Car Detailing — Music City</p>
+      <h1>Your car, <em>showroom new</em> again.</h1>
+      <p class="lede">Hand detailing in Nashville — at our shop, or we come to you. Free estimates, and a walk-through of the whole process if you have never had a detail before.</p>
+      <div class="rating">
+        <span class="stars">★★★★★</span>
+        <span><b>4.9</b> from ~150 Google reviews</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-dark" href="#book">Book my detail</a>
+        <a class="btn btn-line" href="tel:+16155166440">Call (615) 516-6440</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200&q=80" alt="Freshly detailed car in Nashville">
+      <div class="tag">Mobile detailing — we make house calls across Nashville &amp; Davidson County.</div>
+    </div>
+  </div>
+</section>
+
+<section class="fix">
+  <div class="wrap">
+    <h2>What a proper site does for Dr. Detail</h2>
+    <p class="sub">The work is five-star. The website should sell it like it is.</p>
+    <div class="fix-grid">
+      <div class="fix-item">
+        <p class="num">01</p>
+        <h3>Book online in a minute</h3>
+        <p>No phone tag. Pick a service, pick a day, and the request lands straight in the shop inbox.</p>
+      </div>
+      <div class="fix-item">
+        <p class="num">02</p>
+        <h3>Every service, spelled out</h3>
+        <p>Interior, exterior and mobile — what is included, who it is for, and what it costs to ask.</p>
+      </div>
+      <div class="fix-item">
+        <p class="num">03</p>
+        <h3>Reviews up front</h3>
+        <p>4.9 stars from ~150 reviews, where customers see them first — not buried three clicks deep.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="intro">Top-of-the-line products and equipment, and a team trained to the industry standard. Free estimate before any work starts.</p>
+    <div class="svc">
+      <span class="num">01</span>
+      <div><h3>Interior Detailing</h3><p>Deep clean of seats, carpets, dash and trim — the full inside, done properly.</p></div>
+      <span class="price">Price on consultation</span>
+    </div>
+    <div class="svc">
+      <span class="num">02</span>
+      <div><h3>Exterior Detailing</h3><p>Wash, polish and protection that brings the paint back to the day it left the dealership.</p></div>
+      <span class="price">Price on consultation</span>
+    </div>
+    <div class="svc">
+      <span class="num">03</span>
+      <div><h3>Mobile Detailing — House Calls</h3><p>We come to your home or office anywhere in Nashville and the surrounding counties.</p></div>
+      <span class="price">Price on consultation</span>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="band-grid">
+      <img class="tall" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" alt="Detailing a car exterior">
+      <img src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=1200&q=80" alt="Interior detailing work">
+      <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=1200&q=80" alt="Polished car after a detail">
+    </div>
+  </div>
+</section>
+
+<section class="cred">
+  <div class="wrap">
+    <h2>Credentials that took years to earn</h2>
+    <p class="sub">Dr. Detail was hand-picked for the team that details Air Force One.</p>
+    <ul class="cred-list">
+      <li><span class="tick">✓</span> Certified Skills Verified Detailer — International Detailers Association (IDA)</li>
+      <li><span class="tick">✓</span> Member of the famed Detail Mafia</li>
+      <li><span class="tick">✓</span> Air Force One Detailing Team member</li>
+      <li><span class="tick">✓</span> P&amp;S Inspiration Certified Installer</li>
+      <li><span class="tick">✓</span> IGL Kenzo Installer</li>
+    </ul>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap">
+    <div class="info-grid">
+      <div>
+        <h2>Areas we cover</h2>
+        <p class="areas">
+          <span>Nashville</span><span>Franklin</span><span>Brentwood</span><span>Green Hills</span><span>Belle Meade</span><span>Bellevue</span><span>West Nashville</span><span>East Nashville</span><span>Antioch</span><span>Cool Springs</span><span>Hendersonville</span>
+        </p>
+        <p style="font-size:14px;color:#3D3831;margin-top:8px">Willing to travel outside the service area — additional trip charges apply.</p>
+      </div>
+      <div>
+        <h2>Visit the shop</h2>
+        <p class="hours">
+          <b>1314 Lewis St.</b><br>
+          Nashville, TN 37210<br>
+          <b>Mon–Sat:</b> 8:30am – 5pm<br>
+          <b>Sunday:</b> Closed<br>
+          <a href="tel:+16155166440" style="color:#9A6B2E;text-decoration:none;font-weight:bold">(615) 516-6440</a><br>
+          <a href="mailto:dcunio@docdetail.net" style="color:#9A6B2E;text-decoration:none;font-weight:bold">dcunio@docdetail.net</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Book my detail</h2>
+      <p>Send a booking request and Dr. Detail will confirm your slot and your free estimate. Prefer to talk? Call <a href="tel:+16155166440">(615) 516-6440</a> or follow along on Instagram <a href="https://www.instagram.com/detailingnashville">@detailingnashville</a>.</p>
+      <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1200&q=80" alt="Car being detailed" style="width:100%;height:220px;object-fit:cover;border-radius:3px;margin-top:24px;display:block">
+    </div>
+    <form action="mailto:dcunio@docdetail.net" method="post" enctype="text/plain">
+      <label for="name">Your name</label>
+      <input id="name" name="Name" type="text" placeholder="Full name" required>
+      <label for="phone">Phone</label>
+      <input id="phone" name="Phone" type="tel" placeholder="(615) 555-0100" required>
+      <label for="service">Service</label>
+      <select id="service" name="Service">
+        <option>Interior Detailing</option>
+        <option>Exterior Detailing</option>
+        <option>Interior + Exterior Detail</option>
+        <option>Mobile Detailing — House Call</option>
+      </select>
+      <label for="vehicle">Vehicle</label>
+      <input id="vehicle" name="Vehicle" type="text" placeholder="Year, make &amp; model">
+      <label for="notes">Anything we should know?</label>
+      <textarea id="notes" name="Notes" rows="3" placeholder="Preferred day, location, condition of the car…"></textarea>
+      <button type="submit">Send booking request</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Dr. Detail — Car Detailing Service, Nashville, TN</span>
+    <span><a href="https://www.instagram.com/detailingnashville">Instagram @detailingnashville</a> &nbsp;·&nbsp; <a href="mailto:dcunio@docdetail.net">dcunio@docdetail.net</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
