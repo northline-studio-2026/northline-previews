@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balboa Dental Care — Dentistry in San Diego, CA</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#FAF6EF;color:#1C1B1A;line-height:1.55}
+  a{color:inherit}
+  .topbar{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid #1C1B1A}
+  .topbar .name{font-weight:700;font-size:19px;letter-spacing:.02em}
+  .topbar .city{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#6B6259}
+  .callbtn{display:inline-block;background:#0D3F3A;color:#FAF6EF;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:14px;padding:11px 18px;border-radius:999px}
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:0;padding:0 22px}
+  .hero-copy{padding:52px 26px 40px 0}
+  .kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#C47A3D;font-weight:700}
+  h1{font-size:clamp(38px,7vw,58px);line-height:1.04;font-weight:700;margin:16px 0 18px}
+  h1 em{font-style:italic;color:#0D3F3A}
+  .hero-copy p{font-size:17px;color:#3D3833;max-width:46ch}
+  .hero-copy .cta-row{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .cta-row .ghost{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+  .hero-photo{position:relative;padding:52px 0 40px}
+  .hero-photo img{width:100%;height:420px;object-fit:cover;display:block;border-radius:4px}
+  .rating-badge{position:absolute;left:-14px;bottom:58px;background:#1C1B1A;color:#FAF6EF;padding:14px 18px;border-radius:4px;font-family:Arial,Helvetica,sans-serif}
+  .rating-badge .stars{font-size:20px;letter-spacing:.08em}
+  .rating-badge .txt{font-size:13px;margin-top:2px}
+  .fixband{background:#0D3F3A;color:#FAF6EF;padding:44px 22px}
+  .fixband h2{font-size:28px;margin-bottom:6px}
+  .fixband .sub{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#D8E4DF;max-width:62ch}
+  .fixrow{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin-top:26px;padding-top:20px;border-top:1px solid rgba(250,246,239,.25)}
+  .fixrow .num{font-size:26px;font-weight:700;color:#E8A56B}
+  .fixrow h3{font-size:19px}
+  .fixrow p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#D8E4DF}
+  .services{padding:48px 22px}
+  .services h2{font-size:28px;margin-bottom:4px}
+  .services .sub{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#6B6259;margin-bottom:8px}
+  .svc{display:grid;grid-template-columns:52px 1fr auto;gap:16px;align-items:baseline;padding:22px 0;border-bottom:1px solid #D8CFC2}
+  .svc .n{font-size:15px;font-weight:700;color:#C47A3D;font-family:Arial,Helvetica,sans-serif}
+  .svc h3{font-size:21px}
+  .svc p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#6B6259;margin-top:3px}
+  .svc .tag{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0D3F3A;font-weight:700;white-space:nowrap}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 22px 48px}
+  .gallery img{width:100%;height:230px;object-fit:cover;display:block;border-radius:4px}
+  .gallery .wide{grid-column:1 / -1;height:280px}
+  .reviews{background:#1C1B1A;color:#FAF6EF;padding:48px 22px;text-align:left}
+  .reviews .big{font-size:clamp(40px,8vw,64px);font-weight:700;line-height:1}
+  .reviews .big span{color:#E8A56B}
+  .reviews p{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#D8D2C9;max-width:56ch;margin-top:12px}
+  .book{padding:48px 22px}
+  .book h2{font-size:28px;margin-bottom:6px}
+  .book .sub{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#6B6259;margin-bottom:22px;max-width:56ch}
+  form{display:grid;gap:12px;max-width:520px}
+  label{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:.04em}
+  input,select{font-family:Arial,Helvetica,sans-serif;font-size:15px;padding:12px 14px;border:1px solid #1C1B1A;border-radius:4px;background:#fff;color:#1C1B1A;width:100%}
+  .book .callbtn{justify-self:start;margin-top:6px}
+  .book .note{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#6B6259;margin-top:10px}
+  footer{padding:28px 22px 36px;border-top:1px solid #1C1B1A;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#6B6259}
+  footer a{color:#1C1B1A;font-weight:700}
+  @media (max-width:720px){
+    .hero{grid-template-columns:1fr}
+    .hero-copy{padding:36px 0 8px}
+    .hero-photo{padding:8px 0 36px}
+    .hero-photo img{height:300px}
+    .rating-badge{left:8px;bottom:52px}
+    .gallery{grid-template-columns:1fr}
+    .gallery .wide{height:230px}
+    .svc{grid-template-columns:40px 1fr}
+    .svc .tag{grid-column:2}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div>
+    <div class="name">Balboa Dental Care</div>
+    <div class="city">San Diego, CA</div>
+  </div>
+  <a class="callbtn" href="tel:+18585411844">Call (858) 541-1844</a>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="kicker">Dentistry in San Diego</div>
+    <h1>Great dentistry,<br><em>without the runaround.</em></h1>
+    <p>Rated 5.0 from 180+ reviews. Straightforward care, honest answers, and a booking process that takes minutes — not a maze of dead links and forms that go nowhere.</p>
+    <div class="cta-row">
+      <a class="callbtn" href="tel:+18585411844">Book by phone</a>
+      <a class="ghost" href="#book">Request an appointment ↓</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200&q=80" alt="Dentist treating a patient in a modern San Diego dental office">
+    <div class="rating-badge">
+      <div class="stars">★★★★★ 5.0</div>
+      <div class="txt">from 180+ patient reviews</div>
+    </div>
+  </div>
+</section>
+
+<section class="fixband">
+  <h2>What a proper site fixes</h2>
+  <p class="sub">The current site sits on an old template subdomain, uses stock images, and sends patients to dead review links. Here is what changes.</p>
+  <div class="fixrow">
+    <div class="num">01</div>
+    <div><h3>Real work, shown properly</h3><p>A before-and-after gallery, so new patients can see actual results instead of stock photos.</p></div>
+  </div>
+  <div class="fixrow">
+    <div class="num">02</div>
+    <div><h3>Reviews that actually open</h3><p>Working review links — no more dead short links that lead nowhere.</p></div>
+  </div>
+  <div class="fixrow">
+    <div class="num">03</div>
+    <div><h3>Booking in minutes</h3><p>Request an appointment right on the page, or call the practice direct — no third-party detour.</p></div>
+  </div>
+</section>
+
+<section class="services">
+  <h2>Care on offer</h2>
+  <p class="sub">Everything a family practice patient needs, in one place.</p>
+  <div class="svc">
+    <div class="n">01</div>
+    <div><h3>Check-ups &amp; Cleanings</h3><p>Routine exams, hygiene visits and preventive care.</p></div>
+    <div class="tag">Price on consultation</div>
+  </div>
+  <div class="svc">
+    <div class="n">02</div>
+    <div><h3>Cosmetic Dentistry</h3><p>Whitening, veneers and smile work — with real results to show for it.</p></div>
+    <div class="tag">Price on consultation</div>
+  </div>
+  <div class="svc">
+    <div class="n">03</div>
+    <div><h3>Restorative Dentistry</h3><p>Fillings, crowns and repairs that get teeth back to full strength.</p></div>
+    <div class="tag">Price on consultation</div>
+  </div>
+</section>
+
+<section class="gallery">
+  <img class="wide" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80" alt="Modern dental treatment room">
+  <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=80" alt="Dentist consulting with a patient">
+  <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=1200&q=80" alt="Dental care in progress">
+</section>
+
+<section class="reviews">
+  <div class="big">5.0 <span>★★★★★</span></div>
+  <p>From 180+ patient reviews. That is the reputation the site should be showing off — front and centre, with working links to the reviews themselves.</p>
+</section>
+
+<section class="book" id="book">
+  <h2>Request an appointment</h2>
+  <p class="sub">Fill this in, then tap the button to call the practice and confirm your slot. No online form that disappears into a void.</p>
+  <form action="tel:+18585411844" method="get">
+    <div>
+      <label for="bname">Your name</label>
+      <input id="bname" name="name" type="text" placeholder="Full name" required>
+    </div>
+    <div>
+      <label for="bphone">Your phone</label>
+      <input id="bphone" name="phone" type="tel" placeholder="(555) 000-0000" required>
+    </div>
+    <div>
+      <label for="bservice">What do you need?</label>
+      <select id="bservice" name="service">
+        <option>Check-up &amp; cleaning</option>
+        <option>Cosmetic dentistry</option>
+        <option>Restorative dentistry</option>
+        <option>Something else</option>
+      </select>
+    </div>
+    <a class="callbtn" href="tel:+18585411844">Call (858) 541-1844 to book</a>
+    <p class="note">Calling is the fastest way to confirm a time — the practice answers at (858) 541-1844.</p>
+  </form>
+</section>
+
+<footer>
+  <div>Balboa Dental Care — San Diego, CA</div>
+  <div>Call the practice: <a href="tel:+18585411844">(858) 541-1844</a></div>
+</footer>
+
+</body>
+</html>
