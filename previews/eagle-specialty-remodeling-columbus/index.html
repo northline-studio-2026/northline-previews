@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eagle Specialty Remodeling Inc. — Kitchen &amp; Home Remodeling, Columbus OH</title>
+<meta name="description" content="Eagle Specialty Remodeling Inc., Columbus OH. Rated 4.9 from 26 Houzz reviews. Kitchen and home remodeling. Call (614) 326-0011.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #FAF6EF; color: #1F1B16; line-height: 1.55; }
+  a { color: inherit; }
+  .topbar { background: #1F1B16; color: #FAF6EF; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .topbar .brand { font-size: 15px; letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
+  .topbar .phone { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; color: #E8A15C; text-decoration: none; }
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 0; align-items: stretch; }
+  .hero-copy { padding: 56px 28px 48px 24px; }
+  .hero-copy .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #B4551F; margin-bottom: 16px; }
+  .hero-copy h1 { font-size: clamp(34px, 7vw, 56px); line-height: 1.05; font-weight: normal; margin-bottom: 18px; }
+  .hero-copy h1 em { font-style: italic; color: #B4551F; }
+  .hero-copy p.lede { font-size: 17px; max-width: 480px; margin-bottom: 22px; }
+  .rating { font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin-bottom: 26px; }
+  .rating strong { font-size: 20px; }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-block; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; text-decoration: none; padding: 14px 24px; }
+  .btn-dark { background: #1F1B16; color: #FAF6EF; }
+  .btn-copper { background: #B4551F; color: #fff; }
+  .hero-photo { position: relative; min-height: 340px; }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; position: absolute; inset: 0; }
+  .hero-caption { position: absolute; left: 16px; bottom: 16px; background: #FAF6EF; padding: 10px 14px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; max-width: 260px; }
+  .fix { background: #1F1B16; color: #FAF6EF; padding: 48px 24px; }
+  .fix h2 { font-size: 28px; font-weight: normal; margin-bottom: 8px; }
+  .fix .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #C9BFAF; margin-bottom: 28px; max-width: 560px; }
+  .fix-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .fix-item { border-top: 2px solid #B4551F; padding-top: 14px; }
+  .fix-item .num { font-family: Arial, Helvetica, sans-serif; font-size: 13px; letter-spacing: 2px; color: #E8A15C; }
+  .fix-item h3 { font-size: 19px; font-weight: normal; margin: 8px 0 6px; }
+  .fix-item p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #D8D0C4; }
+  .services { padding: 52px 24px; }
+  .services h2 { font-size: 28px; font-weight: normal; margin-bottom: 6px; }
+  .services .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #6B6156; margin-bottom: 28px; }
+  .svc { display: grid; grid-template-columns: 64px 1fr auto; gap: 16px; align-items: baseline; padding: 20px 0; border-top: 1px solid #D8CFC2; }
+  .svc:last-of-type { border-bottom: 1px solid #D8CFC2; }
+  .svc .num { font-family: Arial, Helvetica, sans-serif; font-size: 13px; letter-spacing: 2px; color: #B4551F; }
+  .svc h3 { font-size: 22px; font-weight: normal; }
+  .svc p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #6B6156; margin-top: 4px; max-width: 520px; }
+  .svc .price { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #6B6156; white-space: nowrap; }
+  .gallery { padding: 0 24px 52px; }
+  .gallery h2 { font-size: 28px; font-weight: normal; margin-bottom: 6px; }
+  .gallery .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #6B6156; margin-bottom: 24px; max-width: 560px; }
+  .gal-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 14px; }
+  .gal-grid img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .gal-grid .tall { grid-row: span 2; min-height: 420px; }
+  .gal-stack { display: grid; gap: 14px; }
+  .gal-stack img { height: 203px; }
+  .reviews { background: #EFE7D8; padding: 48px 24px; }
+  .reviews h2 { font-size: 28px; font-weight: normal; margin-bottom: 10px; }
+  .reviews .big { font-size: clamp(40px, 9vw, 64px); line-height: 1; }
+  .reviews .big span { color: #B4551F; }
+  .reviews p { font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #4A4238; max-width: 520px; margin-top: 12px; }
+  .quote { padding: 52px 24px; }
+  .quote h2 { font-size: 28px; font-weight: normal; margin-bottom: 6px; }
+  .quote .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #6B6156; margin-bottom: 26px; max-width: 520px; }
+  form { max-width: 560px; }
+  label { display: block; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; margin: 16px 0 6px; }
+  input, select, textarea { width: 100%; font-family: Arial, Helvetica, sans-serif; font-size: 15px; padding: 12px; border: 1px solid #C9BFAF; background: #fff; color: #1F1B16; }
+  textarea { min-height: 96px; resize: vertical; }
+  .quote .btn { margin-top: 22px; }
+  .quote .or-call { font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin-top: 14px; }
+  .quote .or-call a { font-weight: bold; color: #B4551F; }
+  footer { background: #1F1B16; color: #FAF6EF; padding: 36px 24px; }
+  footer .fbrand { font-size: 15px; letter-spacing: 2px; text-transform: uppercase; font-weight: bold; margin-bottom: 10px; }
+  footer p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #C9BFAF; max-width: 520px; }
+  footer a { color: #E8A15C; font-weight: bold; text-decoration: none; font-family: Arial, Helvetica, sans-serif; }
+  footer .fphone { display: inline-block; margin-top: 14px; font-size: 18px; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-copy { padding: 40px 20px 36px; }
+    .hero-photo { min-height: 260px; }
+    .fix-grid { grid-template-columns: 1fr; }
+    .svc { grid-template-columns: 44px 1fr; }
+    .svc .price { grid-column: 2; }
+    .gal-grid { grid-template-columns: 1fr; }
+    .gal-grid .tall { min-height: 280px; }
+    .gal-stack img { height: 200px; }
+    .fix, .services, .gallery, .reviews, .quote { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">Eagle Specialty Remodeling Inc.</div>
+  <a class="phone" href="tel:+16143260011">(614) 326-0011</a>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="kicker">Columbus, Ohio &middot; Remodeling</div>
+    <h1>Kitchens worth<br>coming <em>home</em> to.</h1>
+    <p class="lede">Eagle Specialty Remodeling rebuilds the rooms you live in most — planned properly, built properly, and finished to a standard you can see every day.</p>
+    <div class="rating"><strong>4.9 &#9733;</strong> from 26 Houzz reviews</div>
+    <div class="cta-row">
+      <a class="btn btn-dark" href="tel:+16143260011">Call (614) 326-0011</a>
+      <a class="btn btn-copper" href="#quote">Request a quote</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80" alt="Newly remodeled kitchen with white cabinets and island">
+    <div class="hero-caption">A kitchen rebuilt around how you actually cook, gather, and live.</div>
+  </div>
+</section>
+
+<section class="fix">
+  <h2>What a proper site does for this work</h2>
+  <p class="sub">Good remodeling sells on proof. Right now the work is hard to find — here is what changes when the site does its job.</p>
+  <div class="fix-grid">
+    <div class="fix-item">
+      <div class="num">01</div>
+      <h3>A real project gallery</h3>
+      <p>Finished kitchens and remodels shown with dates, so the next customer can see recent work — not guess at it.</p>
+    </div>
+    <div class="fix-item">
+      <div class="num">02</div>
+      <h3>A quote form that works</h3>
+      <p>Enquiries arrive with the project details attached, instead of every lead having to start from a cold phone call.</p>
+    </div>
+    <div class="fix-item">
+      <div class="num">03</div>
+      <h3>One clear way to reach you</h3>
+      <p>One domain, one number, one form — no confusion about where to go or how to get in touch.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <h2>What we remodel</h2>
+  <p class="sub">Every project starts with a conversation. Call to talk through yours.</p>
+  <div class="svc">
+    <div class="num">01</div>
+    <div>
+      <h3>Kitchen Remodeling</h3>
+      <p>Cabinets, counters, layout, and light — the room your whole house revolves around, rebuilt properly.</p>
+    </div>
+    <div class="price">Price on consultation</div>
+  </div>
+  <div class="svc">
+    <div class="num">02</div>
+    <div>
+      <h3>Bathroom Remodeling</h3>
+      <p>Showers, vanities, and fixtures that hold up to daily use and still look good years later.</p>
+    </div>
+    <div class="price">Price on consultation</div>
+  </div>
+  <div class="svc">
+    <div class="num">03</div>
+    <div>
+      <h3>Whole-Home Remodeling</h3>
+      <p>Bigger jobs, done in order — one crew, one plan, one point of contact from start to finish.</p>
+    </div>
+    <div class="price">Price on consultation</div>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Recent work</h2>
+  <p class="sub">The kind of finish a proper gallery should show — kitchens rebuilt to be lived in, not just looked at.</p>
+  <div class="gal-grid">
+    <div class="tall"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80" alt="Bright remodeled kitchen with wood and white finishes"></div>
+    <div class="gal-stack">
+      <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1200&q=80" alt="Modern kitchen with island seating">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="Open-plan living space with new kitchen">
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <h2>What homeowners say</h2>
+  <div class="big"><span>4.9 &#9733;</span></div>
+  <p><strong>4.9 from 26 Houzz reviews.</strong> That is the rating customers have already given Eagle Specialty Remodeling — a proper site puts it where the next customer can see it, next to the work itself.</p>
+</section>
+
+<section class="quote" id="quote">
+  <h2>Request a quote</h2>
+  <p class="sub">Tell us about your project, then call — your details are ready to talk through when you do.</p>
+  <form onsubmit="return false;">
+    <label for="q-name">Your name</label>
+    <input id="q-name" name="name" type="text" placeholder="Jane Smith" required>
+    <label for="q-phone">Your phone</label>
+    <input id="q-phone" name="phone" type="tel" placeholder="(614) 555-0100" required>
+    <label for="q-type">Project type</label>
+    <select id="q-type" name="project">
+      <option>Kitchen remodeling</option>
+      <option>Bathroom remodeling</option>
+      <option>Whole-home remodeling</option>
+      <option>Something else</option>
+    </select>
+    <label for="q-msg">About your project</label>
+    <textarea id="q-msg" name="message" placeholder="Tell us briefly what you would like remodelled…"></textarea>
+    <a class="btn btn-copper" href="tel:+16143260011">Call (614) 326-0011 to request your quote</a>
+    <p class="or-call">Prefer to talk first? Call <a href="tel:+16143260011">(614) 326-0011</a>.</p>
+  </form>
+</section>
+
+<footer>
+  <div class="fbrand">Eagle Specialty Remodeling Inc.</div>
+  <p>Kitchen &amp; home remodeling in Columbus, Ohio. Rated 4.9 from 26 Houzz reviews.</p>
+  <a class="fphone" href="tel:+16143260011">(614) 326-0011</a>
+</footer>
+
+</body>
+</html>
