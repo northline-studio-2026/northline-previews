@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spark Pro Detailing — Car Detailing &amp; Paint Protection, I-8 Islamabad</title>
+<meta name="description" content="Spark Pro Detailing, I-8 Islamabad. Paint protection film, ceramic coating and 360° car detailing. Rated 4.8 from 87 Google reviews. Book on WhatsApp.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#F7F3EC;color:#161513;line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  header{display:flex;justify-content:space-between;align-items:baseline;padding:22px 0 8px;border-bottom:2px solid #161513}
+  header .brand{font-size:22px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+  header .brand span{color:#C47A3D}
+  header .loc{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+  /* HERO — asymmetric */
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;padding:44px 0 30px;align-items:start}
+  .hero h1{font-size:clamp(38px,6vw,62px);line-height:1.02;font-weight:700}
+  .hero h1 em{font-style:italic;color:#C47A3D}
+  .hero p.lede{font-family:Arial,Helvetica,sans-serif;font-size:17px;margin:20px 0 8px;max-width:46ch}
+  .hero .stars{font-family:Arial,Helvetica,sans-serif;font-size:15px;margin:14px 0 22px}
+  .hero .stars b{font-size:19px}
+  .btn{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:16px;text-decoration:none;background:#161513;color:#F7F3EC;padding:14px 24px;margin:4px 10px 4px 0}
+  .btn.alt{background:#C47A3D;color:#fff}
+  .hero figure{margin-top:26px;position:relative}
+  .hero figure img{width:100%;height:340px;object-fit:cover;display:block}
+  .hero figure figcaption{position:absolute;left:-14px;bottom:-14px;background:#C47A3D;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:10px 14px}
+  /* FIX STRIP */
+  .fix{background:#161513;color:#F7F3EC;padding:38px 0;margin:26px 0 0}
+  .fix h2{font-size:26px;margin-bottom:6px}
+  .fix .sub{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#D8CFC0;margin-bottom:22px}
+  .fix ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .fix li{border-top:3px solid #C47A3D;padding-top:12px}
+  .fix li .n{font-size:30px;color:#C47A3D;font-weight:700}
+  .fix li h3{font-size:19px;margin:6px 0}
+  .fix li p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#D8CFC0}
+  /* SERVICES — numbered rows */
+  .services{padding:44px 0 10px}
+  .services h2{font-size:30px;margin-bottom:4px}
+  .services .sub{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#6B6257;margin-bottom:20px}
+  .svc{display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:baseline;padding:20px 0;border-top:2px solid #161513}
+  .svc:last-of-type{border-bottom:2px solid #161513}
+  .svc .n{font-size:30px;color:#C47A3D;font-weight:700}
+  .svc h3{font-size:22px}
+  .svc p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#6B6257;margin-top:4px;max-width:56ch}
+  .svc .price{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+  /* PHOTO BAND */
+  .band{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:36px 0 8px}
+  .band img{width:100%;height:260px;object-fit:cover;display:block}
+  .band img.tall{height:300px;margin-top:-24px}
+  /* REVIEWS */
+  .reviews{background:#C47A3D;color:#fff;padding:40px 0;margin-top:36px}
+  .reviews .big{font-size:clamp(44px,7vw,72px);font-weight:700;line-height:1}
+  .reviews p{font-family:Arial,Helvetica,sans-serif;font-size:16px;margin-top:10px;max-width:52ch}
+  /* BOOKING */
+  .book{padding:44px 0 30px;display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}
+  .book h2{font-size:30px;line-height:1.1}
+  .book p{font-family:Arial,Helvetica,sans-serif;font-size:15px;margin-top:12px;color:#6B6257}
+  form label{display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:14px 0 5px}
+  form input,form select{width:100%;font-family:Arial,Helvetica,sans-serif;font-size:16px;padding:12px;border:2px solid #161513;background:#fff}
+  form button{margin-top:20px;width:100%;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;background:#161513;color:#F7F3EC;border:0;padding:15px;cursor:pointer}
+  form .note{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#6B6257;margin-top:10px}
+  /* FOOTER */
+  footer{background:#161513;color:#F7F3EC;padding:30px 0 36px}
+  footer .cols{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  footer a{color:#F7F3EC}
+  footer .fbrand{font-size:20px;font-weight:700;text-transform:uppercase}
+  footer .fbrand span{color:#C47A3D}
+  footer p,footer li{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#D8CFC0}
+  footer ul{list-style:none}
+  footer li{margin:4px 0}
+  @media(max-width:720px){
+    .hero{grid-template-columns:1fr}
+    .hero figure img{height:250px}
+    .fix ol{grid-template-columns:1fr}
+    .band{grid-template-columns:1fr}
+    .band img.tall{margin-top:0}
+    .book{grid-template-columns:1fr}
+    .svc{grid-template-columns:44px 1fr}
+    .svc .price{grid-column:2}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">Spark Pro <span>Detailing</span></div>
+    <div class="loc">I-8 · Islamabad</div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Your car deserves better than <em>a guess.</em></h1>
+      <p class="lede">Paint protection, ceramic coating and 360° detailing in I-8, Islamabad — done properly, priced clearly, booked in seconds.</p>
+      <p class="stars"><b>4.8 ★</b> from 87 Google reviews</p>
+      <a class="btn" href="https://wa.me/923115072727?text=Hi%20Spark%20Pro%20Detailing%2C%20I%20want%20to%20book%20a%20detailing%20slot.">Book on WhatsApp</a>
+      <a class="btn alt" href="https://www.instagram.com/sparkpro.details">See our work on Instagram</a>
+    </div>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Freshly detailed dark car">
+      <figcaption>Paint protection · Ceramic · Detailing</figcaption>
+    </figure>
+  </section>
+</div>
+
+<section class="fix">
+  <div class="wrap">
+    <h2>Three things fixed on this page</h2>
+    <p class="sub">What customers ask for first — answered before they have to message and wait.</p>
+    <ol>
+      <li><div class="n">01</div><h3>Prices, up front</h3><p>Every package shows its price. No more “DM for price” — customers decide before they message.</p></li>
+      <li><div class="n">02</div><h3>Booking in seconds</h3><p>Pick a service, pick a day, send it on WhatsApp. No phone tag, no missed calls.</p></li>
+      <li><div class="n">03</div><h3>Reviews where they count</h3><p>4.8 stars from 87 Google reviews, right on the page — the proof does the selling.</p></li>
+    </ol>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="services">
+    <h2>Services</h2>
+    <p class="sub">Four core services. Every package priced on enquiry — message us for an exact quote for your car.</p>
+    <div class="svc"><div class="n">01</div><div><h3>Paint Protection Film</h3><p>Clear film that shields your paint from stone chips, scratches and road rash — invisible once fitted.</p></div><div class="price">Price on enquiry</div></div>
+    <div class="svc"><div class="n">02</div><div><h3>Ceramic Coating</h3><p>Hard gloss layer that repels water and dust and keeps the car looking freshly detailed for months.</p></div><div class="price">Price on enquiry</div></div>
+    <div class="svc"><div class="n">03</div><div><h3>360° Car Detailing</h3><p>Full interior and exterior detail — paint, leather, trim and glass, brought back to showroom condition.</p></div><div class="price">Price on enquiry</div></div>
+    <div class="svc"><div class="n">04</div><div><h3>Glass Coating &amp; Dechrome</h3><p>Rain-repellent glass coating and a clean dechrome finish for trims and grilles.</p></div><div class="price">Price on enquiry</div></div>
+  </section>
+
+  <section class="band">
+    <img src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Detailing work in progress">
+    <img class="tall" src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Car wash and finish">
+  </section>
+</div>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="big">4.8 ★ / 87 reviews</div>
+    <p>Rated 4.8 stars from 87 Google reviews. Customers come back for the finish — and send their friends.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="book">
+    <div>
+      <h2>Book your slot</h2>
+      <p>Fill this in and it opens WhatsApp with your booking ready to send. We confirm your slot and your exact price before you come in.</p>
+      <p style="margin-top:18px"><strong>WhatsApp:</strong> <a href="https://wa.me/923115072727">+92 311 5072727</a><br>
+      <strong>Instagram:</strong> <a href="https://www.instagram.com/sparkpro.details">@sparkpro.details</a><br>
+      <strong>Area:</strong> I-8, Islamabad</p>
+    </div>
+    <form onsubmit="var n=document.getElementById('bk-name').value;var c=document.getElementById('bk-car').value;var s=document.getElementById('bk-service').value;var d=document.getElementById('bk-day').value;var msg='Hi Spark Pro Detailing, I want to book: '+s+' for my '+c+'. Name: '+n+'. Preferred day: '+d+'. Please confirm price and slot.';window.open('https://wa.me/923115072727?text='+encodeURIComponent(msg),'_blank');return false;">
+      <label for="bk-name">Your name</label>
+      <input id="bk-name" type="text" placeholder="e.g. Ahmed" required>
+      <label for="bk-car">Your car</label>
+      <input id="bk-car" type="text" placeholder="e.g. Toyota Corolla 2022" required>
+      <label for="bk-service">Service</label>
+      <select id="bk-service">
+        <option>Paint Protection Film</option>
+        <option>Ceramic Coating</option>
+        <option>360° Car Detailing</option>
+        <option>Glass Coating &amp; Dechrome</option>
+      </select>
+      <label for="bk-day">Preferred day</label>
+      <input id="bk-day" type="text" placeholder="e.g. Saturday">
+      <button type="submit">Send booking on WhatsApp →</button>
+      <p class="note">No payment taken here — you pay at the studio after your price is confirmed.</p>
+    </form>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <div class="fbrand">Spark Pro <span>Detailing</span></div>
+      <p style="margin-top:8px">I-8, Islamabad, Pakistan</p>
+    </div>
+    <ul>
+      <li>WhatsApp: <a href="https://wa.me/923115072727">+92 311 5072727</a></li>
+      <li>Instagram: <a href="https://www.instagram.com/sparkpro.details">@sparkpro.details</a></li>
+      <li>4.8 ★ from 87 Google reviews</li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
