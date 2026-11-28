@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAK Fitness Gym — Train Hard in Al Nahda 1, Dubai</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;background:#FAF6EF;color:#16130F;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:2px solid #16130F}
+.brand{font-weight:700;font-size:20px;letter-spacing:.06em}
+.brand span{color:#C8432B}
+.topbar .loc{font-size:13px;color:#5A5148;font-family:Arial,Helvetica,sans-serif}
+.wa-btn{display:inline-block;background:#1FA855;color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:15px;padding:12px 22px;border-radius:999px;text-decoration:none}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;padding:44px 0 8px;align-items:start}
+.hero h1{font-size:52px;line-height:1.02;letter-spacing:-.01em;margin:14px 0 18px}
+.hero h1 em{color:#C8432B;font-style:normal}
+.kicker{font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C8432B;font-weight:700}
+.hero p.lede{font-size:18px;max-width:46ch;color:#3A332C}
+.rating{display:inline-flex;gap:10px;align-items:center;background:#16130F;color:#FAF6EF;padding:10px 16px;margin:22px 0;font-family:Arial,Helvetica,sans-serif}
+.rating b{font-size:22px}
+.rating small{font-size:13px;color:#D8CFC4}
+.hero-cta{margin-top:6px}
+.hero-cta .note{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#5A5148;margin-top:10px}
+.hero-img{position:relative;margin-top:26px}
+.hero-img img{width:100%;height:420px;object-fit:cover;display:block}
+.hero-img figcaption{position:absolute;left:-14px;bottom:-16px;background:#C8432B;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;padding:9px 14px}
+.fix{background:#16130F;color:#FAF6EF;margin-top:56px;padding:38px 0}
+.fix h2{font-size:30px;margin-bottom:6px}
+.fix .sub{color:#C9BFB2;font-size:15px;margin-bottom:26px;max-width:62ch}
+.fixrow{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:18px 0;border-top:1px solid #3A332C}
+.fixrow .n{font-size:30px;color:#E8703A;font-weight:700}
+.fixrow h3{font-size:19px;margin-bottom:4px}
+.fixrow p{color:#C9BFB2;font-size:15px}
+.services{padding:48px 0 12px}
+.services h2{font-size:30px;margin-bottom:4px}
+.services .sub{color:#5A5148;font-size:15px;margin-bottom:20px}
+.svc{display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:baseline;padding:20px 0;border-top:2px solid #16130F}
+.svc .n{font-size:26px;color:#C8432B;font-weight:700}
+.svc h3{font-size:21px}
+.svc p{color:#5A5148;font-size:15px}
+.svc .price{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;background:#EDE4D6;padding:7px 12px;white-space:nowrap}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:34px 0 8px}
+.photos img{width:100%;height:250px;object-fit:cover;display:block}
+.photos img.tall{height:514px;grid-row:span 2}
+.reviews{background:#EDE4D6;padding:40px 0;text-align:left}
+.reviews .big{font-size:64px;line-height:1;color:#16130F}
+.reviews .big span{color:#C8432B}
+.reviews p{font-size:16px;max-width:56ch;margin-top:8px}
+.join{padding:48px 0 60px}
+.join h2{font-size:30px;margin-bottom:6px}
+.join .sub{color:#5A5148;font-size:15px;margin-bottom:24px;max-width:60ch}
+.join form{max-width:520px}
+.join label{display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;margin:14px 0 5px}
+.join input,.join select{width:100%;padding:12px 14px;border:2px solid #16130F;background:#fff;font-size:15px;font-family:Arial,Helvetica,sans-serif}
+.join button{margin-top:20px;background:#1FA855;color:#fff;border:0;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px;cursor:pointer}
+.join .fine{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#5A5148;margin-top:12px}
+footer{background:#16130F;color:#FAF6EF;padding:30px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+footer p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#C9BFB2}
+@media(max-width:720px){
+.hero{grid-template-columns:1fr;padding-top:28px}
+.hero h1{font-size:38px}
+.hero-img img{height:300px}
+.photos{grid-template-columns:1fr}
+.photos img.tall{height:250px;grid-row:auto}
+.svc{grid-template-columns:44px 1fr;gap:10px}
+.svc .price{grid-column:2}
+}
+</style>
+</head>
+<body>
+<header class="wrap topbar">
+<div class="brand">MAK <span>FITNESS</span> GYM</div>
+<div class="loc">Al Nahda 1, Dubai</div>
+<a class="wa-btn" href="https://wa.me/971562758850?text=Hi%20MAK%20Fitness%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20membership.">WhatsApp Us</a>
+</header>
+
+<main class="wrap">
+<section class="hero">
+<div>
+<p class="kicker">Gym &amp; Fitness — Al Nahda 1, Dubai</p>
+<h1>Train hard.<br><em>Train right.</em></h1>
+<p class="lede">A proper gym in Al Nahda 1 — strength training, personal coaching and swimming, with trainers who actually watch your form. No confusing website, no guessing: message us and we will tell you exactly what membership fits you.</p>
+<div class="rating"><b>4.8 ★</b><small>from 136 Google reviews</small></div>
+<div class="hero-cta">
+<a class="wa-btn" href="https://wa.me/971562758850?text=Hi%20MAK%20Fitness%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20membership.">Message on WhatsApp</a>
+<p class="note">Fastest reply — usually within the hour during the day.</p>
+</div>
+</div>
+<figure class="hero-img">
+<img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80" alt="Dumbbell rack in a gym">
+<figcaption>Strength floor — open for members</figcaption>
+</figure>
+</section>
+</main>
+
+<section class="fix">
+<div class="wrap">
+<h2>What this new site fixes</h2>
+<p class="sub">Your current site is a stock template with typos on the homepage, garbled About copy and filler text where member stories should be. This rebuild puts the gym first — clear, honest, and built to turn visitors into members.</p>
+<div class="fixrow"><div class="n">01</div><div><h3>Clean copy, no typos</h3><p>Every class and service spelled out properly — the homepage finally reads like a gym that cares about detail.</p></div></div>
+<div class="fixrow"><div class="n">02</div><div><h3>Real reviews up front</h3><p>Your 4.8-star rating from 136 Google reviews leads the page. No made-up quotes, no filler text.</p></div></div>
+<div class="fixrow"><div class="n">03</div><div><h3>Join in one tap</h3><p>No dead forms, no missing prices page. One WhatsApp button and the enquiry form below send the message straight to the gym.</p></div></div>
+</div>
+</section>
+
+<main class="wrap">
+<section class="services">
+<h2>Train with us</h2>
+<p class="sub">Four ways in. Ask on WhatsApp for the plan that fits your goal.</p>
+<div class="svc"><div class="n">01</div><div><h3>Strength Training</h3><p>Free weights, machines and a proper floor — train at your own pace.</p></div><div class="price">Price on enquiry</div></div>
+<div class="svc"><div class="n">02</div><div><h3>Personal Training</h3><p>One-to-one coaching with a trainer who plans your sessions and tracks progress.</p></div><div class="price">Price on enquiry</div></div>
+<div class="svc"><div class="n">03</div><div><h3>Swimming Class</h3><p>Pool sessions for fitness and technique, coached in small groups.</p></div><div class="price">Price on enquiry</div></div>
+<div class="svc"><div class="n">04</div><div><h3>Group Fitness Classes</h3><p>High-energy group sessions — show up, follow the coach, leave stronger.</p></div><div class="price">Price on enquiry</div></div>
+</section>
+
+<section class="photos">
+<img class="tall" src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1200&q=80" alt="Dark gym interior with equipment">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&q=80" alt="Member training with dumbbells">
+<img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=1200&q=80" alt="Barbell training">
+</section>
+
+<section class="reviews">
+<div class="wrap">
+<div class="big">4.8 <span>★</span></div>
+<p><strong>136 Google reviews.</strong> Members rate the gym 4.8 out of 5 — that is the number this page leads with, because it is real and it is earned.</p>
+</div>
+</section>
+
+<section class="join">
+<h2>Start with a message</h2>
+<p class="sub">Tell us your goal and when you want to train. The form opens WhatsApp with your message ready to send — no account, no waiting for an email reply.</p>
+<form id="joinForm">
+<label for="fname">Your name</label>
+<input id="fname" type="text" placeholder="Your name" required>
+<label for="goal">Your goal</label>
+<select id="goal">
+<option>Build strength</option>
+<option>Lose weight</option>
+<option>Personal training</option>
+<option>Swimming classes</option>
+<option>General fitness</option>
+</select>
+<label for="when">When do you want to train?</label>
+<select id="when">
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Evening</option>
+<option>Weekends</option>
+</select>
+<button type="submit">Send on WhatsApp →</button>
+<p class="fine">Opens WhatsApp to +971 56 275 8850 with your message pre-filled.</p>
+</form>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<p>MAK Fitness Gym — Al Nahda 1, Dubai<br>WhatsApp: +971 56 275 8850</p>
+<a class="wa-btn" href="https://wa.me/971562758850?text=Hi%20MAK%20Fitness%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20membership.">WhatsApp Us</a>
+</div>
+</footer>
+
+<script>
+document.getElementById('joinForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var name = document.getElementById('fname').value.trim();
+  var goal = document.getElementById('goal').value;
+  var when = document.getElementById('when').value;
+  var text = 'Hi MAK Fitness Gym, my name is ' + name + '. My goal is ' + goal.toLowerCase() + ' and I would like to train in the ' + when.toLowerCase() + '. Can you tell me about membership?';
+  window.open('https://wa.me/971562758850?text=' + encodeURIComponent(text), '_blank');
+});
+</script>
+</body>
+</html>
