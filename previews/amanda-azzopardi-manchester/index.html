@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amanda Azzopardi Aesthetics — Aesthetics Clinic, Manchester</title>
+<meta name="description" content="Amanda Azzopardi Aesthetics — CQC-registered aesthetics clinic in Manchester. Rated 5.0 from 364 Google reviews.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:#FAF6EF;color:#1E1E1C;line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  /* top bar */
+  .topbar{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0 8px;border-bottom:2px solid #1E1E1C}
+  .topbar .name{font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+  .topbar .phone{font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;text-decoration:none;background:#1E1E1C;color:#FAF6EF;padding:8px 14px;border-radius:999px;white-space:nowrap}
+  /* hero: asymmetric */
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;padding:44px 0 10px;align-items:start}
+  .hero h1{font-size:clamp(38px,6vw,62px);line-height:1.04;font-weight:400;letter-spacing:-.01em}
+  .hero h1 em{font-style:italic;color:#B0714A}
+  .hero .lede{font-family:Arial,Helvetica,sans-serif;font-size:17px;margin-top:18px;max-width:46ch}
+  .hero .rating{display:inline-block;margin-top:20px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;background:#F3E7D3;border:1px solid #D9C6A5;padding:8px 14px;border-radius:999px}
+  .hero .cta-row{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{font-family:Arial,Helvetica,sans-serif;display:inline-block;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px}
+  .btn-dark{background:#1E1E1C;color:#FAF6EF}
+  .btn-line{border:2px solid #1E1E1C;color:#1E1E1C}
+  .hero figure{margin-top:26px}
+  .hero figure img{width:100%;height:340px;object-fit:cover;display:block;border-radius:4px}
+  .hero figure figcaption{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#6B6257;margin-top:8px}
+  .hero .side-note{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#6B6257;border-left:3px solid #B0714A;padding-left:14px;margin-top:8px}
+  .hero .side-note strong{color:#1E1E1C}
+  /* fix strip */
+  .fix{background:#1E1E1C;color:#FAF6EF;margin-top:44px;padding:38px 0}
+  .fix h2{font-size:30px;font-weight:400;margin-bottom:6px}
+  .fix .sub{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#CFC6B8;max-width:62ch}
+  .fix ol{list-style:none;margin-top:26px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
+  .fix li{border-top:2px solid #B0714A;padding-top:14px}
+  .fix li .n{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.12em;color:#E0A878}
+  .fix li h3{font-size:19px;margin:8px 0 6px;font-weight:700}
+  .fix li p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#D8D0C2}
+  .fix li p strong{color:#FAF6EF}
+  /* services: numbered rows */
+  .services{padding:44px 0 8px}
+  .services h2{font-size:30px;font-weight:400}
+  .services .kicker{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B0714A;margin-bottom:8px}
+  .svc{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:baseline;padding:22px 0;border-bottom:1px solid #D9C6A5}
+  .svc .num{font-size:26px;color:#B0714A}
+  .svc h3{font-size:22px;font-weight:700}
+  .svc p{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#5A5348;margin-top:4px;max-width:56ch}
+  .svc .price{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;background:#F3E7D3;padding:6px 12px;border-radius:999px;white-space:nowrap}
+  /* photo band */
+  .band{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:34px 0 8px}
+  .band img{width:100%;height:260px;object-fit:cover;display:block;border-radius:4px}
+  /* reviews */
+  .reviews{padding:34px 0}
+  .reviews .big{font-size:clamp(30px,4.5vw,44px);line-height:1.15;font-weight:400;max-width:22ch}
+  .reviews .big em{font-style:italic;color:#B0714A}
+  .reviews .meta{font-family:Arial,Helvetica,sans-serif;font-size:15px;margin-top:14px}
+  .reviews .meta strong{font-size:18px}
+  /* trust bar */
+  .trust{background:#F3E7D3;padding:26px 0;margin-top:10px}
+  .trust .row{display:flex;gap:28px;flex-wrap:wrap;font-family:Arial,Helvetica,sans-serif;font-size:15px}
+  .trust .row div strong{display:block;font-size:18px}
+  /* booking */
+  .booking{padding:44px 0 56px}
+  .booking h2{font-size:30px;font-weight:400}
+  .booking p{font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#5A5348;margin-top:8px;max-width:60ch}
+  form{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px}
+  form label{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;display:block;margin-bottom:6px}
+  form input,form select,form textarea{width:100%;padding:12px 14px;border:1px solid #C9BBA6;border-radius:6px;background:#fff;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#1E1E1C}
+  form .full{grid-column:1 / -1}
+  .call-btn{grid-column:1 / -1;font-family:Arial,Helvetica,sans-serif;display:block;text-align:center;background:#1E1E1C;color:#FAF6EF;padding:15px;border-radius:999px;text-decoration:none;font-weight:700;font-size:16px;margin-top:4px}
+  .fineprint{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#6B6257;margin-top:12px}
+  footer{border-top:2px solid #1E1E1C;padding:22px 0 30px;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#6B6257;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:#1E1E1C;font-weight:700;text-decoration:none}
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr;padding-top:30px}
+    .hero figure img{height:260px}
+    .fix ol{grid-template-columns:1fr}
+    .svc{grid-template-columns:44px 1fr;gap:10px}
+    .svc .price{grid-column:2}
+    .band{grid-template-columns:1fr}
+    .band img{height:220px}
+    form{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap topbar">
+  <div class="name">Amanda Azzopardi Aesthetics</div>
+  <a class="phone" href="tel:+441618837250">Call 0161 883 7250</a>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="wrap hero">
+    <div>
+      <h1>Natural results,<br><em>honestly</em> done.</h1>
+      <p class="lede">A CQC-registered aesthetics clinic in Manchester. Subtle, considered treatments — from a clinic patients already trust.</p>
+      <span class="rating">★ 5.0 from 364 Google reviews</span>
+      <div class="cta-row">
+        <a class="btn btn-dark" href="tel:+441618837250">Book by phone</a>
+        <a class="btn btn-line" href="#booking">Request a booking</a>
+      </div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=900&q=70" alt="Facial skincare treatment in a calm clinic room">
+        <figcaption>Consultation-led care — every treatment starts with a proper conversation.</figcaption>
+      </figure>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&q=70" alt="Woman after a natural makeup and skin treatment" style="width:100%;height:420px;object-fit:cover;display:block;border-radius:4px">
+      <p class="side-note" style="margin-top:16px"><strong>Why this page exists:</strong> the clinic's paid ads are working hard — but most of them send people to a chat redirect instead of a website that shows the treatments, the prices, and a way to book. This preview fixes that.</p>
+    </div>
+  </section>
+
+  <!-- THE FIX -->
+  <section class="fix">
+    <div class="wrap">
+      <h2>What your ads are missing</h2>
+      <p class="sub">Five ads are live right now, four of them new this month. The demand is there — the website just isn't catching it.</p>
+      <ol>
+        <li>
+          <span class="n">01</span>
+          <h3>Paid clicks go to a chat link</h3>
+          <p><strong>88% of all ads (28 of 32)</strong> send paid traffic to an fb.me Messenger redirect — not to your website. People click, land in a chat, and most never book.</p>
+        </li>
+        <li>
+          <span class="n">02</span>
+          <h3>Typos in the ad copy</h3>
+          <p>Live ads are running with spelling mistakes — <strong>"Lip Enhancments"</strong> — on a clinic selling precision treatments. It undermines the trust your 5.0 rating earned.</p>
+        </li>
+        <li>
+          <span class="n">03</span>
+          <h3>One angle, recycled</h3>
+          <p>The same <strong>"MODELS WANTED – REDUCED COST"</strong> angle runs across 23 ads. A proper site lets the treatments, the results and the reviews do the selling instead.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="wrap services">
+    <p class="kicker">Treatments</p>
+    <h2>What the clinic offers</h2>
+    <div class="svc">
+      <div class="num">01</div>
+      <div>
+        <h3>Lip Enhancement</h3>
+        <p>Natural, balanced lip treatments — subtle volume and shape, never overdone. Consultation first, always.</p>
+      </div>
+      <span class="price">Price on consultation</span>
+    </div>
+    <div class="svc">
+      <div class="num">02</div>
+      <div>
+        <h3>Anti-Wrinkle Treatments</h3>
+        <p>Smoothing treatments for forehead lines, frown lines and crow's feet, tailored to your face.</p>
+      </div>
+      <span class="price">Price on consultation</span>
+    </div>
+    <div class="svc">
+      <div class="num">03</div>
+      <div>
+        <h3>Dermal Fillers</h3>
+        <p>Restoring volume and definition where time has taken it — cheeks, jawline and under-eye area.</p>
+      </div>
+      <span class="price">Price on consultation</span>
+    </div>
+    <div class="svc">
+      <div class="num">04</div>
+      <div>
+        <h3>Skin Treatments</h3>
+        <p>Clinic skin care for texture, tone and glow — planned around your skin, not a one-size routine.</p>
+      </div>
+      <span class="price">Price on consultation</span>
+    </div>
+  </section>
+
+  <!-- PHOTO BAND -->
+  <section class="wrap band">
+    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=900&q=70" alt="Relaxing spa and skin treatment room">
+    <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=900&q=70" alt="Skincare products and treatment preparation">
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="wrap reviews">
+    <p class="big">Patients already rate this clinic <em>5.0 out of 5.</em></p>
+    <p class="meta"><strong>★ 5.0</strong> from 364 Google reviews — across the whole clinic. A website that shows that trust up front turns ad clicks into booked appointments.</p>
+    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=900&q=70" alt="Happy client after a clinic visit" style="width:100%;height:300px;object-fit:cover;display:block;border-radius:4px;margin-top:22px">
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust">
+    <div class="wrap row">
+      <div><strong>CQC-registered</strong>clinic</div>
+      <div><strong>5.0 ★</strong>364 Google reviews</div>
+      <div><strong>Manchester</strong>0161 883 7250</div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="wrap booking" id="booking">
+    <h2>Request a booking</h2>
+    <p>Tell us what you'd like and we'll confirm by phone. Or call the clinic directly — <a href="tel:+441618837250">0161 883 7250</a>.</p>
+    <form action="tel:+441618837250" method="get">
+      <div>
+        <label for="bname">Your name</label>
+        <input id="bname" name="name" type="text" placeholder="Full name" required>
+      </div>
+      <div>
+        <label for="bphone">Your phone number</label>
+        <input id="bphone" name="phone" type="tel" placeholder="07___ ______" required>
+      </div>
+      <div>
+        <label for="btreat">Treatment</label>
+        <select id="btreat" name="treatment">
+          <option>Lip Enhancement</option>
+          <option>Anti-Wrinkle Treatments</option>
+          <option>Dermal Fillers</option>
+          <option>Skin Treatments</option>
+          <option>Not sure yet — consultation</option>
+        </select>
+      </div>
+      <div>
+        <label for="bday">Preferred day</label>
+        <input id="bday" name="day" type="text" placeholder="e.g. Thursday morning">
+      </div>
+      <div class="full">
+        <label for="bnotes">Anything we should know?</label>
+        <textarea id="bnotes" name="notes" rows="3" placeholder="Optional — tell us briefly what you'd like."></textarea>
+      </div>
+      <a class="call-btn" href="tel:+441618837250">Call 0161 883 7250 to confirm your booking</a>
+      <p class="fineprint full">Fill in the details above, then tap the button to call the clinic and confirm your booking. No payment is taken over this form.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div>Amanda Azzopardi Aesthetics — Aesthetics Clinic, Manchester</div>
+  <div><a href="tel:+441618837250">0161 883 7250</a></div>
+</footer>
+
+</body>
+</html>
