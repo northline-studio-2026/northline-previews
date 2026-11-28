@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor Detail — Car Detailing, Orlando FL</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #F7F2E9; color: #1C1A17; line-height: 1.55; }
+  a { color: inherit; }
+  .topbar { display: flex; justify-content: space-between; align-items: center; padding: 18px 20px; border-bottom: 2px solid #1C1A17; }
+  .topbar .name { font-size: 20px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+  .topbar .city { font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #6B6257; }
+  .call-btn { display: inline-block; background: #1C1A17; color: #F7F2E9; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; text-decoration: none; padding: 12px 18px; border-radius: 2px; }
+  .hero { padding: 28px 20px 8px; }
+  .hero .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #B4552D; margin-bottom: 14px; }
+  .hero h1 { font-size: 42px; line-height: 1.08; font-weight: bold; max-width: 560px; }
+  .hero h1 em { font-style: italic; color: #B4552D; }
+  .hero p.lede { font-size: 18px; margin-top: 16px; max-width: 520px; color: #3A352E; }
+  .hero-fig { position: relative; margin: 26px 20px 0 20px; }
+  .hero-fig img { width: 78%; height: 300px; object-fit: cover; display: block; margin-left: auto; border-radius: 2px; }
+  .rating-tag { position: absolute; left: 0; bottom: 24px; background: #B4552D; color: #F7F2E9; padding: 14px 18px; font-family: Arial, Helvetica, sans-serif; max-width: 220px; }
+  .rating-tag .stars { font-size: 22px; letter-spacing: 2px; }
+  .rating-tag .lbl { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; margin-top: 4px; }
+  .cta-row { padding: 26px 20px 0; display: flex; flex-wrap: wrap; gap: 12px; }
+  .cta-row .call-btn { background: #B4552D; }
+  .cta-row .ghost { display: inline-block; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; text-decoration: none; padding: 12px 18px; border: 2px solid #1C1A17; border-radius: 2px; }
+  .fix { background: #1C1A17; color: #F7F2E9; margin-top: 34px; padding: 30px 20px; }
+  .fix h2 { font-size: 26px; line-height: 1.2; margin-bottom: 6px; }
+  .fix .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #C9BFAE; margin-bottom: 22px; max-width: 520px; }
+  .fix ol { list-style: none; }
+  .fix li { display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #3A352E; }
+  .fix li .num { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #E0784A; min-width: 28px; }
+  .fix li h3 { font-size: 18px; margin-bottom: 4px; }
+  .fix li p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #C9BFAE; }
+  .services { padding: 30px 20px; }
+  .services h2 { font-size: 26px; margin-bottom: 6px; }
+  .services .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #6B6257; margin-bottom: 18px; }
+  .svc { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding: 18px 0; border-top: 2px solid #1C1A17; }
+  .svc .n { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #B4552D; }
+  .svc h3 { font-size: 20px; }
+  .svc p { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #6B6257; margin-top: 3px; }
+  .svc .price { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; white-space: nowrap; }
+  .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 0 20px; }
+  .photos img { width: 100%; height: 170px; object-fit: cover; display: block; border-radius: 2px; }
+  .photos img.wide { grid-column: 1 / -1; height: 220px; }
+  .reviews { padding: 30px 20px; text-align: left; }
+  .reviews .big { font-size: 64px; line-height: 1; font-weight: bold; }
+  .reviews .stars { font-size: 26px; color: #B4552D; letter-spacing: 3px; margin: 6px 0; }
+  .reviews p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3A352E; max-width: 480px; }
+  .book { background: #B4552D; color: #F7F2E9; padding: 30px 20px; }
+  .book h2 { font-size: 26px; margin-bottom: 6px; }
+  .book .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin-bottom: 20px; max-width: 480px; }
+  .book label { display: block; font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; margin: 14px 0 6px; }
+  .book input, .book select, .book textarea { width: 100%; padding: 12px; border: none; border-radius: 2px; font-size: 15px; font-family: Arial, Helvetica, sans-serif; background: #F7F2E9; color: #1C1A17; }
+  .book .call-big { display: block; text-align: center; background: #1C1A17; color: #F7F2E9; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; text-decoration: none; padding: 16px; margin-top: 22px; border-radius: 2px; }
+  .book .note { font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-top: 10px; text-align: center; }
+  footer { background: #1C1A17; color: #C9BFAE; padding: 26px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
+  footer .fname { color: #F7F2E9; font-size: 17px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+  footer a { color: #F7F2E9; font-weight: bold; text-decoration: none; }
+  footer p { margin-top: 8px; }
+  @media (min-width: 700px) {
+    .hero h1 { font-size: 56px; }
+    .hero-fig img { height: 420px; }
+    .photos img { height: 240px; }
+    .photos img.wide { height: 320px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div>
+    <div class="name">Doctor Detail</div>
+    <div class="city">Orlando, FL</div>
+  </div>
+  <a class="call-btn" href="tel:+14072759633">Call (407) 275-9633</a>
+</header>
+
+<section class="hero">
+  <div class="kicker">Car Detailing &middot; Orlando, Florida</div>
+  <h1>Your car deserves <em>better than a 2013 website.</em></h1>
+  <p class="lede">Rated 4.9 stars by Orlando drivers — yet the current site is an ancient WordPress theme with photos from April 2013, a map that is just a placeholder graphic, no prices and no way to book. This is what the business should look like online.</p>
+</section>
+
+<figure class="hero-fig">
+  <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200&q=80" alt="Car being detailed">
+  <div class="rating-tag">
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <div class="lbl">Rated 4.9 stars</div>
+  </div>
+</figure>
+
+<div class="cta-row">
+  <a class="call-btn" href="tel:+14072759633">Call to book — (407) 275-9633</a>
+  <a class="ghost" href="#services">See services</a>
+</div>
+
+<section class="fix">
+  <h2>What we fixed in this preview</h2>
+  <p class="sub">The old site hides a 4.9-star business behind a broken first impression. Three changes fix it:</p>
+  <ol>
+    <li>
+      <span class="num">01</span>
+      <div>
+        <h3>A site from this decade</h3>
+        <p>No more smallbiz theme from 2013. A clean, modern page that loads fast on a phone and shows the work properly.</p>
+      </div>
+    </li>
+    <li>
+      <span class="num">02</span>
+      <div>
+        <h3>Clear services, clear next step</h3>
+        <p>Real service rows with honest "price on enquiry" — and a booking request that goes straight to a phone call, instead of a dead end.</p>
+      </div>
+    </li>
+    <li>
+      <span class="num">03</span>
+      <div>
+        <h3>A real map, not a placeholder</h3>
+        <p>The old "Find Us" page shows a graphic labelled "Expand2Web Example Image". Customers need a real location and a real way to reach you.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="services" id="services">
+  <h2>Detailing services</h2>
+  <p class="sub">Every detail finished by hand. Call for a quote on your vehicle.</p>
+
+  <div class="svc">
+    <div>
+      <span class="n">01</span>
+      <h3>Exterior Detail</h3>
+      <p>Wash, wax and paintwork finished properly.</p>
+    </div>
+    <span class="price">Price on enquiry</span>
+  </div>
+
+  <div class="svc">
+    <div>
+      <span class="n">02</span>
+      <h3>Interior Detail</h3>
+      <p>Seats, carpets, dash and trim cleaned through.</p>
+    </div>
+    <span class="price">Price on enquiry</span>
+  </div>
+
+  <div class="svc">
+    <div>
+      <span class="n">03</span>
+      <h3>Complete Detail</h3>
+      <p>Inside and out, top to bottom — the full job.</p>
+    </div>
+    <span class="price">Price on enquiry</span>
+  </div>
+</section>
+
+<section class="photos">
+  <img class="wide" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" alt="Detailed car exterior">
+  <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=1200&q=80" alt="Car after detailing">
+  <img src="https://images.unsplash.com/photo-1600661653561-629509216228?w=1200&q=80" alt="Car detailing work">
+</section>
+
+<section class="reviews">
+  <div class="big">4.9</div>
+  <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+  <p>Rated 4.9 stars. Orlando drivers already trust Doctor Detail — the website should say so before they ever pick up the phone.</p>
+</section>
+
+<section class="book">
+  <h2>Book your detail</h2>
+  <p class="sub">Fill this in, then tap call — Doctor Detail confirms your booking by phone.</p>
+  <form action="tel:+14072759633" method="get">
+    <label for="bname">Your name</label>
+    <input id="bname" type="text" placeholder="Full name" required>
+    <label for="bphone">Your phone</label>
+    <input id="bphone" type="tel" placeholder="(407) 555-0100" required>
+    <label for="bservice">Service</label>
+    <select id="bservice">
+      <option>Exterior Detail</option>
+      <option>Interior Detail</option>
+      <option>Complete Detail</option>
+    </select>
+    <label for="bmsg">Vehicle &amp; notes</label>
+    <textarea id="bmsg" rows="3" placeholder="e.g. 2021 SUV — full interior clean"></textarea>
+    <a class="call-big" href="tel:+14072759633">Call (407) 275-9633 to confirm</a>
+    <p class="note">Bookings are confirmed by phone — no online payment, no waiting on email.</p>
+  </form>
+</section>
+
+<footer>
+  <div class="fname">Doctor Detail</div>
+  <p>Car Detailing — Orlando, FL</p>
+  <p>Call: <a href="tel:+14072759633">(407) 275-9633</a></p>
+  <p>Preview built by Northline Studio — a sample of what your new site could look like.</p>
+</footer>
+
+</body>
+</html>
